@@ -1,0 +1,1275 @@
+Archive member included because of file (symbol)
+
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_mulsi3.o)
+                              original_sww/controller.o (__mulsi3)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodqi4.o)
+                              original_sww/com.o (__udivmodqi4)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodqi4.o)
+                              original_sww/menu.o (__divmodqi4)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodhi4.o)
+                              original_sww/motor.o (__udivmodhi4)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodhi4.o)
+                              original_sww/motor.o (__divmodhi4)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodsi4.o)
+                              original_sww/adc.o (__udivmodsi4)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodsi4.o)
+                              original_sww/adc.o (__divmodsi4)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_prologue.o)
+                              original_sww/rtc.o (__prologue_saves__)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_epilogue.o)
+                              original_sww/rtc.o (__epilogue_restores__)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+                              /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o (exit)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
+                              original_sww/com.o (__tablejump2__)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+                              original_sww/motor.o (__do_copy_data)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+                              original_sww/motor.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+MOTOR_counter       0x4               original_sww/motor.o
+hourbar_buff        0x4               original_sww/menu.o
+RTC_DS              0x1               original_sww/rtc.o
+menu_state          0x1               original_sww/menu.o
+CTL_open_window_timeout
+                    0x2               original_sww/controller.o
+ring_buf_temp_avgs_pos
+                    0x1               original_sww/adc.o
+MOTOR_Dir           0x1               original_sww/motor.o
+state_wheel_prev    0x1               original_sww/keyboard.o
+LCD_Data            0x12              original_sww/lcd.o
+ring_buf_temp_avgs  0x40              original_sww/adc.o
+timmers_patch_data  0x2               original_sww/eeprom.o
+config              0x29              original_sww/eeprom.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x0000000000000000 0x0000000000020000 xr
+data             0x0000000000800060 0x000000000000ffa0 rw !x
+eeprom           0x0000000000810000 0x0000000000010000 rw !x
+fuse             0x0000000000820000 0x0000000000000400 rw !x
+lock             0x0000000000830000 0x0000000000000400 rw !x
+signature        0x0000000000840000 0x0000000000000400 rw !x
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+LOAD original_sww/motor.o
+LOAD original_sww/controller.o
+LOAD original_sww/rs232_485_hw.o
+LOAD original_sww/watch.o
+LOAD original_sww/com.o
+LOAD original_sww/wireless.o
+LOAD original_sww/rfm.o
+LOAD original_sww/cmac.o
+LOAD original_sww/xtea-asm.o
+LOAD original_sww/rtc.o
+LOAD original_sww/main.o
+LOAD original_sww/keyboard.o
+LOAD original_sww/adc.o
+LOAD original_sww/eeprom.o
+LOAD original_sww/menu.o
+LOAD original_sww/lcd.o
+LOAD /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a
+LOAD /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a
+LOAD /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a
+LOAD /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x0000000000000000     0x3046
+ *(.vectors)
+ .vectors       0x0000000000000000       0x5c /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+                0x0000000000000000                __vectors
+                0x0000000000000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ .progmem.gcc_sw_table
+                0x000000000000005c       0x32 original_sww/com.o
+ .progmem.gcc_sw_table
+                0x000000000000008e       0x5c original_sww/menu.o
+ *(.progmem*)
+ .progmem.data  0x00000000000000ea       0x1c original_sww/watch.o
+ .progmem.data  0x0000000000000106       0x59 original_sww/com.o
+ .progmem.data  0x000000000000015f       0x24 original_sww/rtc.o
+                0x000000000000015f                RTC_DayOfMonthTablePrgMem
+ .progmem.data  0x0000000000000183       0x9b original_sww/lcd.o
+                0x0000000000000183                LCD_CharTablePrgMem
+                0x00000000000001ab                LCD_StringTable
+                0x00000000000001fb                LCD_FieldOffsetTablePrgMem
+                0x00000000000001ff                LCD_SegOffsetTablePrgMem
+                0x0000000000000206                LCD_SegHourBarOffsetTablePrgMem
+                0x000000000000021e                . = ALIGN (0x2)
+                0x000000000000021e                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x000000000000021e        0x0 linker stubs
+ *(.trampolines*)
+                0x000000000000021e                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x000000000000021e                __ctors_start = .
+ *(.ctors)
+                0x000000000000021e                __ctors_end = .
+                0x000000000000021e                __dtors_start = .
+ *(.dtors)
+                0x000000000000021e                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x000000000000021e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+                0x000000000000021e                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000000000000021e        0xc /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x000000000000022a       0x16 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+                0x000000000000022a                __do_copy_data
+ .init4         0x0000000000000240       0x10 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+                0x0000000000000240                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000000000000250        0x8 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+ *(.init9)
+ *(.text)
+ .text          0x0000000000000258        0x2 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+                0x0000000000000258                __vector_1
+                0x0000000000000258                __vector_12
+                0x0000000000000258                __bad_interrupt
+                0x0000000000000258                __vector_6
+                0x0000000000000258                __vector_17
+                0x0000000000000258                __vector_7
+                0x0000000000000258                __vector_9
+                0x0000000000000258                __vector_21
+                0x0000000000000258                __vector_8
+                0x0000000000000258                __vector_10
+                0x0000000000000258                __vector_16
+                0x0000000000000258                __vector_18
+                0x0000000000000258                __vector_20
+ .text          0x000000000000025a      0x668 original_sww/motor.o
+                0x000000000000025a                MOTOR_GetPosPercent
+                0x00000000000003ae                MOTOR_Goto
+                0x0000000000000446                MOTOR_timer_pulse
+                0x00000000000004e0                __vector_2
+                0x0000000000000662                __vector_11
+                0x00000000000006f8                MOTOR_timer_stop
+                0x0000000000000824                MOTOR_updateCalibration
+ .text          0x00000000000008c2      0x47e original_sww/controller.o
+                0x00000000000008c2                CTL_temp_change_inc
+                0x00000000000008ea                CTL_change_mode
+                0x0000000000000948                CTL_update
+ .text          0x0000000000000d40      0x144 original_sww/rs232_485_hw.o
+                0x0000000000000d40                __vector_15
+                0x0000000000000d6a                RS_Init
+                0x0000000000000d8c                RS_startSend
+                0x0000000000000db8                __vector_14
+                0x0000000000000e26                __vector_13
+ .text          0x0000000000000e84       0x30 original_sww/watch.o
+                0x0000000000000e84                watch
+ .text          0x0000000000000eb4      0x514 original_sww/com.o
+                0x0000000000000eb4                COM_putchar
+                0x0000000000000ee8                COM_tx_char_isr
+                0x0000000000000f0c                COM_rx_char_isr
+                0x00000000000010d2                COM_flush
+                0x00000000000010e2                COM_print_debug
+                0x00000000000011ee                COM_commad_parse
+                0x00000000000013c0                COM_init
+ .text          0x00000000000013c8        0x0 original_sww/wireless.o
+ .text          0x00000000000013c8        0x0 original_sww/rfm.o
+ .text          0x00000000000013c8        0x0 original_sww/cmac.o
+ .text          0x00000000000013c8       0xfc original_sww/xtea-asm.o
+                0x00000000000013c8                xtea_enc
+ .text          0x00000000000014c4      0x548 original_sww/rtc.o
+                0x00000000000014c4                RTC_SetHour
+                0x00000000000014d2                RTC_SetMinute
+                0x00000000000014e0                RTC_SetSecond
+                0x00000000000014ee                RTC_timer_set
+                0x0000000000001542                __vector_5
+                0x000000000000155c                __vector_4
+                0x0000000000001668                RTC_ActualTimerTemperature
+                0x00000000000016de                RTC_DowTimerGetHourBar
+                0x0000000000001772                RTC_AddOneSecond
+                0x000000000000192c                RTC_SetYear
+                0x0000000000001932                RTC_SetMonth
+                0x0000000000001942                RTC_SetDay
+                0x0000000000001978                RTC_Init
+                0x00000000000019ae                RTC_DowTimerGet
+                0x00000000000019d4                RTC_DowTimerSet
+ .text          0x0000000000001a0c      0x240 original_sww/main.o
+                0x0000000000001a0c                main
+ .text          0x0000000000001c4c      0x23c original_sww/keyboard.o
+                0x0000000000001c4c                task_keyboard_long_press_detect
+                0x0000000000001d04                mont_contact_pooling
+                0x0000000000001d4a                __vector_3
+                0x0000000000001d78                task_keyboard
+ .text          0x0000000000001e88      0x28e original_sww/adc.o
+                0x0000000000001f60                start_task_ADC
+                0x0000000000001f82                task_ADC
+                0x0000000000002112                __vector_19
+ .text          0x0000000000002116      0x182 original_sww/eeprom.o
+                0x0000000000002116                EEPROM_read
+                0x0000000000002124                config_read
+                0x000000000000216c                eeprom_config_save
+                0x00000000000021cc                eeprom_config_init
+                0x0000000000002220                eeprom_timers_read_raw
+                0x000000000000226c                eeprom_timers_write_raw
+ .text          0x0000000000002298      0x7d4 original_sww/menu.o
+                0x00000000000022de                menu_view
+                0x00000000000025e2                menu_controller
+ .text          0x0000000000002a6c      0x424 original_sww/lcd.o
+                0x0000000000002a6c                LCD_AllSegments
+                0x0000000000002aa0                LCD_Init
+                0x0000000000002ace                LCD_HourBarBitmap
+                0x0000000000002b04                LCD_SetSeg
+                0x0000000000002b94                LCD_SetHourBarSeg
+                0x0000000000002ba2                LCD_PrintChar
+                0x0000000000002bfe                LCD_PrintDec
+                0x0000000000002c32                LCD_PrintDecW
+                0x0000000000002c6e                LCD_PrintDec3
+                0x0000000000002cb8                LCD_PrintTempInt
+                0x0000000000002d16                LCD_PrintHex
+                0x0000000000002d40                LCD_PrintHexW
+                0x0000000000002d5e                LCD_PrintStringID
+                0x0000000000002d9c                LCD_PrintTemp
+                0x0000000000002df8                task_lcd_update
+                0x0000000000002e8c                __vector_22
+ .text          0x0000000000002e90        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_mulsi3.o)
+ .text          0x0000000000002e90        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodqi4.o)
+ .text          0x0000000000002e90        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodqi4.o)
+ .text          0x0000000000002e90        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodhi4.o)
+ .text          0x0000000000002e90        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodhi4.o)
+ .text          0x0000000000002e90        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodsi4.o)
+ .text          0x0000000000002e90        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodsi4.o)
+ .text          0x0000000000002e90        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_prologue.o)
+ .text          0x0000000000002e90        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_epilogue.o)
+ .text          0x0000000000002e90        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+ .text          0x0000000000002e90        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
+ .text          0x0000000000002e90        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+ .text          0x0000000000002e90        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+                0x0000000000002e90                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x0000000000002e90       0x3e /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_mulsi3.o)
+                0x0000000000002e90                __mulsi3
+ .text.libgcc   0x0000000000002ece       0x18 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodqi4.o)
+                0x0000000000002ece                __udivmodqi4
+ .text.libgcc   0x0000000000002ee6       0x1a /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodqi4.o)
+                0x0000000000002ee6                __divmodqi4
+ .text.libgcc   0x0000000000002f00       0x28 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodhi4.o)
+                0x0000000000002f00                __udivmodhi4
+ .text.libgcc   0x0000000000002f28       0x26 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodhi4.o)
+                0x0000000000002f28                __divmodhi4
+                0x0000000000002f28                _div
+ .text.libgcc   0x0000000000002f4e       0x44 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodsi4.o)
+                0x0000000000002f4e                __udivmodsi4
+ .text.libgcc   0x0000000000002f92       0x36 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodsi4.o)
+                0x0000000000002f92                __divmodsi4
+ .text.libgcc   0x0000000000002fc8       0x38 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_prologue.o)
+                0x0000000000002fc8                __prologue_saves__
+ .text.libgcc   0x0000000000003000       0x36 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_epilogue.o)
+                0x0000000000003000                __epilogue_restores__
+ .text.libgcc   0x0000000000003036        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+ .text.libgcc   0x0000000000003036        0xc /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
+                0x0000000000003036                __tablejump2__
+                0x000000000000303a                __tablejump__
+ .text.libgcc   0x0000000000003042        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000000000003042        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+                0x0000000000003042                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x0000000000003042        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+                0x0000000000003042                exit
+                0x0000000000003042                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x0000000000003042        0x4 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000000000003046                _etext = .
+
+.data           0x0000000000800100       0x16 load address 0x0000000000003046
+                0x0000000000800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+ .data          0x0000000000800100        0x0 original_sww/motor.o
+ .data          0x0000000000800100        0x0 original_sww/controller.o
+ .data          0x0000000000800100        0x0 original_sww/rs232_485_hw.o
+ .data          0x0000000000800100        0x0 original_sww/watch.o
+ .data          0x0000000000800100        0x0 original_sww/com.o
+ .data          0x0000000000800100        0x0 original_sww/wireless.o
+ .data          0x0000000000800100        0x0 original_sww/rfm.o
+ .data          0x0000000000800100        0x0 original_sww/cmac.o
+ .data          0x0000000000800100        0x0 original_sww/xtea-asm.o
+ .data          0x0000000000800100        0x0 original_sww/rtc.o
+ .data          0x0000000000800100        0x0 original_sww/main.o
+ .data          0x0000000000800100        0x0 original_sww/keyboard.o
+ .data          0x0000000000800100        0x0 original_sww/adc.o
+ .data          0x0000000000800100        0x0 original_sww/eeprom.o
+ .data          0x0000000000800100        0x0 original_sww/menu.o
+ .data          0x0000000000800100        0x0 original_sww/lcd.o
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_mulsi3.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodqi4.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodqi4.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodhi4.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodhi4.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodsi4.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodsi4.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_prologue.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_epilogue.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+ *(.data*)
+ .data.MOTOR_calibration_step
+                0x0000000000800100        0x1 original_sww/motor.o
+                0x0000000000800100                MOTOR_calibration_step
+ .data.motor_diag_ignore
+                0x0000000000800101        0x1 original_sww/motor.o
+ .data.MOTOR_wait_for_new_calibration
+                0x0000000000800102        0x1 original_sww/motor.o
+ .data.CTL_temp_wanted_last
+                0x0000000000800103        0x1 original_sww/controller.o
+                0x0000000000800103                CTL_temp_wanted_last
+ .data.CTL_mode_auto
+                0x0000000000800104        0x1 original_sww/controller.o
+                0x0000000000800104                CTL_mode_auto
+ .data.PID_force_update
+                0x0000000000800105        0x1 original_sww/controller.o
+                0x0000000000800105                PID_force_update
+ .data.PID_update_timeout
+                0x0000000000800106        0x2 original_sww/controller.o
+ .data.RTC      0x0000000000800108        0x7 original_sww/rtc.o
+                0x0000000000800108                RTC
+ .data.kb_timeout
+                0x000000000080010f        0x1 original_sww/keyboard.o
+                0x000000000080010f                kb_timeout
+ .data.ring_used
+                0x0000000000800110        0x1 original_sww/adc.o
+ .data.timmers_patch_offset
+                0x0000000000800111        0x1 original_sww/eeprom.o
+                0x0000000000800111                timmers_patch_offset
+ .data.menu_auto_update_timeout
+                0x0000000000800112        0x1 original_sww/menu.o
+                0x0000000000800112                menu_auto_update_timeout
+ .data.service_idx
+                0x0000000000800113        0x1 original_sww/menu.o
+ .data.LCD_used_bitplanes
+                0x0000000000800114        0x1 original_sww/lcd.o
+                0x0000000000800114                LCD_used_bitplanes
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x0000000000800116                . = ALIGN (0x2)
+ *fill*         0x0000000000800115        0x1 00
+                0x0000000000800116                _edata = .
+                0x0000000000800116                PROVIDE (__data_end, .)
+
+.bss            0x0000000000800116      0x1b4
+                0x0000000000800116                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x0000000000800116        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+ .bss           0x0000000000800116        0x0 original_sww/motor.o
+ .bss           0x0000000000800116        0x0 original_sww/controller.o
+ .bss           0x0000000000800116        0x0 original_sww/rs232_485_hw.o
+ .bss           0x0000000000800116        0x0 original_sww/watch.o
+ .bss           0x0000000000800116        0x0 original_sww/com.o
+ .bss           0x0000000000800116        0x0 original_sww/wireless.o
+ .bss           0x0000000000800116        0x0 original_sww/rfm.o
+ .bss           0x0000000000800116        0x0 original_sww/cmac.o
+ .bss           0x0000000000800116        0x0 original_sww/xtea-asm.o
+ .bss           0x0000000000800116        0x0 original_sww/rtc.o
+ .bss           0x0000000000800116        0x0 original_sww/main.o
+ .bss           0x0000000000800116        0x0 original_sww/keyboard.o
+ .bss           0x0000000000800116        0x0 original_sww/adc.o
+ .bss           0x0000000000800116        0x0 original_sww/eeprom.o
+ .bss           0x0000000000800116        0x0 original_sww/menu.o
+ .bss           0x0000000000800116        0x0 original_sww/lcd.o
+ .bss           0x0000000000800116        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_mulsi3.o)
+ .bss           0x0000000000800116        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodqi4.o)
+ .bss           0x0000000000800116        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodqi4.o)
+ .bss           0x0000000000800116        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodhi4.o)
+ .bss           0x0000000000800116        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodhi4.o)
+ .bss           0x0000000000800116        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodsi4.o)
+ .bss           0x0000000000800116        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodsi4.o)
+ .bss           0x0000000000800116        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_prologue.o)
+ .bss           0x0000000000800116        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_epilogue.o)
+ .bss           0x0000000000800116        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+ .bss           0x0000000000800116        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
+ .bss           0x0000000000800116        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+ .bss           0x0000000000800116        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+ *(.bss*)
+ .bss.MOTOR_PosAct
+                0x0000000000800116        0x2 original_sww/motor.o
+                0x0000000000800116                MOTOR_PosAct
+ .bss.MOTOR_PosMax
+                0x0000000000800118        0x2 original_sww/motor.o
+                0x0000000000800118                MOTOR_PosMax
+ .bss.motor_diag
+                0x000000000080011a        0x2 original_sww/motor.o
+                0x000000000080011a                motor_diag
+ .bss.MOTOR_PosOvershoot
+                0x000000000080011c        0x1 original_sww/motor.o
+                0x000000000080011c                MOTOR_PosOvershoot
+ .bss.motor_diag_cnt
+                0x000000000080011d        0x2 original_sww/motor.o
+ .bss.motor_timer
+                0x000000000080011f        0x2 original_sww/motor.o
+ .bss.pine_last
+                0x0000000000800121        0x1 original_sww/motor.o
+ .bss.last_eye_change
+                0x0000000000800122        0x2 original_sww/motor.o
+ .bss.longest_low_eye
+                0x0000000000800124        0x2 original_sww/motor.o
+ .bss.MOTOR_PosStop
+                0x0000000000800126        0x2 original_sww/motor.o
+ .bss.MOTOR_Dir_Counter
+                0x0000000000800128        0x1 original_sww/motor.o
+ .bss.motor_max_time_for_impulse
+                0x0000000000800129        0x2 original_sww/motor.o
+ .bss.CTL_temp_wanted
+                0x000000000080012b        0x1 original_sww/controller.o
+                0x000000000080012b                CTL_temp_wanted
+ .bss.CTL_temp_auto
+                0x000000000080012c        0x1 original_sww/controller.o
+                0x000000000080012c                CTL_temp_auto
+ .bss.CTL_mode_window
+                0x000000000080012d        0x1 original_sww/controller.o
+                0x000000000080012d                CTL_mode_window
+ .bss.CTL_error
+                0x000000000080012e        0x1 original_sww/controller.o
+                0x000000000080012e                CTL_error
+ .bss.sumError  0x000000000080012f        0x2 original_sww/controller.o
+                0x000000000080012f                sumError
+ .bss.lastProcessValue
+                0x0000000000800131        0x2 original_sww/controller.o
+ .bss.menu_temp_rewoke
+                0x0000000000800133        0x1 original_sww/controller.o
+ .bss.rx_buff_in
+                0x0000000000800134        0x1 original_sww/com.o
+ .bss.rx_buff_out
+                0x0000000000800135        0x1 original_sww/com.o
+ .bss.tx_buff_in
+                0x0000000000800136        0x1 original_sww/com.o
+ .bss.tx_buff_out
+                0x0000000000800137        0x1 original_sww/com.o
+ .bss.tx_buff   0x0000000000800138       0x80 original_sww/com.o
+ .bss.rx_buff   0x00000000008001b8       0x20 original_sww/com.o
+ .bss.COM_requests
+                0x00000000008001d8        0x1 original_sww/com.o
+ .bss.com_hex   0x00000000008001d9        0x3 original_sww/com.o
+ .bss.RTC_timer_todo
+                0x00000000008001dc        0x1 original_sww/rtc.o
+                0x00000000008001dc                RTC_timer_todo
+ .bss.RTC_timer_done
+                0x00000000008001dd        0x1 original_sww/rtc.o
+                0x00000000008001dd                RTC_timer_done
+ .bss.RTC_timer_time
+                0x00000000008001de        0x1 original_sww/rtc.o
+ .bss.valve_wanted
+                0x00000000008001df        0x1 original_sww/main.o
+                0x00000000008001df                valve_wanted
+ .bss.kb_events
+                0x00000000008001e0        0x2 original_sww/keyboard.o
+                0x00000000008001e0                kb_events
+ .bss.keys      0x00000000008001e2        0x1 original_sww/keyboard.o
+ .bss.allow_rewoke
+                0x00000000008001e3        0x1 original_sww/keyboard.o
+ .bss.state_front_prev
+                0x00000000008001e4        0x1 original_sww/keyboard.o
+ .bss.long_press
+                0x00000000008001e5        0x1 original_sww/keyboard.o
+ .bss.long_quiet
+                0x00000000008001e6        0x1 original_sww/keyboard.o
+ .bss.sleep_with_ADC
+                0x00000000008001e7        0x1 original_sww/adc.o
+                0x00000000008001e7                sleep_with_ADC
+ .bss.ring_average
+                0x00000000008001e8        0x4 original_sww/adc.o
+                0x00000000008001e8                ring_average
+ .bss.dummy_adc
+                0x00000000008001ec        0x2 original_sww/adc.o
+ .bss.ring_sum  0x00000000008001ee        0x8 original_sww/adc.o
+ .bss.ring_pos  0x00000000008001f6        0x1 original_sww/adc.o
+ .bss.state_ADC
+                0x00000000008001f7        0x1 original_sww/adc.o
+ .bss.ring_buf  0x00000000008001f8       0x3c original_sww/adc.o
+ .bss.service_watch_n
+                0x0000000000800234        0x1 original_sww/menu.o
+ .bss.locked    0x0000000000800235        0x1 original_sww/menu.o
+ .bss.menu_set_dow
+                0x0000000000800236        0x1 original_sww/menu.o
+ .bss.menu_set_time
+                0x0000000000800237        0x2 original_sww/menu.o
+ .bss.menu_set_mode
+                0x0000000000800239        0x1 original_sww/menu.o
+ .bss.menu_set_slot
+                0x000000000080023a        0x1 original_sww/menu.o
+ .bss.LCD_force_update
+                0x000000000080023b        0x1 original_sww/lcd.o
+                0x000000000080023b                LCD_force_update
+ .bss.LCD_BlinkCounter
+                0x000000000080023c        0x1 original_sww/lcd.o
+ .bss.LCD_Bitplane
+                0x000000000080023d        0x1 original_sww/lcd.o
+ *(COMMON)
+ COMMON         0x000000000080023e        0x5 original_sww/motor.o
+                0x000000000080023e                MOTOR_counter
+                0x0000000000800242                MOTOR_Dir
+ COMMON         0x0000000000800243        0x2 original_sww/controller.o
+                0x0000000000800243                CTL_open_window_timeout
+ COMMON         0x0000000000800245        0x1 original_sww/rtc.o
+                0x0000000000800245                RTC_DS
+ COMMON         0x0000000000800246        0x1 original_sww/keyboard.o
+                0x0000000000800246                state_wheel_prev
+ COMMON         0x0000000000800247       0x41 original_sww/adc.o
+                0x0000000000800247                ring_buf_temp_avgs_pos
+                0x0000000000800248                ring_buf_temp_avgs
+ COMMON         0x0000000000800288       0x2b original_sww/eeprom.o
+                0x0000000000800288                timmers_patch_data
+                0x000000000080028a                config
+ COMMON         0x00000000008002b3        0x5 original_sww/menu.o
+                0x00000000008002b3                hourbar_buff
+                0x00000000008002b7                menu_state
+ COMMON         0x00000000008002b8       0x12 original_sww/lcd.o
+                0x00000000008002b8                LCD_Data
+                0x00000000008002ca                PROVIDE (__bss_end, .)
+                0x0000000000003046                __data_load_start = LOADADDR (.data)
+                0x000000000000305c                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00000000008002ca        0x0
+                0x00000000008002ca                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00000000008002ca                PROVIDE (__noinit_end, .)
+                0x00000000008002ca                _end = .
+                0x00000000008002ca                PROVIDE (__heap_start, .)
+
+.eeprom         0x0000000000810000      0x164
+ *(.eeprom*)
+ .eeprom        0x0000000000810000      0x164 original_sww/eeprom.o
+                0x0000000000810000                ee_reserved1
+                0x0000000000810001                ee_reserved2
+                0x0000000000810002                ee_reserved3
+                0x0000000000810003                ee_layout
+                0x0000000000810004                ee_timers
+                0x0000000000810084                ee_reserved2_60
+                0x00000000008100c0                ee_config
+                0x0000000000810164                __eeprom_end = .
+
+.fuse           0x0000000000820000        0x3
+ *(.fuse)
+ .fuse          0x0000000000820000        0x3 original_sww/main.o
+                0x0000000000820000                __fuse
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x0000000000000000      0xcb4
+ *(.stab)
+ .stab          0x0000000000000000      0x6b4 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+ .stab          0x00000000000006b4      0x600 original_sww/xtea-asm.o
+                                        0x60c (size before relaxing)
+
+.stabstr        0x0000000000000000       0x79
+ *(.stabstr)
+ .stabstr       0x0000000000000000       0x79 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x180
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x20 original_sww/motor.o
+ .debug_aranges
+                0x0000000000000020       0x20 original_sww/controller.o
+ .debug_aranges
+                0x0000000000000040       0x20 original_sww/rs232_485_hw.o
+ .debug_aranges
+                0x0000000000000060       0x20 original_sww/watch.o
+ .debug_aranges
+                0x0000000000000080       0x20 original_sww/com.o
+ .debug_aranges
+                0x00000000000000a0       0x20 original_sww/rtc.o
+ .debug_aranges
+                0x00000000000000c0       0x20 original_sww/main.o
+ .debug_aranges
+                0x00000000000000e0       0x20 original_sww/keyboard.o
+ .debug_aranges
+                0x0000000000000100       0x20 original_sww/adc.o
+ .debug_aranges
+                0x0000000000000120       0x20 original_sww/eeprom.o
+ .debug_aranges
+                0x0000000000000140       0x20 original_sww/menu.o
+ .debug_aranges
+                0x0000000000000160       0x20 original_sww/lcd.o
+
+.debug_pubnames
+                0x0000000000000000      0x9de
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x0000000000000000      0x122 original_sww/motor.o
+ .debug_pubnames
+                0x0000000000000122       0xfe original_sww/controller.o
+ .debug_pubnames
+                0x0000000000000220       0x5f original_sww/rs232_485_hw.o
+ .debug_pubnames
+                0x000000000000027f       0x2d original_sww/watch.o
+ .debug_pubnames
+                0x00000000000002ac       0x8e original_sww/com.o
+ .debug_pubnames
+                0x000000000000033a      0x181 original_sww/rtc.o
+ .debug_pubnames
+                0x00000000000004bb       0x37 original_sww/main.o
+ .debug_pubnames
+                0x00000000000004f2       0xa2 original_sww/keyboard.o
+ .debug_pubnames
+                0x0000000000000594       0x98 original_sww/adc.o
+ .debug_pubnames
+                0x000000000000062c      0x143 original_sww/eeprom.o
+ .debug_pubnames
+                0x000000000000076f       0x71 original_sww/menu.o
+ .debug_pubnames
+                0x00000000000007e0      0x1fe original_sww/lcd.o
+
+.debug_info     0x0000000000000000     0x4981
+ *(.debug_info)
+ .debug_info    0x0000000000000000      0x6b5 original_sww/motor.o
+ .debug_info    0x00000000000006b5      0x67c original_sww/controller.o
+ .debug_info    0x0000000000000d31       0xf9 original_sww/rs232_485_hw.o
+ .debug_info    0x0000000000000e2a      0x1d4 original_sww/watch.o
+ .debug_info    0x0000000000000ffe      0x990 original_sww/com.o
+ .debug_info    0x000000000000198e       0x61 original_sww/wireless.o
+ .debug_info    0x00000000000019ef       0x61 original_sww/rfm.o
+ .debug_info    0x0000000000001a50       0x61 original_sww/cmac.o
+ .debug_info    0x0000000000001ab1      0xb1a original_sww/rtc.o
+ .debug_info    0x00000000000025cb      0x54b original_sww/main.o
+ .debug_info    0x0000000000002b16      0x1f0 original_sww/keyboard.o
+ .debug_info    0x0000000000002d06      0x541 original_sww/adc.o
+ .debug_info    0x0000000000003247      0x5a8 original_sww/eeprom.o
+ .debug_info    0x00000000000037ef      0x809 original_sww/menu.o
+ .debug_info    0x0000000000003ff8      0x989 original_sww/lcd.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x0000000000000000     0x14ac
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000      0x1c9 original_sww/motor.o
+ .debug_abbrev  0x00000000000001c9      0x1e2 original_sww/controller.o
+ .debug_abbrev  0x00000000000003ab       0x88 original_sww/rs232_485_hw.o
+ .debug_abbrev  0x0000000000000433       0xd4 original_sww/watch.o
+ .debug_abbrev  0x0000000000000507      0x23c original_sww/com.o
+ .debug_abbrev  0x0000000000000743       0x33 original_sww/wireless.o
+ .debug_abbrev  0x0000000000000776       0x33 original_sww/rfm.o
+ .debug_abbrev  0x00000000000007a9       0x33 original_sww/cmac.o
+ .debug_abbrev  0x00000000000007dc      0x336 original_sww/rtc.o
+ .debug_abbrev  0x0000000000000b12      0x13c original_sww/main.o
+ .debug_abbrev  0x0000000000000c4e      0x103 original_sww/keyboard.o
+ .debug_abbrev  0x0000000000000d51      0x19e original_sww/adc.o
+ .debug_abbrev  0x0000000000000eef      0x194 original_sww/eeprom.o
+ .debug_abbrev  0x0000000000001083      0x251 original_sww/menu.o
+ .debug_abbrev  0x00000000000012d4      0x1d8 original_sww/lcd.o
+
+.debug_line     0x0000000000000000     0x2fe8
+ *(.debug_line)
+ .debug_line    0x0000000000000000      0x5c0 original_sww/motor.o
+ .debug_line    0x00000000000005c0      0x39f original_sww/controller.o
+ .debug_line    0x000000000000095f      0x187 original_sww/rs232_485_hw.o
+ .debug_line    0x0000000000000ae6       0xdd original_sww/watch.o
+ .debug_line    0x0000000000000bc3      0x66e original_sww/com.o
+ .debug_line    0x0000000000001231       0x3e original_sww/wireless.o
+ .debug_line    0x000000000000126f       0x3e original_sww/rfm.o
+ .debug_line    0x00000000000012ad       0x3e original_sww/cmac.o
+ .debug_line    0x00000000000012eb      0x5a3 original_sww/rtc.o
+ .debug_line    0x000000000000188e      0x42e original_sww/main.o
+ .debug_line    0x0000000000001cbc      0x2bb original_sww/keyboard.o
+ .debug_line    0x0000000000001f77      0x1f1 original_sww/adc.o
+ .debug_line    0x0000000000002168      0x284 original_sww/eeprom.o
+ .debug_line    0x00000000000023ec      0x76c original_sww/menu.o
+ .debug_line    0x0000000000002b58      0x490 original_sww/lcd.o
+
+.debug_frame    0x0000000000000000      0x620
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0x90 original_sww/motor.o
+ .debug_frame   0x0000000000000090       0x40 original_sww/controller.o
+ .debug_frame   0x00000000000000d0       0x60 original_sww/rs232_485_hw.o
+ .debug_frame   0x0000000000000130       0x20 original_sww/watch.o
+ .debug_frame   0x0000000000000150      0x110 original_sww/com.o
+ .debug_frame   0x0000000000000260      0x120 original_sww/rtc.o
+ .debug_frame   0x0000000000000380       0x20 original_sww/main.o
+ .debug_frame   0x00000000000003a0       0x50 original_sww/keyboard.o
+ .debug_frame   0x00000000000003f0       0x50 original_sww/adc.o
+ .debug_frame   0x0000000000000440       0x80 original_sww/eeprom.o
+ .debug_frame   0x00000000000004c0       0x50 original_sww/menu.o
+ .debug_frame   0x0000000000000510      0x110 original_sww/lcd.o
+
+.debug_str      0x0000000000000000     0x12c7
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x570 original_sww/motor.o
+                                        0x5d3 (size before relaxing)
+ .debug_str     0x0000000000000570      0x1b9 original_sww/controller.o
+                                        0x565 (size before relaxing)
+ .debug_str     0x0000000000000729       0x51 original_sww/rs232_485_hw.o
+                                        0x111 (size before relaxing)
+ .debug_str     0x000000000000077a       0x24 original_sww/watch.o
+                                        0x1b0 (size before relaxing)
+ .debug_str     0x000000000000079e      0x141 original_sww/com.o
+                                        0x57d (size before relaxing)
+ .debug_str     0x00000000000008df        0xb original_sww/wireless.o
+                                         0xbd (size before relaxing)
+ .debug_str     0x00000000000008ea        0x6 original_sww/rfm.o
+                                         0xb8 (size before relaxing)
+ .debug_str     0x00000000000008f0        0x7 original_sww/cmac.o
+                                         0xb9 (size before relaxing)
+ .debug_str     0x00000000000008f7      0x27a original_sww/rtc.o
+                                        0x673 (size before relaxing)
+ .debug_str     0x0000000000000b71       0x83 original_sww/main.o
+                                        0x4d7 (size before relaxing)
+ .debug_str     0x0000000000000bf4       0xab original_sww/keyboard.o
+                                        0x1bf (size before relaxing)
+ .debug_str     0x0000000000000c9f       0xb1 original_sww/adc.o
+                                        0x49c (size before relaxing)
+ .debug_str     0x0000000000000d50      0x12d original_sww/eeprom.o
+                                        0x4df (size before relaxing)
+ .debug_str     0x0000000000000e7d      0x27c original_sww/menu.o
+                                        0x721 (size before relaxing)
+ .debug_str     0x00000000000010f9      0x1ce original_sww/lcd.o
+                                        0x5a7 (size before relaxing)
+
+.debug_loc      0x0000000000000000     0x1925
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000      0x1c9 original_sww/motor.o
+ .debug_loc     0x00000000000001c9      0x3ba original_sww/controller.o
+ .debug_loc     0x0000000000000583       0x1e original_sww/rs232_485_hw.o
+ .debug_loc     0x00000000000005a1       0x1e original_sww/watch.o
+ .debug_loc     0x00000000000005bf      0x437 original_sww/com.o
+ .debug_loc     0x00000000000009f6      0x3e1 original_sww/rtc.o
+ .debug_loc     0x0000000000000dd7       0x52 original_sww/main.o
+ .debug_loc     0x0000000000000e29       0x26 original_sww/keyboard.o
+ .debug_loc     0x0000000000000e4f       0xb9 original_sww/adc.o
+ .debug_loc     0x0000000000000f08      0x156 original_sww/eeprom.o
+ .debug_loc     0x000000000000105e      0x3f2 original_sww/menu.o
+ .debug_loc     0x0000000000001450      0x4d5 original_sww/lcd.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(../bin/original_sww/hr20.elf elf32-avr)
+LOAD linker stubs
+
+.debug_ranges   0x0000000000000000       0x30
+ .debug_ranges  0x0000000000000000       0x18 original_sww/eeprom.o
+ .debug_ranges  0x0000000000000018       0x18 original_sww/menu.o
+
+Cross Reference Table
+
+Symbol                                            File
+COM_commad_parse                                  original_sww/com.o
+                                                  original_sww/main.o
+COM_flush                                         original_sww/com.o
+COM_init                                          original_sww/com.o
+                                                  original_sww/main.o
+COM_print_debug                                   original_sww/com.o
+                                                  original_sww/controller.o
+COM_putchar                                       original_sww/com.o
+COM_rx_char_isr                                   original_sww/com.o
+                                                  original_sww/rs232_485_hw.o
+COM_tx_char_isr                                   original_sww/com.o
+                                                  original_sww/rs232_485_hw.o
+CTL_change_mode                                   original_sww/controller.o
+                                                  original_sww/menu.o
+                                                  original_sww/com.o
+CTL_error                                         original_sww/controller.o
+                                                  original_sww/menu.o
+                                                  original_sww/keyboard.o
+                                                  original_sww/main.o
+                                                  original_sww/com.o
+                                                  original_sww/motor.o
+CTL_mode_auto                                     original_sww/controller.o
+                                                  original_sww/menu.o
+                                                  original_sww/com.o
+                                                  original_sww/watch.o
+CTL_mode_window                                   original_sww/controller.o
+                                                  original_sww/menu.o
+                                                  original_sww/main.o
+                                                  original_sww/com.o
+                                                  original_sww/watch.o
+CTL_open_window_timeout                           original_sww/controller.o
+CTL_temp_auto                                     original_sww/controller.o
+                                                  original_sww/menu.o
+                                                  original_sww/com.o
+                                                  original_sww/watch.o
+CTL_temp_change_inc                               original_sww/controller.o
+                                                  original_sww/menu.o
+CTL_temp_wanted                                   original_sww/controller.o
+                                                  original_sww/menu.o
+                                                  original_sww/com.o
+                                                  original_sww/watch.o
+CTL_temp_wanted_last                              original_sww/controller.o
+                                                  original_sww/com.o
+                                                  original_sww/watch.o
+CTL_update                                        original_sww/controller.o
+                                                  original_sww/main.o
+EEPROM_read                                       original_sww/eeprom.o
+                                                  original_sww/main.o
+LCD_AllSegments                                   original_sww/lcd.o
+                                                  original_sww/menu.o
+LCD_CharTablePrgMem                               original_sww/lcd.o
+LCD_Data                                          original_sww/lcd.o
+LCD_FieldOffsetTablePrgMem                        original_sww/lcd.o
+LCD_HourBarBitmap                                 original_sww/lcd.o
+                                                  original_sww/menu.o
+LCD_Init                                          original_sww/lcd.o
+                                                  original_sww/menu.o
+                                                  original_sww/main.o
+LCD_PrintChar                                     original_sww/lcd.o
+                                                  original_sww/menu.o
+LCD_PrintDec                                      original_sww/lcd.o
+                                                  original_sww/menu.o
+LCD_PrintDec3                                     original_sww/lcd.o
+                                                  original_sww/menu.o
+LCD_PrintDecW                                     original_sww/lcd.o
+                                                  original_sww/menu.o
+LCD_PrintHex                                      original_sww/lcd.o
+                                                  original_sww/menu.o
+LCD_PrintHexW                                     original_sww/lcd.o
+                                                  original_sww/menu.o
+LCD_PrintStringID                                 original_sww/lcd.o
+                                                  original_sww/menu.o
+                                                  original_sww/main.o
+LCD_PrintTemp                                     original_sww/lcd.o
+                                                  original_sww/menu.o
+LCD_PrintTempInt                                  original_sww/lcd.o
+                                                  original_sww/menu.o
+LCD_SegHourBarOffsetTablePrgMem                   original_sww/lcd.o
+LCD_SegOffsetTablePrgMem                          original_sww/lcd.o
+LCD_SetHourBarSeg                                 original_sww/lcd.o
+                                                  original_sww/menu.o
+LCD_SetSeg                                        original_sww/lcd.o
+                                                  original_sww/menu.o
+LCD_StringTable                                   original_sww/lcd.o
+LCD_force_update                                  original_sww/lcd.o
+                                                  original_sww/main.o
+LCD_used_bitplanes                                original_sww/lcd.o
+MOTOR_Dir                                         original_sww/main.o
+                                                  original_sww/motor.o
+MOTOR_GetPosPercent                               original_sww/motor.o
+                                                  original_sww/menu.o
+MOTOR_Goto                                        original_sww/motor.o
+                                                  original_sww/main.o
+MOTOR_PosAct                                      original_sww/motor.o
+                                                  original_sww/watch.o
+MOTOR_PosMax                                      original_sww/motor.o
+                                                  original_sww/watch.o
+MOTOR_PosOvershoot                                original_sww/motor.o
+                                                  original_sww/watch.o
+MOTOR_calibration_step                            original_sww/motor.o
+                                                  original_sww/menu.o
+MOTOR_counter                                     original_sww/watch.o
+                                                  original_sww/motor.o
+MOTOR_timer_pulse                                 original_sww/motor.o
+                                                  original_sww/main.o
+MOTOR_timer_stop                                  original_sww/motor.o
+                                                  original_sww/main.o
+MOTOR_updateCalibration                           original_sww/motor.o
+                                                  original_sww/main.o
+PID_force_update                                  original_sww/controller.o
+                                                  original_sww/main.o
+                                                  original_sww/com.o
+RS_Init                                           original_sww/rs232_485_hw.o
+                                                  original_sww/com.o
+RS_startSend                                      original_sww/rs232_485_hw.o
+                                                  original_sww/com.o
+RTC                                               original_sww/rtc.o
+                                                  original_sww/menu.o
+                                                  original_sww/main.o
+                                                  original_sww/com.o
+RTC_ActualTimerTemperature                        original_sww/rtc.o
+                                                  original_sww/controller.o
+RTC_AddOneSecond                                  original_sww/rtc.o
+                                                  original_sww/main.o
+RTC_DS                                            original_sww/rtc.o
+RTC_DayOfMonthTablePrgMem                         original_sww/rtc.o
+RTC_DowTimerGet                                   original_sww/rtc.o
+                                                  original_sww/menu.o
+RTC_DowTimerGetHourBar                            original_sww/rtc.o
+                                                  original_sww/menu.o
+RTC_DowTimerSet                                   original_sww/rtc.o
+                                                  original_sww/menu.o
+                                                  original_sww/com.o
+RTC_Init                                          original_sww/rtc.o
+                                                  original_sww/main.o
+RTC_SetDay                                        original_sww/rtc.o
+                                                  original_sww/menu.o
+                                                  original_sww/com.o
+RTC_SetHour                                       original_sww/rtc.o
+                                                  original_sww/menu.o
+                                                  original_sww/com.o
+RTC_SetMinute                                     original_sww/rtc.o
+                                                  original_sww/menu.o
+                                                  original_sww/com.o
+RTC_SetMonth                                      original_sww/rtc.o
+                                                  original_sww/menu.o
+                                                  original_sww/com.o
+RTC_SetSecond                                     original_sww/rtc.o
+                                                  original_sww/menu.o
+                                                  original_sww/com.o
+RTC_SetYear                                       original_sww/rtc.o
+                                                  original_sww/menu.o
+                                                  original_sww/com.o
+RTC_timer_done                                    original_sww/rtc.o
+                                                  original_sww/main.o
+RTC_timer_set                                     original_sww/rtc.o
+                                                  original_sww/keyboard.o
+RTC_timer_todo                                    original_sww/rtc.o
+__bad_interrupt                                   /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__bss_end                                         /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+__bss_start                                       /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+__data_end                                        /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+__data_load_start                                 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+__data_start                                      /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+__divmodhi4                                       /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodhi4.o)
+                                                  original_sww/lcd.o
+                                                  original_sww/menu.o
+                                                  original_sww/adc.o
+                                                  original_sww/rtc.o
+                                                  original_sww/controller.o
+                                                  original_sww/motor.o
+__divmodqi4                                       /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodqi4.o)
+                                                  original_sww/menu.o
+__divmodsi4                                       /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodsi4.o)
+                                                  original_sww/adc.o
+__do_clear_bss                                    /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+                                                  original_sww/lcd.o
+                                                  original_sww/menu.o
+                                                  original_sww/eeprom.o
+                                                  original_sww/adc.o
+                                                  original_sww/keyboard.o
+                                                  original_sww/main.o
+                                                  original_sww/rtc.o
+                                                  original_sww/com.o
+                                                  original_sww/watch.o
+                                                  original_sww/controller.o
+                                                  original_sww/motor.o
+__do_copy_data                                    /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+                                                  original_sww/lcd.o
+                                                  original_sww/menu.o
+                                                  original_sww/eeprom.o
+                                                  original_sww/adc.o
+                                                  original_sww/keyboard.o
+                                                  original_sww/rtc.o
+                                                  original_sww/com.o
+                                                  original_sww/controller.o
+                                                  original_sww/motor.o
+__epilogue_restores__                             /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_epilogue.o)
+                                                  original_sww/lcd.o
+                                                  original_sww/eeprom.o
+                                                  original_sww/adc.o
+                                                  original_sww/rtc.o
+__fuse                                            original_sww/main.o
+__heap_end                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__init                                            /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__mulsi3                                          /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_mulsi3.o)
+                                                  original_sww/adc.o
+                                                  original_sww/controller.o
+__prologue_saves__                                /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_prologue.o)
+                                                  original_sww/adc.o
+                                                  original_sww/rtc.o
+__stack                                           /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__tablejump2__                                    /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
+                                                  original_sww/menu.o
+                                                  original_sww/com.o
+__tablejump__                                     /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
+__udivmodhi4                                      /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodhi4.o)
+                                                  /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodhi4.o)
+                                                  original_sww/lcd.o
+                                                  original_sww/menu.o
+                                                  original_sww/rtc.o
+                                                  original_sww/com.o
+                                                  original_sww/motor.o
+__udivmodqi4                                      /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodqi4.o)
+                                                  /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodqi4.o)
+                                                  original_sww/lcd.o
+                                                  original_sww/menu.o
+                                                  original_sww/rtc.o
+                                                  original_sww/com.o
+__udivmodsi4                                      /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodsi4.o)
+                                                  /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodsi4.o)
+                                                  original_sww/adc.o
+__vector_1                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_10                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_11                                       original_sww/motor.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_12                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_13                                       original_sww/rs232_485_hw.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_14                                       original_sww/rs232_485_hw.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_15                                       original_sww/rs232_485_hw.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_16                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_17                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_18                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_19                                       original_sww/adc.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_2                                        original_sww/motor.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_20                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_21                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_22                                       original_sww/lcd.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_3                                        original_sww/keyboard.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_4                                        original_sww/rtc.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_5                                        original_sww/rtc.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_6                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_7                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_8                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_9                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_default                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vectors                                         /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+_div                                              /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodhi4.o)
+_exit                                             /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+config                                            original_sww/lcd.o
+                                                  original_sww/menu.o
+                                                  original_sww/eeprom.o
+                                                  original_sww/adc.o
+                                                  original_sww/main.o
+                                                  original_sww/rtc.o
+                                                  original_sww/com.o
+                                                  original_sww/controller.o
+                                                  original_sww/motor.o
+config_read                                       original_sww/eeprom.o
+                                                  original_sww/menu.o
+ee_config                                         original_sww/eeprom.o
+ee_layout                                         original_sww/eeprom.o
+                                                  original_sww/main.o
+ee_reserved1                                      original_sww/eeprom.o
+ee_reserved2                                      original_sww/eeprom.o
+ee_reserved2_60                                   original_sww/eeprom.o
+ee_reserved3                                      original_sww/eeprom.o
+ee_timers                                         original_sww/eeprom.o
+eeprom_config_init                                original_sww/eeprom.o
+                                                  original_sww/main.o
+eeprom_config_save                                original_sww/eeprom.o
+                                                  original_sww/menu.o
+                                                  original_sww/com.o
+                                                  original_sww/motor.o
+eeprom_timers_read_raw                            original_sww/eeprom.o
+                                                  original_sww/rtc.o
+                                                  original_sww/com.o
+eeprom_timers_write_raw                           original_sww/eeprom.o
+                                                  original_sww/rtc.o
+exit                                              /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+hourbar_buff                                      original_sww/menu.o
+                                                  original_sww/rtc.o
+kb_events                                         original_sww/keyboard.o
+                                                  original_sww/menu.o
+                                                  original_sww/main.o
+kb_timeout                                        original_sww/keyboard.o
+                                                  original_sww/rtc.o
+main                                              original_sww/main.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+menu_auto_update_timeout                          original_sww/menu.o
+                                                  original_sww/main.o
+menu_controller                                   original_sww/menu.o
+                                                  original_sww/main.o
+menu_state                                        original_sww/menu.o
+menu_view                                         original_sww/menu.o
+                                                  original_sww/main.o
+mont_contact_pooling                              original_sww/keyboard.o
+                                                  original_sww/main.o
+motor_diag                                        original_sww/motor.o
+                                                  original_sww/watch.o
+ring_average                                      original_sww/adc.o
+                                                  original_sww/menu.o
+                                                  original_sww/main.o
+                                                  original_sww/com.o
+                                                  original_sww/watch.o
+                                                  original_sww/controller.o
+                                                  original_sww/motor.o
+ring_buf_temp_avgs                                original_sww/adc.o
+                                                  original_sww/controller.o
+ring_buf_temp_avgs_pos                            original_sww/adc.o
+                                                  original_sww/controller.o
+sleep_with_ADC                                    original_sww/adc.o
+                                                  original_sww/main.o
+start_task_ADC                                    original_sww/adc.o
+                                                  original_sww/main.o
+state_wheel_prev                                  original_sww/keyboard.o
+                                                  original_sww/main.o
+sumError                                          original_sww/controller.o
+                                                  original_sww/keyboard.o
+                                                  original_sww/main.o
+                                                  original_sww/com.o
+                                                  original_sww/watch.o
+task_ADC                                          original_sww/adc.o
+                                                  original_sww/main.o
+task_keyboard                                     original_sww/keyboard.o
+                                                  original_sww/main.o
+task_keyboard_long_press_detect                   original_sww/keyboard.o
+                                                  original_sww/main.o
+task_lcd_update                                   original_sww/lcd.o
+                                                  original_sww/main.o
+timmers_patch_data                                original_sww/menu.o
+                                                  original_sww/eeprom.o
+timmers_patch_offset                              original_sww/eeprom.o
+                                                  original_sww/menu.o
+valve_wanted                                      original_sww/main.o
+                                                  original_sww/com.o
+watch                                             original_sww/watch.o
+                                                  original_sww/menu.o
+                                                  original_sww/com.o
+xtea_enc                                          original_sww/xtea-asm.o

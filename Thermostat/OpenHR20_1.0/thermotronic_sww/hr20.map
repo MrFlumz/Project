@@ -1,0 +1,1255 @@
+Archive member included because of file (symbol)
+
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_mulsi3.o)
+                              thermotronic_sww/controller.o (__mulsi3)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodqi4.o)
+                              thermotronic_sww/com.o (__udivmodqi4)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodqi4.o)
+                              thermotronic_sww/menu.o (__divmodqi4)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodhi4.o)
+                              thermotronic_sww/motor.o (__udivmodhi4)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodhi4.o)
+                              thermotronic_sww/motor.o (__divmodhi4)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodsi4.o)
+                              thermotronic_sww/adc.o (__udivmodsi4)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodsi4.o)
+                              thermotronic_sww/adc.o (__divmodsi4)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_prologue.o)
+                              thermotronic_sww/rtc.o (__prologue_saves__)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_epilogue.o)
+                              thermotronic_sww/rtc.o (__epilogue_restores__)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+                              /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o (exit)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
+                              thermotronic_sww/com.o (__tablejump2__)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+                              thermotronic_sww/motor.o (__do_copy_data)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+                              thermotronic_sww/motor.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+MOTOR_counter       0x4               thermotronic_sww/motor.o
+hourbar_buff        0x4               thermotronic_sww/menu.o
+RTC_DS              0x1               thermotronic_sww/rtc.o
+menu_state          0x1               thermotronic_sww/menu.o
+CTL_open_window_timeout
+                    0x2               thermotronic_sww/controller.o
+ring_buf_temp_avgs_pos
+                    0x1               thermotronic_sww/adc.o
+MOTOR_Dir           0x1               thermotronic_sww/motor.o
+state_wheel_prev    0x1               thermotronic_sww/keyboard.o
+LCD_Data            0x12              thermotronic_sww/lcd.o
+ring_buf_temp_avgs  0x40              thermotronic_sww/adc.o
+timmers_patch_data  0x2               thermotronic_sww/eeprom.o
+config              0x29              thermotronic_sww/eeprom.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x0000000000000000 0x0000000000020000 xr
+data             0x0000000000800060 0x000000000000ffa0 rw !x
+eeprom           0x0000000000810000 0x0000000000010000 rw !x
+fuse             0x0000000000820000 0x0000000000000400 rw !x
+lock             0x0000000000830000 0x0000000000000400 rw !x
+signature        0x0000000000840000 0x0000000000000400 rw !x
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+LOAD thermotronic_sww/motor.o
+LOAD thermotronic_sww/controller.o
+LOAD thermotronic_sww/rs232_485_hw.o
+LOAD thermotronic_sww/watch.o
+LOAD thermotronic_sww/com.o
+LOAD thermotronic_sww/wireless.o
+LOAD thermotronic_sww/rfm.o
+LOAD thermotronic_sww/cmac.o
+LOAD thermotronic_sww/xtea-asm.o
+LOAD thermotronic_sww/rtc.o
+LOAD thermotronic_sww/main.o
+LOAD thermotronic_sww/keyboard.o
+LOAD thermotronic_sww/adc.o
+LOAD thermotronic_sww/eeprom.o
+LOAD thermotronic_sww/menu.o
+LOAD thermotronic_sww/lcd.o
+LOAD /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a
+LOAD /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a
+LOAD /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a
+LOAD /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x0000000000000000     0x2e78
+ *(.vectors)
+ .vectors       0x0000000000000000       0x5c /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+                0x0000000000000000                __vectors
+                0x0000000000000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ .progmem.gcc_sw_table
+                0x000000000000005c       0x32 thermotronic_sww/com.o
+ .progmem.gcc_sw_table
+                0x000000000000008e       0x5c thermotronic_sww/menu.o
+ *(.progmem*)
+ .progmem.data  0x00000000000000ea       0x1c thermotronic_sww/watch.o
+ .progmem.data  0x0000000000000106       0x59 thermotronic_sww/com.o
+ .progmem.data  0x000000000000015f       0x24 thermotronic_sww/rtc.o
+                0x000000000000015f                RTC_DayOfMonthTablePrgMem
+ .progmem.data  0x0000000000000183       0x9b thermotronic_sww/lcd.o
+                0x0000000000000183                LCD_CharTablePrgMem
+                0x00000000000001ab                LCD_StringTable
+                0x00000000000001fb                LCD_FieldOffsetTablePrgMem
+                0x00000000000001ff                LCD_SegOffsetTablePrgMem
+                0x0000000000000206                LCD_SegHourBarOffsetTablePrgMem
+                0x000000000000021e                . = ALIGN (0x2)
+                0x000000000000021e                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x000000000000021e        0x0 linker stubs
+ *(.trampolines*)
+                0x000000000000021e                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x000000000000021e                __ctors_start = .
+ *(.ctors)
+                0x000000000000021e                __ctors_end = .
+                0x000000000000021e                __dtors_start = .
+ *(.dtors)
+                0x000000000000021e                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x000000000000021e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+                0x000000000000021e                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000000000000021e        0xc /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x000000000000022a       0x16 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+                0x000000000000022a                __do_copy_data
+ .init4         0x0000000000000240       0x10 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+                0x0000000000000240                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000000000000250        0x8 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+ *(.init9)
+ *(.text)
+ .text          0x0000000000000258        0x2 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+                0x0000000000000258                __vector_1
+                0x0000000000000258                __vector_12
+                0x0000000000000258                __bad_interrupt
+                0x0000000000000258                __vector_6
+                0x0000000000000258                __vector_13
+                0x0000000000000258                __vector_17
+                0x0000000000000258                __vector_7
+                0x0000000000000258                __vector_9
+                0x0000000000000258                __vector_21
+                0x0000000000000258                __vector_15
+                0x0000000000000258                __vector_8
+                0x0000000000000258                __vector_14
+                0x0000000000000258                __vector_10
+                0x0000000000000258                __vector_16
+                0x0000000000000258                __vector_18
+                0x0000000000000258                __vector_20
+ .text          0x000000000000025a      0x63a thermotronic_sww/motor.o
+                0x000000000000025a                MOTOR_GetPosPercent
+                0x00000000000003a8                MOTOR_Goto
+                0x0000000000000440                MOTOR_timer_pulse
+                0x00000000000004da                __vector_2
+                0x000000000000063c                __vector_11
+                0x00000000000006ce                MOTOR_timer_stop
+                0x00000000000007f6                MOTOR_updateCalibration
+ .text          0x0000000000000894      0x47e thermotronic_sww/controller.o
+                0x0000000000000894                CTL_temp_change_inc
+                0x00000000000008bc                CTL_change_mode
+                0x000000000000091a                CTL_update
+ .text          0x0000000000000d12        0x0 thermotronic_sww/rs232_485_hw.o
+ .text          0x0000000000000d12       0x30 thermotronic_sww/watch.o
+                0x0000000000000d12                watch
+ .text          0x0000000000000d42      0x4fe thermotronic_sww/com.o
+                0x0000000000000d42                COM_putchar
+                0x0000000000000d76                COM_tx_char_isr
+                0x0000000000000d9a                COM_rx_char_isr
+                0x0000000000000e18                COM_flush
+                0x0000000000000ef2                COM_init
+                0x0000000000000ef6                COM_print_debug
+                0x0000000000001070                COM_commad_parse
+ .text          0x0000000000001240        0x0 thermotronic_sww/wireless.o
+ .text          0x0000000000001240        0x0 thermotronic_sww/rfm.o
+ .text          0x0000000000001240        0x0 thermotronic_sww/cmac.o
+ .text          0x0000000000001240       0xfc thermotronic_sww/xtea-asm.o
+                0x0000000000001240                xtea_enc
+ .text          0x000000000000133c      0x548 thermotronic_sww/rtc.o
+                0x000000000000133c                RTC_SetHour
+                0x000000000000134a                RTC_SetMinute
+                0x0000000000001358                RTC_SetSecond
+                0x0000000000001366                RTC_timer_set
+                0x00000000000013ba                __vector_5
+                0x00000000000013d4                __vector_4
+                0x00000000000014e0                RTC_ActualTimerTemperature
+                0x0000000000001556                RTC_DowTimerGetHourBar
+                0x00000000000015ea                RTC_AddOneSecond
+                0x00000000000017a4                RTC_SetYear
+                0x00000000000017aa                RTC_SetMonth
+                0x00000000000017ba                RTC_SetDay
+                0x00000000000017f0                RTC_Init
+                0x0000000000001826                RTC_DowTimerGet
+                0x000000000000184c                RTC_DowTimerSet
+ .text          0x0000000000001884      0x238 thermotronic_sww/main.o
+                0x0000000000001884                main
+ .text          0x0000000000001abc      0x1fe thermotronic_sww/keyboard.o
+                0x0000000000001abc                task_keyboard_long_press_detect
+                0x0000000000001b74                mont_contact_pooling
+                0x0000000000001b78                __vector_3
+                0x0000000000001b9e                task_keyboard
+ .text          0x0000000000001cba      0x28e thermotronic_sww/adc.o
+                0x0000000000001d92                start_task_ADC
+                0x0000000000001db4                task_ADC
+                0x0000000000001f44                __vector_19
+ .text          0x0000000000001f48      0x182 thermotronic_sww/eeprom.o
+                0x0000000000001f48                EEPROM_read
+                0x0000000000001f56                config_read
+                0x0000000000001f9e                eeprom_config_save
+                0x0000000000001ffe                eeprom_config_init
+                0x0000000000002052                eeprom_timers_read_raw
+                0x000000000000209e                eeprom_timers_write_raw
+ .text          0x00000000000020ca      0x7d4 thermotronic_sww/menu.o
+                0x0000000000002110                menu_view
+                0x0000000000002414                menu_controller
+ .text          0x000000000000289e      0x424 thermotronic_sww/lcd.o
+                0x000000000000289e                LCD_AllSegments
+                0x00000000000028d2                LCD_Init
+                0x0000000000002900                LCD_HourBarBitmap
+                0x0000000000002936                LCD_SetSeg
+                0x00000000000029c6                LCD_SetHourBarSeg
+                0x00000000000029d4                LCD_PrintChar
+                0x0000000000002a30                LCD_PrintDec
+                0x0000000000002a64                LCD_PrintDecW
+                0x0000000000002aa0                LCD_PrintDec3
+                0x0000000000002aea                LCD_PrintTempInt
+                0x0000000000002b48                LCD_PrintHex
+                0x0000000000002b72                LCD_PrintHexW
+                0x0000000000002b90                LCD_PrintStringID
+                0x0000000000002bce                LCD_PrintTemp
+                0x0000000000002c2a                task_lcd_update
+                0x0000000000002cbe                __vector_22
+ .text          0x0000000000002cc2        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_mulsi3.o)
+ .text          0x0000000000002cc2        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodqi4.o)
+ .text          0x0000000000002cc2        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodqi4.o)
+ .text          0x0000000000002cc2        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodhi4.o)
+ .text          0x0000000000002cc2        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodhi4.o)
+ .text          0x0000000000002cc2        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodsi4.o)
+ .text          0x0000000000002cc2        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodsi4.o)
+ .text          0x0000000000002cc2        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_prologue.o)
+ .text          0x0000000000002cc2        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_epilogue.o)
+ .text          0x0000000000002cc2        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+ .text          0x0000000000002cc2        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
+ .text          0x0000000000002cc2        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+ .text          0x0000000000002cc2        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+                0x0000000000002cc2                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x0000000000002cc2       0x3e /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_mulsi3.o)
+                0x0000000000002cc2                __mulsi3
+ .text.libgcc   0x0000000000002d00       0x18 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodqi4.o)
+                0x0000000000002d00                __udivmodqi4
+ .text.libgcc   0x0000000000002d18       0x1a /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodqi4.o)
+                0x0000000000002d18                __divmodqi4
+ .text.libgcc   0x0000000000002d32       0x28 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodhi4.o)
+                0x0000000000002d32                __udivmodhi4
+ .text.libgcc   0x0000000000002d5a       0x26 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodhi4.o)
+                0x0000000000002d5a                __divmodhi4
+                0x0000000000002d5a                _div
+ .text.libgcc   0x0000000000002d80       0x44 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodsi4.o)
+                0x0000000000002d80                __udivmodsi4
+ .text.libgcc   0x0000000000002dc4       0x36 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodsi4.o)
+                0x0000000000002dc4                __divmodsi4
+ .text.libgcc   0x0000000000002dfa       0x38 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_prologue.o)
+                0x0000000000002dfa                __prologue_saves__
+ .text.libgcc   0x0000000000002e32       0x36 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_epilogue.o)
+                0x0000000000002e32                __epilogue_restores__
+ .text.libgcc   0x0000000000002e68        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+ .text.libgcc   0x0000000000002e68        0xc /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
+                0x0000000000002e68                __tablejump2__
+                0x0000000000002e6c                __tablejump__
+ .text.libgcc   0x0000000000002e74        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000000000002e74        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+                0x0000000000002e74                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x0000000000002e74        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+                0x0000000000002e74                exit
+                0x0000000000002e74                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x0000000000002e74        0x4 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000000000002e78                _etext = .
+
+.data           0x0000000000800100       0x16 load address 0x0000000000002e78
+                0x0000000000800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+ .data          0x0000000000800100        0x0 thermotronic_sww/motor.o
+ .data          0x0000000000800100        0x0 thermotronic_sww/controller.o
+ .data          0x0000000000800100        0x0 thermotronic_sww/rs232_485_hw.o
+ .data          0x0000000000800100        0x0 thermotronic_sww/watch.o
+ .data          0x0000000000800100        0x0 thermotronic_sww/com.o
+ .data          0x0000000000800100        0x0 thermotronic_sww/wireless.o
+ .data          0x0000000000800100        0x0 thermotronic_sww/rfm.o
+ .data          0x0000000000800100        0x0 thermotronic_sww/cmac.o
+ .data          0x0000000000800100        0x0 thermotronic_sww/xtea-asm.o
+ .data          0x0000000000800100        0x0 thermotronic_sww/rtc.o
+ .data          0x0000000000800100        0x0 thermotronic_sww/main.o
+ .data          0x0000000000800100        0x0 thermotronic_sww/keyboard.o
+ .data          0x0000000000800100        0x0 thermotronic_sww/adc.o
+ .data          0x0000000000800100        0x0 thermotronic_sww/eeprom.o
+ .data          0x0000000000800100        0x0 thermotronic_sww/menu.o
+ .data          0x0000000000800100        0x0 thermotronic_sww/lcd.o
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_mulsi3.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodqi4.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodqi4.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodhi4.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodhi4.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodsi4.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodsi4.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_prologue.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_epilogue.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+ *(.data*)
+ .data.MOTOR_calibration_step
+                0x0000000000800100        0x1 thermotronic_sww/motor.o
+                0x0000000000800100                MOTOR_calibration_step
+ .data.motor_diag_ignore
+                0x0000000000800101        0x1 thermotronic_sww/motor.o
+ .data.MOTOR_wait_for_new_calibration
+                0x0000000000800102        0x1 thermotronic_sww/motor.o
+ .data.CTL_temp_wanted_last
+                0x0000000000800103        0x1 thermotronic_sww/controller.o
+                0x0000000000800103                CTL_temp_wanted_last
+ .data.CTL_mode_auto
+                0x0000000000800104        0x1 thermotronic_sww/controller.o
+                0x0000000000800104                CTL_mode_auto
+ .data.PID_force_update
+                0x0000000000800105        0x1 thermotronic_sww/controller.o
+                0x0000000000800105                PID_force_update
+ .data.PID_update_timeout
+                0x0000000000800106        0x2 thermotronic_sww/controller.o
+ .data.RTC      0x0000000000800108        0x7 thermotronic_sww/rtc.o
+                0x0000000000800108                RTC
+ .data.kb_timeout
+                0x000000000080010f        0x1 thermotronic_sww/keyboard.o
+                0x000000000080010f                kb_timeout
+ .data.ring_used
+                0x0000000000800110        0x1 thermotronic_sww/adc.o
+ .data.timmers_patch_offset
+                0x0000000000800111        0x1 thermotronic_sww/eeprom.o
+                0x0000000000800111                timmers_patch_offset
+ .data.menu_auto_update_timeout
+                0x0000000000800112        0x1 thermotronic_sww/menu.o
+                0x0000000000800112                menu_auto_update_timeout
+ .data.service_idx
+                0x0000000000800113        0x1 thermotronic_sww/menu.o
+ .data.LCD_used_bitplanes
+                0x0000000000800114        0x1 thermotronic_sww/lcd.o
+                0x0000000000800114                LCD_used_bitplanes
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x0000000000800116                . = ALIGN (0x2)
+ *fill*         0x0000000000800115        0x1 00
+                0x0000000000800116                _edata = .
+                0x0000000000800116                PROVIDE (__data_end, .)
+
+.bss            0x0000000000800116      0x1b4
+                0x0000000000800116                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x0000000000800116        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+ .bss           0x0000000000800116        0x0 thermotronic_sww/motor.o
+ .bss           0x0000000000800116        0x0 thermotronic_sww/controller.o
+ .bss           0x0000000000800116        0x0 thermotronic_sww/rs232_485_hw.o
+ .bss           0x0000000000800116        0x0 thermotronic_sww/watch.o
+ .bss           0x0000000000800116        0x0 thermotronic_sww/com.o
+ .bss           0x0000000000800116        0x0 thermotronic_sww/wireless.o
+ .bss           0x0000000000800116        0x0 thermotronic_sww/rfm.o
+ .bss           0x0000000000800116        0x0 thermotronic_sww/cmac.o
+ .bss           0x0000000000800116        0x0 thermotronic_sww/xtea-asm.o
+ .bss           0x0000000000800116        0x0 thermotronic_sww/rtc.o
+ .bss           0x0000000000800116        0x0 thermotronic_sww/main.o
+ .bss           0x0000000000800116        0x0 thermotronic_sww/keyboard.o
+ .bss           0x0000000000800116        0x0 thermotronic_sww/adc.o
+ .bss           0x0000000000800116        0x0 thermotronic_sww/eeprom.o
+ .bss           0x0000000000800116        0x0 thermotronic_sww/menu.o
+ .bss           0x0000000000800116        0x0 thermotronic_sww/lcd.o
+ .bss           0x0000000000800116        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_mulsi3.o)
+ .bss           0x0000000000800116        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodqi4.o)
+ .bss           0x0000000000800116        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodqi4.o)
+ .bss           0x0000000000800116        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodhi4.o)
+ .bss           0x0000000000800116        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodhi4.o)
+ .bss           0x0000000000800116        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodsi4.o)
+ .bss           0x0000000000800116        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodsi4.o)
+ .bss           0x0000000000800116        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_prologue.o)
+ .bss           0x0000000000800116        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_epilogue.o)
+ .bss           0x0000000000800116        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+ .bss           0x0000000000800116        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
+ .bss           0x0000000000800116        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+ .bss           0x0000000000800116        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+ *(.bss*)
+ .bss.MOTOR_PosAct
+                0x0000000000800116        0x2 thermotronic_sww/motor.o
+                0x0000000000800116                MOTOR_PosAct
+ .bss.MOTOR_PosMax
+                0x0000000000800118        0x2 thermotronic_sww/motor.o
+                0x0000000000800118                MOTOR_PosMax
+ .bss.motor_diag
+                0x000000000080011a        0x2 thermotronic_sww/motor.o
+                0x000000000080011a                motor_diag
+ .bss.MOTOR_PosOvershoot
+                0x000000000080011c        0x1 thermotronic_sww/motor.o
+                0x000000000080011c                MOTOR_PosOvershoot
+ .bss.motor_diag_cnt
+                0x000000000080011d        0x2 thermotronic_sww/motor.o
+ .bss.motor_timer
+                0x000000000080011f        0x2 thermotronic_sww/motor.o
+ .bss.pine_last
+                0x0000000000800121        0x1 thermotronic_sww/motor.o
+ .bss.last_eye_change
+                0x0000000000800122        0x2 thermotronic_sww/motor.o
+ .bss.longest_low_eye
+                0x0000000000800124        0x2 thermotronic_sww/motor.o
+ .bss.MOTOR_PosStop
+                0x0000000000800126        0x2 thermotronic_sww/motor.o
+ .bss.MOTOR_Dir_Counter
+                0x0000000000800128        0x1 thermotronic_sww/motor.o
+ .bss.motor_max_time_for_impulse
+                0x0000000000800129        0x2 thermotronic_sww/motor.o
+ .bss.CTL_temp_wanted
+                0x000000000080012b        0x1 thermotronic_sww/controller.o
+                0x000000000080012b                CTL_temp_wanted
+ .bss.CTL_temp_auto
+                0x000000000080012c        0x1 thermotronic_sww/controller.o
+                0x000000000080012c                CTL_temp_auto
+ .bss.CTL_mode_window
+                0x000000000080012d        0x1 thermotronic_sww/controller.o
+                0x000000000080012d                CTL_mode_window
+ .bss.CTL_error
+                0x000000000080012e        0x1 thermotronic_sww/controller.o
+                0x000000000080012e                CTL_error
+ .bss.sumError  0x000000000080012f        0x2 thermotronic_sww/controller.o
+                0x000000000080012f                sumError
+ .bss.lastProcessValue
+                0x0000000000800131        0x2 thermotronic_sww/controller.o
+ .bss.menu_temp_rewoke
+                0x0000000000800133        0x1 thermotronic_sww/controller.o
+ .bss.rx_buff_in
+                0x0000000000800134        0x1 thermotronic_sww/com.o
+ .bss.rx_buff_out
+                0x0000000000800135        0x1 thermotronic_sww/com.o
+ .bss.tx_buff_in
+                0x0000000000800136        0x1 thermotronic_sww/com.o
+ .bss.tx_buff_out
+                0x0000000000800137        0x1 thermotronic_sww/com.o
+ .bss.tx_buff   0x0000000000800138       0x80 thermotronic_sww/com.o
+ .bss.rx_buff   0x00000000008001b8       0x20 thermotronic_sww/com.o
+ .bss.COM_requests
+                0x00000000008001d8        0x1 thermotronic_sww/com.o
+ .bss.com_hex   0x00000000008001d9        0x3 thermotronic_sww/com.o
+ .bss.RTC_timer_todo
+                0x00000000008001dc        0x1 thermotronic_sww/rtc.o
+                0x00000000008001dc                RTC_timer_todo
+ .bss.RTC_timer_done
+                0x00000000008001dd        0x1 thermotronic_sww/rtc.o
+                0x00000000008001dd                RTC_timer_done
+ .bss.RTC_timer_time
+                0x00000000008001de        0x1 thermotronic_sww/rtc.o
+ .bss.valve_wanted
+                0x00000000008001df        0x1 thermotronic_sww/main.o
+                0x00000000008001df                valve_wanted
+ .bss.kb_events
+                0x00000000008001e0        0x2 thermotronic_sww/keyboard.o
+                0x00000000008001e0                kb_events
+ .bss.keys      0x00000000008001e2        0x1 thermotronic_sww/keyboard.o
+ .bss.allow_rewoke
+                0x00000000008001e3        0x1 thermotronic_sww/keyboard.o
+ .bss.state_front_prev
+                0x00000000008001e4        0x1 thermotronic_sww/keyboard.o
+ .bss.long_press
+                0x00000000008001e5        0x1 thermotronic_sww/keyboard.o
+ .bss.long_quiet
+                0x00000000008001e6        0x1 thermotronic_sww/keyboard.o
+ .bss.sleep_with_ADC
+                0x00000000008001e7        0x1 thermotronic_sww/adc.o
+                0x00000000008001e7                sleep_with_ADC
+ .bss.ring_average
+                0x00000000008001e8        0x4 thermotronic_sww/adc.o
+                0x00000000008001e8                ring_average
+ .bss.dummy_adc
+                0x00000000008001ec        0x2 thermotronic_sww/adc.o
+ .bss.ring_sum  0x00000000008001ee        0x8 thermotronic_sww/adc.o
+ .bss.ring_pos  0x00000000008001f6        0x1 thermotronic_sww/adc.o
+ .bss.state_ADC
+                0x00000000008001f7        0x1 thermotronic_sww/adc.o
+ .bss.ring_buf  0x00000000008001f8       0x3c thermotronic_sww/adc.o
+ .bss.service_watch_n
+                0x0000000000800234        0x1 thermotronic_sww/menu.o
+ .bss.locked    0x0000000000800235        0x1 thermotronic_sww/menu.o
+ .bss.menu_set_dow
+                0x0000000000800236        0x1 thermotronic_sww/menu.o
+ .bss.menu_set_time
+                0x0000000000800237        0x2 thermotronic_sww/menu.o
+ .bss.menu_set_mode
+                0x0000000000800239        0x1 thermotronic_sww/menu.o
+ .bss.menu_set_slot
+                0x000000000080023a        0x1 thermotronic_sww/menu.o
+ .bss.LCD_force_update
+                0x000000000080023b        0x1 thermotronic_sww/lcd.o
+                0x000000000080023b                LCD_force_update
+ .bss.LCD_BlinkCounter
+                0x000000000080023c        0x1 thermotronic_sww/lcd.o
+ .bss.LCD_Bitplane
+                0x000000000080023d        0x1 thermotronic_sww/lcd.o
+ *(COMMON)
+ COMMON         0x000000000080023e        0x5 thermotronic_sww/motor.o
+                0x000000000080023e                MOTOR_counter
+                0x0000000000800242                MOTOR_Dir
+ COMMON         0x0000000000800243        0x2 thermotronic_sww/controller.o
+                0x0000000000800243                CTL_open_window_timeout
+ COMMON         0x0000000000800245        0x1 thermotronic_sww/rtc.o
+                0x0000000000800245                RTC_DS
+ COMMON         0x0000000000800246        0x1 thermotronic_sww/keyboard.o
+                0x0000000000800246                state_wheel_prev
+ COMMON         0x0000000000800247       0x41 thermotronic_sww/adc.o
+                0x0000000000800247                ring_buf_temp_avgs_pos
+                0x0000000000800248                ring_buf_temp_avgs
+ COMMON         0x0000000000800288       0x2b thermotronic_sww/eeprom.o
+                0x0000000000800288                timmers_patch_data
+                0x000000000080028a                config
+ COMMON         0x00000000008002b3        0x5 thermotronic_sww/menu.o
+                0x00000000008002b3                hourbar_buff
+                0x00000000008002b7                menu_state
+ COMMON         0x00000000008002b8       0x12 thermotronic_sww/lcd.o
+                0x00000000008002b8                LCD_Data
+                0x00000000008002ca                PROVIDE (__bss_end, .)
+                0x0000000000002e78                __data_load_start = LOADADDR (.data)
+                0x0000000000002e8e                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00000000008002ca        0x0
+                0x00000000008002ca                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00000000008002ca                PROVIDE (__noinit_end, .)
+                0x00000000008002ca                _end = .
+                0x00000000008002ca                PROVIDE (__heap_start, .)
+
+.eeprom         0x0000000000810000      0x164
+ *(.eeprom*)
+ .eeprom        0x0000000000810000      0x164 thermotronic_sww/eeprom.o
+                0x0000000000810000                ee_reserved1
+                0x0000000000810001                ee_reserved2
+                0x0000000000810002                ee_reserved3
+                0x0000000000810003                ee_layout
+                0x0000000000810004                ee_timers
+                0x0000000000810084                ee_reserved2_60
+                0x00000000008100c0                ee_config
+                0x0000000000810164                __eeprom_end = .
+
+.fuse           0x0000000000820000        0x3
+ *(.fuse)
+ .fuse          0x0000000000820000        0x3 thermotronic_sww/main.o
+                0x0000000000820000                __fuse
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x0000000000000000      0xcb4
+ *(.stab)
+ .stab          0x0000000000000000      0x6b4 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+ .stab          0x00000000000006b4      0x600 thermotronic_sww/xtea-asm.o
+                                        0x60c (size before relaxing)
+
+.stabstr        0x0000000000000000       0x79
+ *(.stabstr)
+ .stabstr       0x0000000000000000       0x79 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x160
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x20 thermotronic_sww/motor.o
+ .debug_aranges
+                0x0000000000000020       0x20 thermotronic_sww/controller.o
+ .debug_aranges
+                0x0000000000000040       0x20 thermotronic_sww/watch.o
+ .debug_aranges
+                0x0000000000000060       0x20 thermotronic_sww/com.o
+ .debug_aranges
+                0x0000000000000080       0x20 thermotronic_sww/rtc.o
+ .debug_aranges
+                0x00000000000000a0       0x20 thermotronic_sww/main.o
+ .debug_aranges
+                0x00000000000000c0       0x20 thermotronic_sww/keyboard.o
+ .debug_aranges
+                0x00000000000000e0       0x20 thermotronic_sww/adc.o
+ .debug_aranges
+                0x0000000000000100       0x20 thermotronic_sww/eeprom.o
+ .debug_aranges
+                0x0000000000000120       0x20 thermotronic_sww/menu.o
+ .debug_aranges
+                0x0000000000000140       0x20 thermotronic_sww/lcd.o
+
+.debug_pubnames
+                0x0000000000000000      0x97f
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x0000000000000000      0x122 thermotronic_sww/motor.o
+ .debug_pubnames
+                0x0000000000000122       0xfe thermotronic_sww/controller.o
+ .debug_pubnames
+                0x0000000000000220       0x2d thermotronic_sww/watch.o
+ .debug_pubnames
+                0x000000000000024d       0x8e thermotronic_sww/com.o
+ .debug_pubnames
+                0x00000000000002db      0x181 thermotronic_sww/rtc.o
+ .debug_pubnames
+                0x000000000000045c       0x37 thermotronic_sww/main.o
+ .debug_pubnames
+                0x0000000000000493       0xa2 thermotronic_sww/keyboard.o
+ .debug_pubnames
+                0x0000000000000535       0x98 thermotronic_sww/adc.o
+ .debug_pubnames
+                0x00000000000005cd      0x143 thermotronic_sww/eeprom.o
+ .debug_pubnames
+                0x0000000000000710       0x71 thermotronic_sww/menu.o
+ .debug_pubnames
+                0x0000000000000781      0x1fe thermotronic_sww/lcd.o
+
+.debug_info     0x0000000000000000     0x48c1
+ *(.debug_info)
+ .debug_info    0x0000000000000000      0x6b5 thermotronic_sww/motor.o
+ .debug_info    0x00000000000006b5      0x67c thermotronic_sww/controller.o
+ .debug_info    0x0000000000000d31       0x68 thermotronic_sww/rs232_485_hw.o
+ .debug_info    0x0000000000000d99      0x1d4 thermotronic_sww/watch.o
+ .debug_info    0x0000000000000f6d      0x996 thermotronic_sww/com.o
+ .debug_info    0x0000000000001903       0x61 thermotronic_sww/wireless.o
+ .debug_info    0x0000000000001964       0x61 thermotronic_sww/rfm.o
+ .debug_info    0x00000000000019c5       0x61 thermotronic_sww/cmac.o
+ .debug_info    0x0000000000001a26      0xb1a thermotronic_sww/rtc.o
+ .debug_info    0x0000000000002540      0x54b thermotronic_sww/main.o
+ .debug_info    0x0000000000002a8b      0x1bb thermotronic_sww/keyboard.o
+ .debug_info    0x0000000000002c46      0x541 thermotronic_sww/adc.o
+ .debug_info    0x0000000000003187      0x5a8 thermotronic_sww/eeprom.o
+ .debug_info    0x000000000000372f      0x809 thermotronic_sww/menu.o
+ .debug_info    0x0000000000003f38      0x989 thermotronic_sww/lcd.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x0000000000000000     0x1455
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000      0x1c9 thermotronic_sww/motor.o
+ .debug_abbrev  0x00000000000001c9      0x1e2 thermotronic_sww/controller.o
+ .debug_abbrev  0x00000000000003ab       0x33 thermotronic_sww/rs232_485_hw.o
+ .debug_abbrev  0x00000000000003de       0xd4 thermotronic_sww/watch.o
+ .debug_abbrev  0x00000000000004b2      0x25a thermotronic_sww/com.o
+ .debug_abbrev  0x000000000000070c       0x33 thermotronic_sww/wireless.o
+ .debug_abbrev  0x000000000000073f       0x33 thermotronic_sww/rfm.o
+ .debug_abbrev  0x0000000000000772       0x33 thermotronic_sww/cmac.o
+ .debug_abbrev  0x00000000000007a5      0x336 thermotronic_sww/rtc.o
+ .debug_abbrev  0x0000000000000adb      0x13c thermotronic_sww/main.o
+ .debug_abbrev  0x0000000000000c17       0xe3 thermotronic_sww/keyboard.o
+ .debug_abbrev  0x0000000000000cfa      0x19e thermotronic_sww/adc.o
+ .debug_abbrev  0x0000000000000e98      0x194 thermotronic_sww/eeprom.o
+ .debug_abbrev  0x000000000000102c      0x251 thermotronic_sww/menu.o
+ .debug_abbrev  0x000000000000127d      0x1d8 thermotronic_sww/lcd.o
+
+.debug_line     0x0000000000000000     0x2dc1
+ *(.debug_line)
+ .debug_line    0x0000000000000000      0x580 thermotronic_sww/motor.o
+ .debug_line    0x0000000000000580      0x39f thermotronic_sww/controller.o
+ .debug_line    0x000000000000091f       0x3e thermotronic_sww/rs232_485_hw.o
+ .debug_line    0x000000000000095d       0xdd thermotronic_sww/watch.o
+ .debug_line    0x0000000000000a3a      0x640 thermotronic_sww/com.o
+ .debug_line    0x000000000000107a       0x3e thermotronic_sww/wireless.o
+ .debug_line    0x00000000000010b8       0x3e thermotronic_sww/rfm.o
+ .debug_line    0x00000000000010f6       0x3e thermotronic_sww/cmac.o
+ .debug_line    0x0000000000001134      0x5a3 thermotronic_sww/rtc.o
+ .debug_line    0x00000000000016d7      0x426 thermotronic_sww/main.o
+ .debug_line    0x0000000000001afd      0x253 thermotronic_sww/keyboard.o
+ .debug_line    0x0000000000001d50      0x1f1 thermotronic_sww/adc.o
+ .debug_line    0x0000000000001f41      0x284 thermotronic_sww/eeprom.o
+ .debug_line    0x00000000000021c5      0x76c thermotronic_sww/menu.o
+ .debug_line    0x0000000000002931      0x490 thermotronic_sww/lcd.o
+
+.debug_frame    0x0000000000000000      0x5c0
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0x90 thermotronic_sww/motor.o
+ .debug_frame   0x0000000000000090       0x40 thermotronic_sww/controller.o
+ .debug_frame   0x00000000000000d0       0x20 thermotronic_sww/watch.o
+ .debug_frame   0x00000000000000f0      0x110 thermotronic_sww/com.o
+ .debug_frame   0x0000000000000200      0x120 thermotronic_sww/rtc.o
+ .debug_frame   0x0000000000000320       0x20 thermotronic_sww/main.o
+ .debug_frame   0x0000000000000340       0x50 thermotronic_sww/keyboard.o
+ .debug_frame   0x0000000000000390       0x50 thermotronic_sww/adc.o
+ .debug_frame   0x00000000000003e0       0x80 thermotronic_sww/eeprom.o
+ .debug_frame   0x0000000000000460       0x50 thermotronic_sww/menu.o
+ .debug_frame   0x00000000000004b0      0x110 thermotronic_sww/lcd.o
+
+.debug_str      0x0000000000000000     0x1278
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x570 thermotronic_sww/motor.o
+                                        0x5d3 (size before relaxing)
+ .debug_str     0x0000000000000570      0x1b9 thermotronic_sww/controller.o
+                                        0x565 (size before relaxing)
+ .debug_str     0x0000000000000729        0xf thermotronic_sww/rs232_485_hw.o
+                                         0xc6 (size before relaxing)
+ .debug_str     0x0000000000000738       0x24 thermotronic_sww/watch.o
+                                        0x1b0 (size before relaxing)
+ .debug_str     0x000000000000075c      0x141 thermotronic_sww/com.o
+                                        0x57d (size before relaxing)
+ .debug_str     0x000000000000089d        0xb thermotronic_sww/wireless.o
+                                         0xbd (size before relaxing)
+ .debug_str     0x00000000000008a8        0x6 thermotronic_sww/rfm.o
+                                         0xb8 (size before relaxing)
+ .debug_str     0x00000000000008ae        0x7 thermotronic_sww/cmac.o
+                                         0xb9 (size before relaxing)
+ .debug_str     0x00000000000008b5      0x27a thermotronic_sww/rtc.o
+                                        0x673 (size before relaxing)
+ .debug_str     0x0000000000000b2f       0x83 thermotronic_sww/main.o
+                                        0x4d7 (size before relaxing)
+ .debug_str     0x0000000000000bb2       0x9e thermotronic_sww/keyboard.o
+                                        0x197 (size before relaxing)
+ .debug_str     0x0000000000000c50       0xb1 thermotronic_sww/adc.o
+                                        0x49c (size before relaxing)
+ .debug_str     0x0000000000000d01      0x12d thermotronic_sww/eeprom.o
+                                        0x4df (size before relaxing)
+ .debug_str     0x0000000000000e2e      0x27c thermotronic_sww/menu.o
+                                        0x721 (size before relaxing)
+ .debug_str     0x00000000000010aa      0x1ce thermotronic_sww/lcd.o
+                                        0x5a7 (size before relaxing)
+
+.debug_loc      0x0000000000000000     0x1901
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000      0x1be thermotronic_sww/motor.o
+ .debug_loc     0x00000000000001be      0x3ba thermotronic_sww/controller.o
+ .debug_loc     0x0000000000000578       0x1e thermotronic_sww/watch.o
+ .debug_loc     0x0000000000000596      0x43c thermotronic_sww/com.o
+ .debug_loc     0x00000000000009d2      0x3e1 thermotronic_sww/rtc.o
+ .debug_loc     0x0000000000000db3       0x52 thermotronic_sww/main.o
+ .debug_loc     0x0000000000000e05       0x26 thermotronic_sww/keyboard.o
+ .debug_loc     0x0000000000000e2b       0xb9 thermotronic_sww/adc.o
+ .debug_loc     0x0000000000000ee4      0x156 thermotronic_sww/eeprom.o
+ .debug_loc     0x000000000000103a      0x3f2 thermotronic_sww/menu.o
+ .debug_loc     0x000000000000142c      0x4d5 thermotronic_sww/lcd.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(../bin/thermotronic_sww/hr20.elf elf32-avr)
+LOAD linker stubs
+
+.debug_ranges   0x0000000000000000       0x30
+ .debug_ranges  0x0000000000000000       0x18 thermotronic_sww/eeprom.o
+ .debug_ranges  0x0000000000000018       0x18 thermotronic_sww/menu.o
+
+Cross Reference Table
+
+Symbol                                            File
+COM_commad_parse                                  thermotronic_sww/com.o
+                                                  thermotronic_sww/main.o
+COM_flush                                         thermotronic_sww/com.o
+COM_init                                          thermotronic_sww/com.o
+COM_print_debug                                   thermotronic_sww/com.o
+                                                  thermotronic_sww/controller.o
+COM_putchar                                       thermotronic_sww/com.o
+COM_rx_char_isr                                   thermotronic_sww/com.o
+COM_tx_char_isr                                   thermotronic_sww/com.o
+CTL_change_mode                                   thermotronic_sww/controller.o
+                                                  thermotronic_sww/menu.o
+                                                  thermotronic_sww/com.o
+CTL_error                                         thermotronic_sww/controller.o
+                                                  thermotronic_sww/menu.o
+                                                  thermotronic_sww/main.o
+                                                  thermotronic_sww/com.o
+                                                  thermotronic_sww/motor.o
+CTL_mode_auto                                     thermotronic_sww/controller.o
+                                                  thermotronic_sww/menu.o
+                                                  thermotronic_sww/com.o
+                                                  thermotronic_sww/watch.o
+CTL_mode_window                                   thermotronic_sww/controller.o
+                                                  thermotronic_sww/menu.o
+                                                  thermotronic_sww/main.o
+                                                  thermotronic_sww/com.o
+                                                  thermotronic_sww/watch.o
+CTL_open_window_timeout                           thermotronic_sww/controller.o
+CTL_temp_auto                                     thermotronic_sww/controller.o
+                                                  thermotronic_sww/menu.o
+                                                  thermotronic_sww/com.o
+                                                  thermotronic_sww/watch.o
+CTL_temp_change_inc                               thermotronic_sww/controller.o
+                                                  thermotronic_sww/menu.o
+CTL_temp_wanted                                   thermotronic_sww/controller.o
+                                                  thermotronic_sww/menu.o
+                                                  thermotronic_sww/com.o
+                                                  thermotronic_sww/watch.o
+CTL_temp_wanted_last                              thermotronic_sww/controller.o
+                                                  thermotronic_sww/com.o
+                                                  thermotronic_sww/watch.o
+CTL_update                                        thermotronic_sww/controller.o
+                                                  thermotronic_sww/main.o
+EEPROM_read                                       thermotronic_sww/eeprom.o
+                                                  thermotronic_sww/main.o
+LCD_AllSegments                                   thermotronic_sww/lcd.o
+                                                  thermotronic_sww/menu.o
+LCD_CharTablePrgMem                               thermotronic_sww/lcd.o
+LCD_Data                                          thermotronic_sww/lcd.o
+LCD_FieldOffsetTablePrgMem                        thermotronic_sww/lcd.o
+LCD_HourBarBitmap                                 thermotronic_sww/lcd.o
+                                                  thermotronic_sww/menu.o
+LCD_Init                                          thermotronic_sww/lcd.o
+                                                  thermotronic_sww/menu.o
+                                                  thermotronic_sww/main.o
+LCD_PrintChar                                     thermotronic_sww/lcd.o
+                                                  thermotronic_sww/menu.o
+LCD_PrintDec                                      thermotronic_sww/lcd.o
+                                                  thermotronic_sww/menu.o
+LCD_PrintDec3                                     thermotronic_sww/lcd.o
+                                                  thermotronic_sww/menu.o
+LCD_PrintDecW                                     thermotronic_sww/lcd.o
+                                                  thermotronic_sww/menu.o
+LCD_PrintHex                                      thermotronic_sww/lcd.o
+                                                  thermotronic_sww/menu.o
+LCD_PrintHexW                                     thermotronic_sww/lcd.o
+                                                  thermotronic_sww/menu.o
+LCD_PrintStringID                                 thermotronic_sww/lcd.o
+                                                  thermotronic_sww/menu.o
+                                                  thermotronic_sww/main.o
+LCD_PrintTemp                                     thermotronic_sww/lcd.o
+                                                  thermotronic_sww/menu.o
+LCD_PrintTempInt                                  thermotronic_sww/lcd.o
+                                                  thermotronic_sww/menu.o
+LCD_SegHourBarOffsetTablePrgMem                   thermotronic_sww/lcd.o
+LCD_SegOffsetTablePrgMem                          thermotronic_sww/lcd.o
+LCD_SetHourBarSeg                                 thermotronic_sww/lcd.o
+                                                  thermotronic_sww/menu.o
+LCD_SetSeg                                        thermotronic_sww/lcd.o
+                                                  thermotronic_sww/menu.o
+LCD_StringTable                                   thermotronic_sww/lcd.o
+LCD_force_update                                  thermotronic_sww/lcd.o
+                                                  thermotronic_sww/main.o
+LCD_used_bitplanes                                thermotronic_sww/lcd.o
+MOTOR_Dir                                         thermotronic_sww/main.o
+                                                  thermotronic_sww/motor.o
+MOTOR_GetPosPercent                               thermotronic_sww/motor.o
+                                                  thermotronic_sww/menu.o
+MOTOR_Goto                                        thermotronic_sww/motor.o
+                                                  thermotronic_sww/main.o
+MOTOR_PosAct                                      thermotronic_sww/motor.o
+                                                  thermotronic_sww/watch.o
+MOTOR_PosMax                                      thermotronic_sww/motor.o
+                                                  thermotronic_sww/watch.o
+MOTOR_PosOvershoot                                thermotronic_sww/motor.o
+                                                  thermotronic_sww/watch.o
+MOTOR_calibration_step                            thermotronic_sww/motor.o
+                                                  thermotronic_sww/menu.o
+MOTOR_counter                                     thermotronic_sww/watch.o
+                                                  thermotronic_sww/motor.o
+MOTOR_timer_pulse                                 thermotronic_sww/motor.o
+                                                  thermotronic_sww/main.o
+MOTOR_timer_stop                                  thermotronic_sww/motor.o
+                                                  thermotronic_sww/main.o
+MOTOR_updateCalibration                           thermotronic_sww/motor.o
+                                                  thermotronic_sww/main.o
+PID_force_update                                  thermotronic_sww/controller.o
+                                                  thermotronic_sww/main.o
+                                                  thermotronic_sww/com.o
+RTC                                               thermotronic_sww/rtc.o
+                                                  thermotronic_sww/menu.o
+                                                  thermotronic_sww/main.o
+                                                  thermotronic_sww/com.o
+RTC_ActualTimerTemperature                        thermotronic_sww/rtc.o
+                                                  thermotronic_sww/controller.o
+RTC_AddOneSecond                                  thermotronic_sww/rtc.o
+                                                  thermotronic_sww/main.o
+RTC_DS                                            thermotronic_sww/rtc.o
+RTC_DayOfMonthTablePrgMem                         thermotronic_sww/rtc.o
+RTC_DowTimerGet                                   thermotronic_sww/rtc.o
+                                                  thermotronic_sww/menu.o
+RTC_DowTimerGetHourBar                            thermotronic_sww/rtc.o
+                                                  thermotronic_sww/menu.o
+RTC_DowTimerSet                                   thermotronic_sww/rtc.o
+                                                  thermotronic_sww/menu.o
+                                                  thermotronic_sww/com.o
+RTC_Init                                          thermotronic_sww/rtc.o
+                                                  thermotronic_sww/main.o
+RTC_SetDay                                        thermotronic_sww/rtc.o
+                                                  thermotronic_sww/menu.o
+                                                  thermotronic_sww/com.o
+RTC_SetHour                                       thermotronic_sww/rtc.o
+                                                  thermotronic_sww/menu.o
+                                                  thermotronic_sww/com.o
+RTC_SetMinute                                     thermotronic_sww/rtc.o
+                                                  thermotronic_sww/menu.o
+                                                  thermotronic_sww/com.o
+RTC_SetMonth                                      thermotronic_sww/rtc.o
+                                                  thermotronic_sww/menu.o
+                                                  thermotronic_sww/com.o
+RTC_SetSecond                                     thermotronic_sww/rtc.o
+                                                  thermotronic_sww/menu.o
+                                                  thermotronic_sww/com.o
+RTC_SetYear                                       thermotronic_sww/rtc.o
+                                                  thermotronic_sww/menu.o
+                                                  thermotronic_sww/com.o
+RTC_timer_done                                    thermotronic_sww/rtc.o
+                                                  thermotronic_sww/main.o
+RTC_timer_set                                     thermotronic_sww/rtc.o
+                                                  thermotronic_sww/keyboard.o
+RTC_timer_todo                                    thermotronic_sww/rtc.o
+__bad_interrupt                                   /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+__bss_end                                         /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+__bss_start                                       /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+__data_end                                        /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+__data_load_start                                 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+__data_start                                      /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+__divmodhi4                                       /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodhi4.o)
+                                                  thermotronic_sww/lcd.o
+                                                  thermotronic_sww/menu.o
+                                                  thermotronic_sww/adc.o
+                                                  thermotronic_sww/rtc.o
+                                                  thermotronic_sww/controller.o
+                                                  thermotronic_sww/motor.o
+__divmodqi4                                       /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodqi4.o)
+                                                  thermotronic_sww/menu.o
+__divmodsi4                                       /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodsi4.o)
+                                                  thermotronic_sww/adc.o
+__do_clear_bss                                    /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+                                                  thermotronic_sww/lcd.o
+                                                  thermotronic_sww/menu.o
+                                                  thermotronic_sww/eeprom.o
+                                                  thermotronic_sww/adc.o
+                                                  thermotronic_sww/keyboard.o
+                                                  thermotronic_sww/main.o
+                                                  thermotronic_sww/rtc.o
+                                                  thermotronic_sww/com.o
+                                                  thermotronic_sww/watch.o
+                                                  thermotronic_sww/controller.o
+                                                  thermotronic_sww/motor.o
+__do_copy_data                                    /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+                                                  thermotronic_sww/lcd.o
+                                                  thermotronic_sww/menu.o
+                                                  thermotronic_sww/eeprom.o
+                                                  thermotronic_sww/adc.o
+                                                  thermotronic_sww/keyboard.o
+                                                  thermotronic_sww/rtc.o
+                                                  thermotronic_sww/com.o
+                                                  thermotronic_sww/controller.o
+                                                  thermotronic_sww/motor.o
+__epilogue_restores__                             /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_epilogue.o)
+                                                  thermotronic_sww/lcd.o
+                                                  thermotronic_sww/eeprom.o
+                                                  thermotronic_sww/adc.o
+                                                  thermotronic_sww/rtc.o
+__fuse                                            thermotronic_sww/main.o
+__heap_end                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+__init                                            /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+__mulsi3                                          /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_mulsi3.o)
+                                                  thermotronic_sww/adc.o
+                                                  thermotronic_sww/controller.o
+__prologue_saves__                                /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_prologue.o)
+                                                  thermotronic_sww/adc.o
+                                                  thermotronic_sww/rtc.o
+__stack                                           /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+__tablejump2__                                    /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
+                                                  thermotronic_sww/menu.o
+                                                  thermotronic_sww/com.o
+__tablejump__                                     /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
+__udivmodhi4                                      /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodhi4.o)
+                                                  /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodhi4.o)
+                                                  thermotronic_sww/lcd.o
+                                                  thermotronic_sww/menu.o
+                                                  thermotronic_sww/rtc.o
+                                                  thermotronic_sww/com.o
+                                                  thermotronic_sww/motor.o
+__udivmodqi4                                      /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodqi4.o)
+                                                  /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodqi4.o)
+                                                  thermotronic_sww/lcd.o
+                                                  thermotronic_sww/menu.o
+                                                  thermotronic_sww/rtc.o
+                                                  thermotronic_sww/com.o
+__udivmodsi4                                      /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodsi4.o)
+                                                  /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodsi4.o)
+                                                  thermotronic_sww/adc.o
+__vector_1                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+__vector_10                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+__vector_11                                       thermotronic_sww/motor.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+__vector_12                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+__vector_13                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+__vector_14                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+__vector_15                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+__vector_16                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+__vector_17                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+__vector_18                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+__vector_19                                       thermotronic_sww/adc.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+__vector_2                                        thermotronic_sww/motor.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+__vector_20                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+__vector_21                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+__vector_22                                       thermotronic_sww/lcd.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+__vector_3                                        thermotronic_sww/keyboard.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+__vector_4                                        thermotronic_sww/rtc.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+__vector_5                                        thermotronic_sww/rtc.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+__vector_6                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+__vector_7                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+__vector_8                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+__vector_9                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+__vector_default                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+__vectors                                         /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+_div                                              /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodhi4.o)
+_exit                                             /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+config                                            thermotronic_sww/lcd.o
+                                                  thermotronic_sww/menu.o
+                                                  thermotronic_sww/eeprom.o
+                                                  thermotronic_sww/adc.o
+                                                  thermotronic_sww/main.o
+                                                  thermotronic_sww/rtc.o
+                                                  thermotronic_sww/com.o
+                                                  thermotronic_sww/controller.o
+                                                  thermotronic_sww/motor.o
+config_read                                       thermotronic_sww/eeprom.o
+                                                  thermotronic_sww/menu.o
+ee_config                                         thermotronic_sww/eeprom.o
+ee_layout                                         thermotronic_sww/eeprom.o
+                                                  thermotronic_sww/main.o
+ee_reserved1                                      thermotronic_sww/eeprom.o
+ee_reserved2                                      thermotronic_sww/eeprom.o
+ee_reserved2_60                                   thermotronic_sww/eeprom.o
+ee_reserved3                                      thermotronic_sww/eeprom.o
+ee_timers                                         thermotronic_sww/eeprom.o
+eeprom_config_init                                thermotronic_sww/eeprom.o
+                                                  thermotronic_sww/main.o
+eeprom_config_save                                thermotronic_sww/eeprom.o
+                                                  thermotronic_sww/menu.o
+                                                  thermotronic_sww/com.o
+                                                  thermotronic_sww/motor.o
+eeprom_timers_read_raw                            thermotronic_sww/eeprom.o
+                                                  thermotronic_sww/rtc.o
+                                                  thermotronic_sww/com.o
+eeprom_timers_write_raw                           thermotronic_sww/eeprom.o
+                                                  thermotronic_sww/rtc.o
+exit                                              /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+hourbar_buff                                      thermotronic_sww/menu.o
+                                                  thermotronic_sww/rtc.o
+kb_events                                         thermotronic_sww/keyboard.o
+                                                  thermotronic_sww/menu.o
+                                                  thermotronic_sww/main.o
+kb_timeout                                        thermotronic_sww/keyboard.o
+                                                  thermotronic_sww/rtc.o
+main                                              thermotronic_sww/main.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169.o
+menu_auto_update_timeout                          thermotronic_sww/menu.o
+                                                  thermotronic_sww/main.o
+menu_controller                                   thermotronic_sww/menu.o
+                                                  thermotronic_sww/main.o
+menu_state                                        thermotronic_sww/menu.o
+menu_view                                         thermotronic_sww/menu.o
+                                                  thermotronic_sww/main.o
+mont_contact_pooling                              thermotronic_sww/keyboard.o
+                                                  thermotronic_sww/main.o
+motor_diag                                        thermotronic_sww/motor.o
+                                                  thermotronic_sww/watch.o
+ring_average                                      thermotronic_sww/adc.o
+                                                  thermotronic_sww/menu.o
+                                                  thermotronic_sww/main.o
+                                                  thermotronic_sww/com.o
+                                                  thermotronic_sww/watch.o
+                                                  thermotronic_sww/controller.o
+                                                  thermotronic_sww/motor.o
+ring_buf_temp_avgs                                thermotronic_sww/adc.o
+                                                  thermotronic_sww/controller.o
+ring_buf_temp_avgs_pos                            thermotronic_sww/adc.o
+                                                  thermotronic_sww/controller.o
+sleep_with_ADC                                    thermotronic_sww/adc.o
+                                                  thermotronic_sww/main.o
+start_task_ADC                                    thermotronic_sww/adc.o
+                                                  thermotronic_sww/main.o
+state_wheel_prev                                  thermotronic_sww/keyboard.o
+                                                  thermotronic_sww/main.o
+sumError                                          thermotronic_sww/controller.o
+                                                  thermotronic_sww/main.o
+                                                  thermotronic_sww/com.o
+                                                  thermotronic_sww/watch.o
+task_ADC                                          thermotronic_sww/adc.o
+                                                  thermotronic_sww/main.o
+task_keyboard                                     thermotronic_sww/keyboard.o
+                                                  thermotronic_sww/main.o
+task_keyboard_long_press_detect                   thermotronic_sww/keyboard.o
+                                                  thermotronic_sww/main.o
+task_lcd_update                                   thermotronic_sww/lcd.o
+                                                  thermotronic_sww/main.o
+timmers_patch_data                                thermotronic_sww/menu.o
+                                                  thermotronic_sww/eeprom.o
+timmers_patch_offset                              thermotronic_sww/eeprom.o
+                                                  thermotronic_sww/menu.o
+valve_wanted                                      thermotronic_sww/main.o
+                                                  thermotronic_sww/com.o
+watch                                             thermotronic_sww/watch.o
+                                                  thermotronic_sww/menu.o
+                                                  thermotronic_sww/com.o
+xtea_enc                                          thermotronic_sww/xtea-asm.o

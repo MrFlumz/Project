@@ -1,0 +1,900 @@
+Archive member included because of file (symbol)
+
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodqi4.o)
+                              master1/com.o (__udivmodqi4)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodhi4.o)
+                              master1/com.o (__udivmodhi4)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodhi4.o)
+                              master1/rtc.o (__divmodhi4)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_prologue.o)
+                              master1/com.o (__prologue_saves__)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_epilogue.o)
+                              master1/com.o (__epilogue_restores__)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+                              /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o (exit)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
+                              master1/com.o (__tablejump2__)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+                              master1/com.o (__do_copy_data)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+                              master1/main.o (__do_clear_bss)
+/usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(memcpy_P.o)
+                              master1/wireless.o (memcpy_P)
+/usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(memcpy.o)
+                              master1/com.o (memcpy)
+
+Allocating common symbols
+Common symbol       size              file
+
+wl_force_flags      0x4               master1/wireless.o
+RTC_DS              0x1               master1/rtc.o
+task                0x1               master1/main.o
+Keys                0x28              master1/wireless.o
+wl_force_addr2      0x1               master1/wireless.o
+wl_force_addr1      0x1               master1/wireless.o
+rfm_framebuf        0x50              master1/rfm.o
+config              0x8               master1/eeprom.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x0000000000000000 0x0000000000020000 xr
+data             0x0000000000800060 0x000000000000ffa0 rw !x
+eeprom           0x0000000000810000 0x0000000000010000 rw !x
+fuse             0x0000000000820000 0x0000000000000400 rw !x
+lock             0x0000000000830000 0x0000000000000400 rw !x
+signature        0x0000000000840000 0x0000000000000400 rw !x
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+LOAD master1/main.o
+LOAD master1/rs232_485_hw.o
+LOAD master1/com.o
+LOAD master1/rfm.o
+LOAD master1/rtc.o
+LOAD master1/cmac.o
+LOAD master1/eeprom.o
+LOAD master1/wireless.o
+LOAD master1/queue.o
+LOAD master1/xtea-asm.o
+LOAD /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a
+LOAD /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a
+LOAD /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a
+LOAD /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x0000000000000000     0x1c1e
+ *(.vectors)
+ .vectors       0x0000000000000000       0x54 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+                0x0000000000000000                __vectors
+                0x0000000000000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ .progmem.gcc_sw_table
+                0x0000000000000054       0x5c master1/com.o
+ *(.progmem*)
+ .progmem.data  0x00000000000000b0       0x8e master1/com.o
+ .progmem.data  0x000000000000013e       0x24 master1/rtc.o
+                0x000000000000013e                RTC_DayOfMonthTablePrgMem
+ .progmem.data  0x0000000000000162        0xc master1/wireless.o
+                0x000000000000016e                . = ALIGN (0x2)
+                0x000000000000016e                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x000000000000016e        0x0 linker stubs
+ *(.trampolines*)
+                0x000000000000016e                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x000000000000016e                __ctors_start = .
+ *(.ctors)
+                0x000000000000016e                __ctors_end = .
+                0x000000000000016e                __dtors_start = .
+ *(.dtors)
+                0x000000000000016e                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x000000000000016e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+                0x000000000000016e                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000000000000016e        0xc /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ .init3         0x000000000000017a        0xe master1/main.o
+                0x000000000000017a                get_mcusr
+ *(.init3)
+ *(.init4)
+ .init4         0x0000000000000188       0x16 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+                0x0000000000000188                __do_copy_data
+ .init4         0x000000000000019e       0x10 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+                0x000000000000019e                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000000000001ae        0x8 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x00000000000001b6        0x4 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+                0x00000000000001b6                __vector_1
+                0x00000000000001b6                __vector_12
+                0x00000000000001b6                __bad_interrupt
+                0x00000000000001b6                __vector_6
+                0x00000000000001b6                __vector_11
+                0x00000000000001b6                __vector_17
+                0x00000000000001b6                __vector_19
+                0x00000000000001b6                __vector_5
+                0x00000000000001b6                __vector_4
+                0x00000000000001b6                __vector_9
+                0x00000000000001b6                __vector_2
+                0x00000000000001b6                __vector_8
+                0x00000000000001b6                __vector_10
+                0x00000000000001b6                __vector_16
+                0x00000000000001b6                __vector_18
+                0x00000000000001b6                __vector_20
+ .text          0x00000000000001ba      0x2f8 master1/main.o
+                0x00000000000001ba                __vector_3
+                0x00000000000002a4                main
+ .text          0x00000000000004b2       0xe6 master1/rs232_485_hw.o
+                0x00000000000004b2                __vector_15
+                0x00000000000004d0                RS_Init
+                0x00000000000004e4                RS_startSend
+                0x00000000000004f8                __vector_14
+                0x000000000000054e                __vector_13
+ .text          0x0000000000000598      0x9a6 master1/com.o
+                0x0000000000000602                COM_tx_char_isr
+                0x0000000000000636                COM_rx_char_isr
+                0x0000000000000824                COM_req_RTC
+                0x00000000000008dc                COM_print_datetime
+                0x0000000000000946                COM_dump_packet
+                0x0000000000000c06                COM_print_debug
+                0x0000000000000c86                COM_commad_parse
+                0x0000000000000f2c                COM_init
+ .text          0x0000000000000f3e       0x76 master1/rfm.o
+                0x0000000000000f3e                rfm_spi16
+                0x0000000000000f6a                RFM_init
+ .text          0x0000000000000fb4      0x38c master1/rtc.o
+                0x0000000000000fb4                RTC_SetHour
+                0x0000000000000fc2                RTC_SetMinute
+                0x0000000000000fd0                RTC_SetSecond
+                0x0000000000000fde                RTC_SetSecond100
+                0x0000000000000ff2                RTC_AddOneSecond
+                0x0000000000001170                RTC_SetYear
+                0x000000000000117a                RTC_SetMonth
+                0x000000000000118e                RTC_SetDay
+                0x00000000000011c8                RTC_Init
+                0x00000000000011e4                RTC_timer_set
+                0x0000000000001240                __vector_7
+ .text          0x0000000000001340      0x11c master1/cmac.o
+                0x0000000000001340                cmac_calc
+ .text          0x000000000000145c      0x11a master1/eeprom.o
+                0x000000000000145c                EEPROM_read
+                0x000000000000146a                config_read
+                0x000000000000148a                eeprom_config_save
+                0x0000000000001516                eeprom_config_init
+ .text          0x0000000000001576      0x3f4 master1/wireless.o
+                0x0000000000001594                wirelessTimer
+                0x0000000000001598                wirelessTimer2
+                0x000000000000159c                wireless_putchar
+                0x00000000000015b6                wirelessSendDone
+                0x000000000000165e                wirelessReceivePacket
+                0x0000000000001836                wirelessSendSync
+                0x00000000000018c4                crypto_init
+ .text          0x000000000000196a       0xb0 master1/queue.o
+                0x000000000000196a                Q_push
+                0x00000000000019c8                Q_clean
+                0x00000000000019e0                Q_get
+ .text          0x0000000000001a1a       0xfc master1/xtea-asm.o
+                0x0000000000001a1a                xtea_enc
+ .text          0x0000000000001b16        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodqi4.o)
+ .text          0x0000000000001b16        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodhi4.o)
+ .text          0x0000000000001b16        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodhi4.o)
+ .text          0x0000000000001b16        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_prologue.o)
+ .text          0x0000000000001b16        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_epilogue.o)
+ .text          0x0000000000001b16        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+ .text          0x0000000000001b16        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
+ .text          0x0000000000001b16        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+ .text          0x0000000000001b16        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+ .text          0x0000000000001b16        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(memcpy_P.o)
+ .text          0x0000000000001b16        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(memcpy.o)
+                0x0000000000001b16                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x0000000000001b16       0x18 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodqi4.o)
+                0x0000000000001b16                __udivmodqi4
+ .text.libgcc   0x0000000000001b2e       0x28 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodhi4.o)
+                0x0000000000001b2e                __udivmodhi4
+ .text.libgcc   0x0000000000001b56       0x26 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodhi4.o)
+                0x0000000000001b56                __divmodhi4
+                0x0000000000001b56                _div
+ .text.libgcc   0x0000000000001b7c       0x38 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_prologue.o)
+                0x0000000000001b7c                __prologue_saves__
+ .text.libgcc   0x0000000000001bb4       0x36 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_epilogue.o)
+                0x0000000000001bb4                __epilogue_restores__
+ .text.libgcc   0x0000000000001bea        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+ .text.libgcc   0x0000000000001bea        0xc /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
+                0x0000000000001bea                __tablejump2__
+                0x0000000000001bee                __tablejump__
+ .text.libgcc   0x0000000000001bf6        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000000000001bf6        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+ .text.avr-libc
+                0x0000000000001bf6       0x12 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(memcpy_P.o)
+                0x0000000000001bf6                memcpy_P
+ .text.avr-libc
+                0x0000000000001c08       0x12 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(memcpy.o)
+                0x0000000000001c08                memcpy
+                0x0000000000001c1a                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x0000000000001c1a        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+                0x0000000000001c1a                exit
+                0x0000000000001c1a                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x0000000000001c1a        0x4 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000000000001c1e                _etext = .
+
+.data           0x0000000000800060        0xa load address 0x0000000000001c1e
+                0x0000000000800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x0000000000800060        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+ .data          0x0000000000800060        0x0 master1/main.o
+ .data          0x0000000000800060        0x0 master1/rs232_485_hw.o
+ .data          0x0000000000800060        0x0 master1/com.o
+ .data          0x0000000000800060        0x0 master1/rfm.o
+ .data          0x0000000000800060        0x0 master1/rtc.o
+ .data          0x0000000000800060        0x0 master1/cmac.o
+ .data          0x0000000000800060        0x0 master1/eeprom.o
+ .data          0x0000000000800060        0x0 master1/wireless.o
+ .data          0x0000000000800060        0x0 master1/queue.o
+ .data          0x0000000000800060        0x0 master1/xtea-asm.o
+ .data          0x0000000000800060        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodqi4.o)
+ .data          0x0000000000800060        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodhi4.o)
+ .data          0x0000000000800060        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodhi4.o)
+ .data          0x0000000000800060        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_prologue.o)
+ .data          0x0000000000800060        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_epilogue.o)
+ .data          0x0000000000800060        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+ .data          0x0000000000800060        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
+ .data          0x0000000000800060        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+ .data          0x0000000000800060        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+ .data          0x0000000000800060        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(memcpy_P.o)
+ .data          0x0000000000800060        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(memcpy.o)
+ *(.data*)
+ .data.rfm_framesize
+                0x0000000000800060        0x1 master1/rfm.o
+                0x0000000000800060                rfm_framesize
+ .data.RTC      0x0000000000800061        0x8 master1/rtc.o
+                0x0000000000800061                RTC
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x000000000080006a                . = ALIGN (0x2)
+ *fill*         0x0000000000800069        0x1 00
+                0x000000000080006a                _edata = .
+                0x000000000080006a                PROVIDE (__data_end, .)
+
+.bss            0x000000000080006a      0x484
+                0x000000000080006a                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x000000000080006a        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+ .bss           0x000000000080006a        0x0 master1/main.o
+ .bss           0x000000000080006a        0x0 master1/rs232_485_hw.o
+ .bss           0x000000000080006a        0x0 master1/com.o
+ .bss           0x000000000080006a        0x0 master1/rfm.o
+ .bss           0x000000000080006a        0x0 master1/rtc.o
+ .bss           0x000000000080006a        0x0 master1/cmac.o
+ .bss           0x000000000080006a        0x0 master1/eeprom.o
+ .bss           0x000000000080006a        0x0 master1/wireless.o
+ .bss           0x000000000080006a        0x0 master1/queue.o
+ .bss           0x000000000080006a        0x0 master1/xtea-asm.o
+ .bss           0x000000000080006a        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodqi4.o)
+ .bss           0x000000000080006a        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodhi4.o)
+ .bss           0x000000000080006a        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodhi4.o)
+ .bss           0x000000000080006a        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_prologue.o)
+ .bss           0x000000000080006a        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_epilogue.o)
+ .bss           0x000000000080006a        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+ .bss           0x000000000080006a        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
+ .bss           0x000000000080006a        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+ .bss           0x000000000080006a        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+ .bss           0x000000000080006a        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(memcpy_P.o)
+ .bss           0x000000000080006a        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(memcpy.o)
+ *(.bss*)
+ .bss.onsync    0x000000000080006a        0x1 master1/main.o
+                0x000000000080006a                onsync
+ .bss.tx_buff_in
+                0x000000000080006b        0x2 master1/com.o
+ .bss.tx_buff_out
+                0x000000000080006d        0x2 master1/com.o
+ .bss.seq       0x000000000080006f        0x2 master1/com.o
+ .bss.rx_buff_in
+                0x0000000000800071        0x1 master1/com.o
+ .bss.rx_buff_out
+                0x0000000000800072        0x1 master1/com.o
+ .bss.tx_buff   0x0000000000800073      0x200 master1/com.o
+ .bss.rx_buff   0x0000000000800273       0x40 master1/com.o
+ .bss.COM_requests
+                0x00000000008002b3        0x1 master1/com.o
+ .bss.com_hex   0x00000000008002b4        0x4 master1/com.o
+ .bss.rfm_framepos
+                0x00000000008002b8        0x1 master1/rfm.o
+                0x00000000008002b8                rfm_framepos
+ .bss.rfm_mode  0x00000000008002b9        0x1 master1/rfm.o
+                0x00000000008002b9                rfm_mode
+ .bss.RTC_timer_todo
+                0x00000000008002ba        0x1 master1/rtc.o
+                0x00000000008002ba                RTC_timer_todo
+ .bss.RTC_timer_done
+                0x00000000008002bb        0x1 master1/rtc.o
+                0x00000000008002bb                RTC_timer_done
+ .bss.RTC_s100  0x00000000008002bc        0x1 master1/rtc.o
+                0x00000000008002bc                RTC_s100
+ .bss.RTC_timer_time
+                0x00000000008002bd        0x2 master1/rtc.o
+ .bss.RTC_next_compare
+                0x00000000008002bf        0x1 master1/rtc.o
+ .bss.wireless_buf_ptr
+                0x00000000008002c0        0x1 master1/wireless.o
+                0x00000000008002c0                wireless_buf_ptr
+ .bss.wl_packet_bank
+                0x00000000008002c1        0x1 master1/wireless.o
+                0x00000000008002c1                wl_packet_bank
+ .bss.wireless_framebuf
+                0x00000000008002c2       0x46 master1/wireless.o
+ .bss.Q_buf     0x0000000000800308      0x15e master1/queue.o
+ *(COMMON)
+ COMMON         0x0000000000800466        0x1 master1/main.o
+                0x0000000000800466                task
+ COMMON         0x0000000000800467       0x50 master1/rfm.o
+                0x0000000000800467                rfm_framebuf
+ COMMON         0x00000000008004b7        0x1 master1/rtc.o
+                0x00000000008004b7                RTC_DS
+ COMMON         0x00000000008004b8        0x8 master1/eeprom.o
+                0x00000000008004b8                config
+ COMMON         0x00000000008004c0       0x2e master1/wireless.o
+                0x00000000008004c0                wl_force_flags
+                0x00000000008004c4                Keys
+                0x00000000008004ec                wl_force_addr2
+                0x00000000008004ed                wl_force_addr1
+                0x00000000008004ee                PROVIDE (__bss_end, .)
+                0x0000000000001c1e                __data_load_start = LOADADDR (.data)
+                0x0000000000001c28                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00000000008004ee        0x0
+                0x00000000008004ee                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00000000008004ee                PROVIDE (__noinit_end, .)
+                0x00000000008004ee                _end = .
+                0x00000000008004ee                PROVIDE (__heap_start, .)
+
+.eeprom         0x0000000000810000       0x60
+ *(.eeprom*)
+ .eeprom        0x0000000000810000       0x60 master1/eeprom.o
+                0x0000000000810000                ee_reserved1
+                0x0000000000810001                ee_reserved2
+                0x0000000000810002                ee_reserved3
+                0x0000000000810003                ee_layout
+                0x0000000000810004                ee_reserved2_60
+                0x0000000000810040                ee_config
+                0x0000000000810060                __eeprom_end = .
+
+.fuse           0x0000000000820000        0x2
+ *(.fuse)
+ .fuse          0x0000000000820000        0x2 master1/main.o
+                0x0000000000820000                __fuse
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x0000000000000000      0xdbc
+ *(.stab)
+ .stab          0x0000000000000000      0x6b4 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+ .stab          0x00000000000006b4      0x600 master1/xtea-asm.o
+                                        0x60c (size before relaxing)
+ .stab          0x0000000000000cb4       0x84 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(memcpy_P.o)
+                                         0x90 (size before relaxing)
+ .stab          0x0000000000000d38       0x84 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(memcpy.o)
+                                         0x90 (size before relaxing)
+
+.stabstr        0x0000000000000000       0xd9
+ *(.stabstr)
+ .stabstr       0x0000000000000000       0xd9 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x128
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x28 master1/main.o
+ .debug_aranges
+                0x0000000000000028       0x20 master1/rs232_485_hw.o
+ .debug_aranges
+                0x0000000000000048       0x20 master1/com.o
+ .debug_aranges
+                0x0000000000000068       0x20 master1/rfm.o
+ .debug_aranges
+                0x0000000000000088       0x20 master1/rtc.o
+ .debug_aranges
+                0x00000000000000a8       0x20 master1/cmac.o
+ .debug_aranges
+                0x00000000000000c8       0x20 master1/eeprom.o
+ .debug_aranges
+                0x00000000000000e8       0x20 master1/wireless.o
+ .debug_aranges
+                0x0000000000000108       0x20 master1/queue.o
+
+.debug_pubnames
+                0x0000000000000000      0x52c
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x0000000000000000       0x57 master1/main.o
+ .debug_pubnames
+                0x0000000000000057       0x5f master1/rs232_485_hw.o
+ .debug_pubnames
+                0x00000000000000b6       0xab master1/com.o
+ .debug_pubnames
+                0x0000000000000161       0x6e master1/rfm.o
+ .debug_pubnames
+                0x00000000000001cf      0x132 master1/rtc.o
+ .debug_pubnames
+                0x0000000000000301       0x20 master1/cmac.o
+ .debug_pubnames
+                0x0000000000000321       0xce master1/eeprom.o
+ .debug_pubnames
+                0x00000000000003ef      0x10a master1/wireless.o
+ .debug_pubnames
+                0x00000000000004f9       0x33 master1/queue.o
+
+.debug_info     0x0000000000000000     0x1eec
+ *(.debug_info)
+ .debug_info    0x0000000000000000      0x2f0 master1/main.o
+ .debug_info    0x00000000000002f0       0xf9 master1/rs232_485_hw.o
+ .debug_info    0x00000000000003e9      0x941 master1/com.o
+ .debug_info    0x0000000000000d2a      0x166 master1/rfm.o
+ .debug_info    0x0000000000000e90      0x5a7 master1/rtc.o
+ .debug_info    0x0000000000001437      0x17e master1/cmac.o
+ .debug_info    0x00000000000015b5      0x281 master1/eeprom.o
+ .debug_info    0x0000000000001836      0x4dc master1/wireless.o
+ .debug_info    0x0000000000001d12      0x1da master1/queue.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x0000000000000000      0xdaa
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000      0x17c master1/main.o
+ .debug_abbrev  0x000000000000017c       0x88 master1/rs232_485_hw.o
+ .debug_abbrev  0x0000000000000204      0x2ac master1/com.o
+ .debug_abbrev  0x00000000000004b0       0xe1 master1/rfm.o
+ .debug_abbrev  0x0000000000000591      0x260 master1/rtc.o
+ .debug_abbrev  0x00000000000007f1       0xed master1/cmac.o
+ .debug_abbrev  0x00000000000008de      0x14b master1/eeprom.o
+ .debug_abbrev  0x0000000000000a29      0x264 master1/wireless.o
+ .debug_abbrev  0x0000000000000c8d      0x11d master1/queue.o
+
+.debug_line     0x0000000000000000     0x1e7f
+ *(.debug_line)
+ .debug_line    0x0000000000000000      0x45e master1/main.o
+ .debug_line    0x000000000000045e      0x177 master1/rs232_485_hw.o
+ .debug_line    0x00000000000005d5      0xa7f master1/com.o
+ .debug_line    0x0000000000001054      0x182 master1/rfm.o
+ .debug_line    0x00000000000011d6      0x40a master1/rtc.o
+ .debug_line    0x00000000000015e0      0x174 master1/cmac.o
+ .debug_line    0x0000000000001754      0x1d0 master1/eeprom.o
+ .debug_line    0x0000000000001924      0x417 master1/wireless.o
+ .debug_line    0x0000000000001d3b      0x144 master1/queue.o
+
+.debug_frame    0x0000000000000000      0x410
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0x40 master1/main.o
+ .debug_frame   0x0000000000000040       0x60 master1/rs232_485_hw.o
+ .debug_frame   0x00000000000000a0      0x130 master1/com.o
+ .debug_frame   0x00000000000001d0       0x30 master1/rfm.o
+ .debug_frame   0x0000000000000200       0xd0 master1/rtc.o
+ .debug_frame   0x00000000000002d0       0x20 master1/cmac.o
+ .debug_frame   0x00000000000002f0       0x50 master1/eeprom.o
+ .debug_frame   0x0000000000000340       0x90 master1/wireless.o
+ .debug_frame   0x00000000000003d0       0x40 master1/queue.o
+
+.debug_str      0x0000000000000000      0x799
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x1df master1/main.o
+                                        0x218 (size before relaxing)
+ .debug_str     0x00000000000001df       0x5a master1/rs232_485_hw.o
+                                        0x10f (size before relaxing)
+ .debug_str     0x0000000000000239      0x1bd master1/com.o
+                                        0x2f6 (size before relaxing)
+ .debug_str     0x00000000000003f6       0x20 master1/rfm.o
+                                        0x170 (size before relaxing)
+ .debug_str     0x0000000000000416      0x178 master1/rtc.o
+                                        0x29e (size before relaxing)
+ .debug_str     0x000000000000058e       0x2e master1/cmac.o
+                                         0xf6 (size before relaxing)
+ .debug_str     0x00000000000005bc       0xd4 master1/eeprom.o
+                                        0x1ca (size before relaxing)
+ .debug_str     0x0000000000000690       0xd3 master1/wireless.o
+                                        0x2cf (size before relaxing)
+ .debug_str     0x0000000000000763       0x36 master1/queue.o
+                                        0x10b (size before relaxing)
+
+.debug_loc      0x0000000000000000      0xd5c
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000       0x1e master1/main.o
+ .debug_loc     0x000000000000001e       0x13 master1/rs232_485_hw.o
+ .debug_loc     0x0000000000000031      0x62f master1/com.o
+ .debug_loc     0x0000000000000660       0x30 master1/rfm.o
+ .debug_loc     0x0000000000000690      0x29d master1/rtc.o
+ .debug_loc     0x000000000000092d      0x178 master1/cmac.o
+ .debug_loc     0x0000000000000aa5       0x8f master1/eeprom.o
+ .debug_loc     0x0000000000000b34      0x1a5 master1/wireless.o
+ .debug_loc     0x0000000000000cd9       0x83 master1/queue.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(../bin/master1/master.elf elf32-avr)
+LOAD linker stubs
+
+.debug_ranges   0x0000000000000000       0x28
+ .debug_ranges  0x0000000000000000       0x28 master1/main.o
+
+Cross Reference Table
+
+Symbol                                            File
+COM_commad_parse                                  master1/com.o
+                                                  master1/main.o
+COM_dump_packet                                   master1/com.o
+                                                  master1/wireless.o
+COM_init                                          master1/com.o
+                                                  master1/main.o
+COM_print_datetime                                master1/com.o
+                                                  master1/main.o
+COM_print_debug                                   master1/com.o
+COM_req_RTC                                       master1/com.o
+                                                  master1/main.o
+COM_rx_char_isr                                   master1/com.o
+                                                  master1/rs232_485_hw.o
+COM_tx_char_isr                                   master1/com.o
+                                                  master1/rs232_485_hw.o
+EEPROM_read                                       master1/eeprom.o
+Keys                                              master1/wireless.o
+                                                  master1/cmac.o
+Q_clean                                           master1/queue.o
+                                                  master1/main.o
+Q_get                                             master1/queue.o
+                                                  master1/wireless.o
+Q_push                                            master1/queue.o
+                                                  master1/com.o
+RFM_init                                          master1/rfm.o
+                                                  master1/main.o
+RS_Init                                           master1/rs232_485_hw.o
+                                                  master1/com.o
+RS_startSend                                      master1/rs232_485_hw.o
+                                                  master1/com.o
+RTC                                               master1/rtc.o
+                                                  master1/wireless.o
+                                                  master1/com.o
+                                                  master1/main.o
+RTC_AddOneSecond                                  master1/rtc.o
+                                                  master1/main.o
+RTC_DS                                            master1/rtc.o
+RTC_DayOfMonthTablePrgMem                         master1/rtc.o
+RTC_Init                                          master1/rtc.o
+                                                  master1/main.o
+RTC_SetDay                                        master1/rtc.o
+                                                  master1/com.o
+RTC_SetHour                                       master1/rtc.o
+                                                  master1/com.o
+RTC_SetMinute                                     master1/rtc.o
+                                                  master1/com.o
+RTC_SetMonth                                      master1/rtc.o
+                                                  master1/com.o
+RTC_SetSecond                                     master1/rtc.o
+                                                  master1/com.o
+RTC_SetSecond100                                  master1/rtc.o
+                                                  master1/com.o
+RTC_SetYear                                       master1/rtc.o
+                                                  master1/com.o
+RTC_s100                                          master1/rtc.o
+                                                  master1/wireless.o
+                                                  master1/com.o
+RTC_timer_done                                    master1/rtc.o
+                                                  master1/main.o
+RTC_timer_set                                     master1/rtc.o
+                                                  master1/wireless.o
+RTC_timer_todo                                    master1/rtc.o
+__bad_interrupt                                   /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+__bss_end                                         /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+__bss_start                                       /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+__data_end                                        /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+__data_load_start                                 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+__data_start                                      /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+__divmodhi4                                       /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodhi4.o)
+                                                  master1/wireless.o
+                                                  master1/rtc.o
+__do_clear_bss                                    /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+                                                  master1/queue.o
+                                                  master1/wireless.o
+                                                  master1/eeprom.o
+                                                  master1/rtc.o
+                                                  master1/rfm.o
+                                                  master1/com.o
+                                                  master1/main.o
+__do_copy_data                                    /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+                                                  master1/rtc.o
+                                                  master1/rfm.o
+                                                  master1/com.o
+__epilogue_restores__                             /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_epilogue.o)
+                                                  master1/wireless.o
+                                                  master1/eeprom.o
+                                                  master1/cmac.o
+                                                  master1/com.o
+__fuse                                            master1/main.o
+__heap_end                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+__init                                            /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+__prologue_saves__                                /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_prologue.o)
+                                                  master1/wireless.o
+                                                  master1/cmac.o
+                                                  master1/com.o
+__stack                                           /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+__tablejump2__                                    /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
+                                                  master1/com.o
+__tablejump__                                     /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
+__udivmodhi4                                      /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodhi4.o)
+                                                  /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodhi4.o)
+                                                  master1/rtc.o
+                                                  master1/com.o
+__udivmodqi4                                      /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodqi4.o)
+                                                  master1/rtc.o
+                                                  master1/com.o
+__vector_1                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+__vector_10                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+__vector_11                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+__vector_12                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+__vector_13                                       master1/rs232_485_hw.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+__vector_14                                       master1/rs232_485_hw.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+__vector_15                                       master1/rs232_485_hw.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+__vector_16                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+__vector_17                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+__vector_18                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+__vector_19                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+__vector_2                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+__vector_20                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+__vector_3                                        master1/main.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+                                                  master1/wireless.o
+__vector_4                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+__vector_5                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+__vector_6                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+__vector_7                                        master1/rtc.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+__vector_8                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+__vector_9                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+__vector_default                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+__vectors                                         /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+_div                                              /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodhi4.o)
+_exit                                             /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+cmac_calc                                         master1/cmac.o
+                                                  master1/wireless.o
+config                                            master1/wireless.o
+                                                  master1/eeprom.o
+                                                  master1/com.o
+config_read                                       master1/eeprom.o
+crypto_init                                       master1/wireless.o
+                                                  master1/main.o
+ee_config                                         master1/eeprom.o
+ee_layout                                         master1/eeprom.o
+ee_reserved1                                      master1/eeprom.o
+ee_reserved2                                      master1/eeprom.o
+ee_reserved2_60                                   master1/eeprom.o
+ee_reserved3                                      master1/eeprom.o
+eeprom_config_init                                master1/eeprom.o
+                                                  master1/main.o
+eeprom_config_save                                master1/eeprom.o
+                                                  master1/com.o
+exit                                              /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+get_mcusr                                         master1/main.o
+main                                              master1/main.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm32.o
+memcpy                                            /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(memcpy.o)
+                                                  master1/wireless.o
+                                                  master1/cmac.o
+                                                  master1/com.o
+memcpy_P                                          /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(memcpy_P.o)
+                                                  master1/wireless.o
+onsync                                            master1/main.o
+                                                  master1/com.o
+rfm_framebuf                                      master1/wireless.o
+                                                  master1/rfm.o
+                                                  master1/main.o
+rfm_framepos                                      master1/rfm.o
+                                                  master1/wireless.o
+                                                  master1/main.o
+rfm_framesize                                     master1/rfm.o
+                                                  master1/wireless.o
+                                                  master1/main.o
+rfm_mode                                          master1/rfm.o
+                                                  master1/wireless.o
+                                                  master1/main.o
+rfm_spi16                                         master1/rfm.o
+                                                  master1/wireless.o
+                                                  master1/main.o
+task                                              master1/rtc.o
+                                                  master1/com.o
+                                                  master1/main.o
+wirelessReceivePacket                             master1/wireless.o
+                                                  master1/main.o
+wirelessSendDone                                  master1/wireless.o
+                                                  master1/main.o
+wirelessSendSync                                  master1/wireless.o
+                                                  master1/main.o
+wirelessTimer                                     master1/wireless.o
+                                                  master1/main.o
+wirelessTimer2                                    master1/wireless.o
+                                                  master1/main.o
+wireless_buf_ptr                                  master1/wireless.o
+                                                  master1/main.o
+wireless_putchar                                  master1/wireless.o
+                                                  master1/main.o
+wl_force_addr1                                    master1/wireless.o
+                                                  master1/com.o
+                                                  master1/main.o
+wl_force_addr2                                    master1/wireless.o
+                                                  master1/com.o
+                                                  master1/main.o
+wl_force_flags                                    master1/wireless.o
+                                                  master1/com.o
+                                                  master1/main.o
+wl_packet_bank                                    master1/wireless.o
+                                                  master1/main.o
+xtea_enc                                          master1/xtea-asm.o
+                                                  master1/wireless.o
+                                                  master1/cmac.o

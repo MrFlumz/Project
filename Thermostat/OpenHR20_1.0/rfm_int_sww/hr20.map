@@ -1,0 +1,1448 @@
+Archive member included because of file (symbol)
+
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_mulsi3.o)
+                              rfm_int_sww/controller.o (__mulsi3)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodqi4.o)
+                              rfm_int_sww/com.o (__udivmodqi4)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodqi4.o)
+                              rfm_int_sww/menu.o (__divmodqi4)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodhi4.o)
+                              rfm_int_sww/motor.o (__udivmodhi4)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodhi4.o)
+                              rfm_int_sww/motor.o (__divmodhi4)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodsi4.o)
+                              rfm_int_sww/adc.o (__udivmodsi4)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodsi4.o)
+                              rfm_int_sww/adc.o (__divmodsi4)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_prologue.o)
+                              rfm_int_sww/com.o (__prologue_saves__)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_epilogue.o)
+                              rfm_int_sww/com.o (__epilogue_restores__)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+                              /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o (exit)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
+                              rfm_int_sww/com.o (__tablejump2__)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+                              rfm_int_sww/motor.o (__do_copy_data)
+/usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+                              rfm_int_sww/motor.o (__do_clear_bss)
+/usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(memcpy_P.o)
+                              rfm_int_sww/wireless.o (memcpy_P)
+/usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(memcpy.o)
+                              rfm_int_sww/wireless.o (memcpy)
+
+Allocating common symbols
+Common symbol       size              file
+
+MOTOR_counter       0x4               rfm_int_sww/motor.o
+wl_force_flags      0x4               rfm_int_sww/wireless.o
+hourbar_buff        0x4               rfm_int_sww/menu.o
+RTC_DS              0x1               rfm_int_sww/rtc.o
+menu_state          0x1               rfm_int_sww/menu.o
+CTL_open_window_timeout
+                    0x2               rfm_int_sww/controller.o
+Keys                0x28              rfm_int_sww/wireless.o
+ring_buf_temp_avgs_pos
+                    0x1               rfm_int_sww/adc.o
+MOTOR_Dir           0x1               rfm_int_sww/motor.o
+wl_force_addr2      0x1               rfm_int_sww/wireless.o
+state_wheel_prev    0x1               rfm_int_sww/keyboard.o
+wl_force_addr1      0x1               rfm_int_sww/wireless.o
+LCD_Data            0x12              rfm_int_sww/lcd.o
+ring_buf_temp_avgs  0x40              rfm_int_sww/adc.o
+rfm_framebuf        0x50              rfm_int_sww/rfm.o
+timmers_patch_data  0x2               rfm_int_sww/eeprom.o
+config              0x32              rfm_int_sww/eeprom.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x0000000000000000 0x0000000000020000 xr
+data             0x0000000000800060 0x000000000000ffa0 rw !x
+eeprom           0x0000000000810000 0x0000000000010000 rw !x
+fuse             0x0000000000820000 0x0000000000000400 rw !x
+lock             0x0000000000830000 0x0000000000000400 rw !x
+signature        0x0000000000840000 0x0000000000000400 rw !x
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+LOAD rfm_int_sww/motor.o
+LOAD rfm_int_sww/controller.o
+LOAD rfm_int_sww/rs232_485_hw.o
+LOAD rfm_int_sww/watch.o
+LOAD rfm_int_sww/com.o
+LOAD rfm_int_sww/wireless.o
+LOAD rfm_int_sww/rfm.o
+LOAD rfm_int_sww/cmac.o
+LOAD rfm_int_sww/xtea-asm.o
+LOAD rfm_int_sww/rtc.o
+LOAD rfm_int_sww/main.o
+LOAD rfm_int_sww/keyboard.o
+LOAD rfm_int_sww/adc.o
+LOAD rfm_int_sww/eeprom.o
+LOAD rfm_int_sww/menu.o
+LOAD rfm_int_sww/lcd.o
+LOAD /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a
+LOAD /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a
+LOAD /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a
+LOAD /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x0000000000000000     0x3c5c
+ *(.vectors)
+ .vectors       0x0000000000000000       0x5c /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+                0x0000000000000000                __vectors
+                0x0000000000000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ .progmem.gcc_sw_table
+                0x000000000000005c       0x60 rfm_int_sww/com.o
+ .progmem.gcc_sw_table
+                0x00000000000000bc       0x5c rfm_int_sww/menu.o
+ *(.progmem*)
+ .progmem.data  0x0000000000000118       0x1c rfm_int_sww/watch.o
+ .progmem.data  0x0000000000000134       0x5c rfm_int_sww/com.o
+ .progmem.data  0x0000000000000190        0xc rfm_int_sww/wireless.o
+ .progmem.data  0x000000000000019c       0x24 rfm_int_sww/rtc.o
+                0x000000000000019c                RTC_DayOfMonthTablePrgMem
+ .progmem.data  0x00000000000001c0       0x9b rfm_int_sww/lcd.o
+                0x00000000000001c0                LCD_CharTablePrgMem
+                0x00000000000001e8                LCD_StringTable
+                0x0000000000000238                LCD_FieldOffsetTablePrgMem
+                0x000000000000023c                LCD_SegOffsetTablePrgMem
+                0x0000000000000243                LCD_SegHourBarOffsetTablePrgMem
+                0x000000000000025c                . = ALIGN (0x2)
+ *fill*         0x000000000000025b        0x1 00
+                0x000000000000025c                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x000000000000025c        0x0 linker stubs
+ *(.trampolines*)
+                0x000000000000025c                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x000000000000025c                __ctors_start = .
+ *(.ctors)
+                0x000000000000025c                __ctors_end = .
+                0x000000000000025c                __dtors_start = .
+ *(.dtors)
+                0x000000000000025c                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x000000000000025c        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+                0x000000000000025c                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000000000000025c        0xc /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x0000000000000268       0x16 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+                0x0000000000000268                __do_copy_data
+ .init4         0x000000000000027e       0x10 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+                0x000000000000027e                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000000000000028e        0x8 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+ *(.init9)
+ *(.text)
+ .text          0x0000000000000296        0x2 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+                0x0000000000000296                __vector_1
+                0x0000000000000296                __vector_12
+                0x0000000000000296                __bad_interrupt
+                0x0000000000000296                __vector_6
+                0x0000000000000296                __vector_17
+                0x0000000000000296                __vector_7
+                0x0000000000000296                __vector_9
+                0x0000000000000296                __vector_21
+                0x0000000000000296                __vector_8
+                0x0000000000000296                __vector_10
+                0x0000000000000296                __vector_16
+                0x0000000000000296                __vector_18
+                0x0000000000000296                __vector_20
+ .text          0x0000000000000298      0x70e rfm_int_sww/motor.o
+                0x0000000000000298                MOTOR_GetPosPercent
+                0x00000000000003ec                MOTOR_Goto
+                0x0000000000000484                MOTOR_timer_pulse
+                0x000000000000051e                __vector_11
+                0x00000000000005b4                __vector_2
+                0x00000000000007dc                MOTOR_timer_stop
+                0x0000000000000908                MOTOR_updateCalibration
+ .text          0x00000000000009a6      0x482 rfm_int_sww/controller.o
+                0x00000000000009a6                CTL_temp_change_inc
+                0x00000000000009ce                CTL_change_mode
+                0x0000000000000a2e                CTL_update
+ .text          0x0000000000000e28      0x144 rfm_int_sww/rs232_485_hw.o
+                0x0000000000000e28                __vector_15
+                0x0000000000000e52                RS_Init
+                0x0000000000000e74                RS_startSend
+                0x0000000000000ea0                __vector_14
+                0x0000000000000f0e                __vector_13
+ .text          0x0000000000000f6c       0x30 rfm_int_sww/watch.o
+                0x0000000000000f6c                watch
+ .text          0x0000000000000f9c      0x752 rfm_int_sww/com.o
+                0x0000000000000f9c                COM_putchar
+                0x0000000000000fd0                COM_tx_char_isr
+                0x0000000000000ff4                COM_rx_char_isr
+                0x00000000000011ce                COM_flush
+                0x00000000000011de                COM_print_debug
+                0x000000000000136a                COM_wireless_command_parse
+                0x0000000000001510                COM_commad_parse
+                0x00000000000016e6                COM_init
+ .text          0x00000000000016ee      0x5b6 rfm_int_sww/wireless.o
+                0x000000000000170c                wireless_putchar
+                0x000000000000174a                wirelesTimeSyncCheck
+                0x00000000000018c6                wirelessReceivePacket
+                0x0000000000001b28                crypto_init
+                0x0000000000001bc2                wirelessTimer
+                0x0000000000001c54                wirelessSendDone
+ .text          0x0000000000001ca4       0x62 rfm_int_sww/rfm.o
+                0x0000000000001ca4                rfm_spi16
+                0x0000000000001cd0                RFM_init
+ .text          0x0000000000001d06      0x118 rfm_int_sww/cmac.o
+                0x0000000000001d06                cmac_calc
+ .text          0x0000000000001e1e       0xfc rfm_int_sww/xtea-asm.o
+                0x0000000000001e1e                xtea_enc
+ .text          0x0000000000001f1a      0x5c8 rfm_int_sww/rtc.o
+                0x0000000000001f1a                RTC_SetHour
+                0x0000000000001f28                RTC_SetMinute
+                0x0000000000001f36                RTC_SetSecond
+                0x0000000000001f44                RTC_timer_set
+                0x0000000000001fbc                __vector_5
+                0x0000000000001fd6                __vector_4
+                0x000000000000213a                RTC_ActualTimerTemperature
+                0x00000000000021b0                RTC_DowTimerGetHourBar
+                0x0000000000002244                RTC_AddOneSecond
+                0x0000000000002402                RTC_SetYear
+                0x0000000000002408                RTC_SetMonth
+                0x0000000000002418                RTC_SetDay
+                0x000000000000244e                RTC_Init
+                0x0000000000002484                RTC_DowTimerGet
+                0x00000000000024aa                RTC_DowTimerSet
+ .text          0x00000000000024e2      0x35c rfm_int_sww/main.o
+                0x00000000000024e2                main
+ .text          0x000000000000283e      0x23c rfm_int_sww/keyboard.o
+                0x000000000000283e                task_keyboard_long_press_detect
+                0x00000000000028f6                mont_contact_pooling
+                0x000000000000293c                __vector_3
+                0x000000000000296a                task_keyboard
+ .text          0x0000000000002a7a      0x28e rfm_int_sww/adc.o
+                0x0000000000002b52                start_task_ADC
+                0x0000000000002b74                task_ADC
+                0x0000000000002d04                __vector_19
+ .text          0x0000000000002d08      0x182 rfm_int_sww/eeprom.o
+                0x0000000000002d08                EEPROM_read
+                0x0000000000002d16                config_read
+                0x0000000000002d5e                eeprom_config_save
+                0x0000000000002dbe                eeprom_config_init
+                0x0000000000002e12                eeprom_timers_read_raw
+                0x0000000000002e5e                eeprom_timers_write_raw
+ .text          0x0000000000002e8a      0x7d4 rfm_int_sww/menu.o
+                0x0000000000002ed0                menu_view
+                0x00000000000031d4                menu_controller
+ .text          0x000000000000365e      0x424 rfm_int_sww/lcd.o
+                0x000000000000365e                LCD_AllSegments
+                0x0000000000003692                LCD_Init
+                0x00000000000036c0                LCD_HourBarBitmap
+                0x00000000000036f6                LCD_SetSeg
+                0x0000000000003786                LCD_SetHourBarSeg
+                0x0000000000003794                LCD_PrintChar
+                0x00000000000037f0                LCD_PrintDec
+                0x0000000000003824                LCD_PrintDecW
+                0x0000000000003860                LCD_PrintDec3
+                0x00000000000038aa                LCD_PrintTempInt
+                0x0000000000003908                LCD_PrintHex
+                0x0000000000003932                LCD_PrintHexW
+                0x0000000000003950                LCD_PrintStringID
+                0x000000000000398e                LCD_PrintTemp
+                0x00000000000039ea                task_lcd_update
+                0x0000000000003a7e                __vector_22
+ .text          0x0000000000003a82        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_mulsi3.o)
+ .text          0x0000000000003a82        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodqi4.o)
+ .text          0x0000000000003a82        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodqi4.o)
+ .text          0x0000000000003a82        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodhi4.o)
+ .text          0x0000000000003a82        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodhi4.o)
+ .text          0x0000000000003a82        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodsi4.o)
+ .text          0x0000000000003a82        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodsi4.o)
+ .text          0x0000000000003a82        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_prologue.o)
+ .text          0x0000000000003a82        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_epilogue.o)
+ .text          0x0000000000003a82        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+ .text          0x0000000000003a82        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
+ .text          0x0000000000003a82        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+ .text          0x0000000000003a82        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+ .text          0x0000000000003a82        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(memcpy_P.o)
+ .text          0x0000000000003a82        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(memcpy.o)
+                0x0000000000003a82                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x0000000000003a82       0x3e /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_mulsi3.o)
+                0x0000000000003a82                __mulsi3
+ .text.libgcc   0x0000000000003ac0       0x18 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodqi4.o)
+                0x0000000000003ac0                __udivmodqi4
+ .text.libgcc   0x0000000000003ad8       0x1a /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodqi4.o)
+                0x0000000000003ad8                __divmodqi4
+ .text.libgcc   0x0000000000003af2       0x28 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodhi4.o)
+                0x0000000000003af2                __udivmodhi4
+ .text.libgcc   0x0000000000003b1a       0x26 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodhi4.o)
+                0x0000000000003b1a                __divmodhi4
+                0x0000000000003b1a                _div
+ .text.libgcc   0x0000000000003b40       0x44 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodsi4.o)
+                0x0000000000003b40                __udivmodsi4
+ .text.libgcc   0x0000000000003b84       0x36 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodsi4.o)
+                0x0000000000003b84                __divmodsi4
+ .text.libgcc   0x0000000000003bba       0x38 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_prologue.o)
+                0x0000000000003bba                __prologue_saves__
+ .text.libgcc   0x0000000000003bf2       0x36 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_epilogue.o)
+                0x0000000000003bf2                __epilogue_restores__
+ .text.libgcc   0x0000000000003c28        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+ .text.libgcc   0x0000000000003c28        0xc /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
+                0x0000000000003c28                __tablejump2__
+                0x0000000000003c2c                __tablejump__
+ .text.libgcc   0x0000000000003c34        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000000000003c34        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+ .text.avr-libc
+                0x0000000000003c34       0x12 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(memcpy_P.o)
+                0x0000000000003c34                memcpy_P
+ .text.avr-libc
+                0x0000000000003c46       0x12 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(memcpy.o)
+                0x0000000000003c46                memcpy
+                0x0000000000003c58                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x0000000000003c58        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+                0x0000000000003c58                exit
+                0x0000000000003c58                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x0000000000003c58        0x4 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000000000003c5c                _etext = .
+
+.data           0x0000000000800100       0x18 load address 0x0000000000003c5c
+                0x0000000000800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+ .data          0x0000000000800100        0x0 rfm_int_sww/motor.o
+ .data          0x0000000000800100        0x0 rfm_int_sww/controller.o
+ .data          0x0000000000800100        0x0 rfm_int_sww/rs232_485_hw.o
+ .data          0x0000000000800100        0x0 rfm_int_sww/watch.o
+ .data          0x0000000000800100        0x0 rfm_int_sww/com.o
+ .data          0x0000000000800100        0x0 rfm_int_sww/wireless.o
+ .data          0x0000000000800100        0x0 rfm_int_sww/rfm.o
+ .data          0x0000000000800100        0x0 rfm_int_sww/cmac.o
+ .data          0x0000000000800100        0x0 rfm_int_sww/xtea-asm.o
+ .data          0x0000000000800100        0x0 rfm_int_sww/rtc.o
+ .data          0x0000000000800100        0x0 rfm_int_sww/main.o
+ .data          0x0000000000800100        0x0 rfm_int_sww/keyboard.o
+ .data          0x0000000000800100        0x0 rfm_int_sww/adc.o
+ .data          0x0000000000800100        0x0 rfm_int_sww/eeprom.o
+ .data          0x0000000000800100        0x0 rfm_int_sww/menu.o
+ .data          0x0000000000800100        0x0 rfm_int_sww/lcd.o
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_mulsi3.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodqi4.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodqi4.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodhi4.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodhi4.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodsi4.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodsi4.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_prologue.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_epilogue.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(memcpy_P.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(memcpy.o)
+ *(.data*)
+ .data.MOTOR_calibration_step
+                0x0000000000800100        0x1 rfm_int_sww/motor.o
+                0x0000000000800100                MOTOR_calibration_step
+ .data.motor_diag_ignore
+                0x0000000000800101        0x1 rfm_int_sww/motor.o
+ .data.MOTOR_wait_for_new_calibration
+                0x0000000000800102        0x1 rfm_int_sww/motor.o
+ .data.CTL_temp_wanted_last
+                0x0000000000800103        0x1 rfm_int_sww/controller.o
+                0x0000000000800103                CTL_temp_wanted_last
+ .data.CTL_mode_auto
+                0x0000000000800104        0x1 rfm_int_sww/controller.o
+                0x0000000000800104                CTL_mode_auto
+ .data.PID_force_update
+                0x0000000000800105        0x1 rfm_int_sww/controller.o
+                0x0000000000800105                PID_force_update
+ .data.PID_update_timeout
+                0x0000000000800106        0x2 rfm_int_sww/controller.o
+ .data.rfm_framesize
+                0x0000000000800108        0x1 rfm_int_sww/rfm.o
+                0x0000000000800108                rfm_framesize
+ .data.RTC      0x0000000000800109        0x8 rfm_int_sww/rtc.o
+                0x0000000000800109                RTC
+ .data.kb_timeout
+                0x0000000000800111        0x1 rfm_int_sww/keyboard.o
+                0x0000000000800111                kb_timeout
+ .data.ring_used
+                0x0000000000800112        0x1 rfm_int_sww/adc.o
+ .data.timmers_patch_offset
+                0x0000000000800113        0x1 rfm_int_sww/eeprom.o
+                0x0000000000800113                timmers_patch_offset
+ .data.menu_auto_update_timeout
+                0x0000000000800114        0x1 rfm_int_sww/menu.o
+                0x0000000000800114                menu_auto_update_timeout
+ .data.service_idx
+                0x0000000000800115        0x1 rfm_int_sww/menu.o
+ .data.LCD_used_bitplanes
+                0x0000000000800116        0x1 rfm_int_sww/lcd.o
+                0x0000000000800116                LCD_used_bitplanes
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x0000000000800118                . = ALIGN (0x2)
+ *fill*         0x0000000000800117        0x1 00
+                0x0000000000800118                _edata = .
+                0x0000000000800118                PROVIDE (__data_end, .)
+
+.bss            0x0000000000800118      0x289
+                0x0000000000800118                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x0000000000800118        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+ .bss           0x0000000000800118        0x0 rfm_int_sww/motor.o
+ .bss           0x0000000000800118        0x0 rfm_int_sww/controller.o
+ .bss           0x0000000000800118        0x0 rfm_int_sww/rs232_485_hw.o
+ .bss           0x0000000000800118        0x0 rfm_int_sww/watch.o
+ .bss           0x0000000000800118        0x0 rfm_int_sww/com.o
+ .bss           0x0000000000800118        0x0 rfm_int_sww/wireless.o
+ .bss           0x0000000000800118        0x0 rfm_int_sww/rfm.o
+ .bss           0x0000000000800118        0x0 rfm_int_sww/cmac.o
+ .bss           0x0000000000800118        0x0 rfm_int_sww/xtea-asm.o
+ .bss           0x0000000000800118        0x0 rfm_int_sww/rtc.o
+ .bss           0x0000000000800118        0x0 rfm_int_sww/main.o
+ .bss           0x0000000000800118        0x0 rfm_int_sww/keyboard.o
+ .bss           0x0000000000800118        0x0 rfm_int_sww/adc.o
+ .bss           0x0000000000800118        0x0 rfm_int_sww/eeprom.o
+ .bss           0x0000000000800118        0x0 rfm_int_sww/menu.o
+ .bss           0x0000000000800118        0x0 rfm_int_sww/lcd.o
+ .bss           0x0000000000800118        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_mulsi3.o)
+ .bss           0x0000000000800118        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodqi4.o)
+ .bss           0x0000000000800118        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodqi4.o)
+ .bss           0x0000000000800118        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodhi4.o)
+ .bss           0x0000000000800118        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodhi4.o)
+ .bss           0x0000000000800118        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodsi4.o)
+ .bss           0x0000000000800118        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodsi4.o)
+ .bss           0x0000000000800118        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_prologue.o)
+ .bss           0x0000000000800118        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_epilogue.o)
+ .bss           0x0000000000800118        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+ .bss           0x0000000000800118        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
+ .bss           0x0000000000800118        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+ .bss           0x0000000000800118        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+ .bss           0x0000000000800118        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(memcpy_P.o)
+ .bss           0x0000000000800118        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(memcpy.o)
+ *(.bss*)
+ .bss.MOTOR_PosAct
+                0x0000000000800118        0x2 rfm_int_sww/motor.o
+                0x0000000000800118                MOTOR_PosAct
+ .bss.MOTOR_PosMax
+                0x000000000080011a        0x2 rfm_int_sww/motor.o
+                0x000000000080011a                MOTOR_PosMax
+ .bss.motor_diag
+                0x000000000080011c        0x2 rfm_int_sww/motor.o
+                0x000000000080011c                motor_diag
+ .bss.MOTOR_PosOvershoot
+                0x000000000080011e        0x1 rfm_int_sww/motor.o
+                0x000000000080011e                MOTOR_PosOvershoot
+ .bss.motor_diag_cnt
+                0x000000000080011f        0x2 rfm_int_sww/motor.o
+ .bss.motor_timer
+                0x0000000000800121        0x2 rfm_int_sww/motor.o
+ .bss.pine_last
+                0x0000000000800123        0x1 rfm_int_sww/motor.o
+ .bss.last_eye_change
+                0x0000000000800124        0x2 rfm_int_sww/motor.o
+ .bss.longest_low_eye
+                0x0000000000800126        0x2 rfm_int_sww/motor.o
+ .bss.MOTOR_PosStop
+                0x0000000000800128        0x2 rfm_int_sww/motor.o
+ .bss.MOTOR_Dir_Counter
+                0x000000000080012a        0x1 rfm_int_sww/motor.o
+ .bss.motor_max_time_for_impulse
+                0x000000000080012b        0x2 rfm_int_sww/motor.o
+ .bss.CTL_temp_wanted
+                0x000000000080012d        0x1 rfm_int_sww/controller.o
+                0x000000000080012d                CTL_temp_wanted
+ .bss.CTL_temp_auto
+                0x000000000080012e        0x1 rfm_int_sww/controller.o
+                0x000000000080012e                CTL_temp_auto
+ .bss.CTL_mode_window
+                0x000000000080012f        0x1 rfm_int_sww/controller.o
+                0x000000000080012f                CTL_mode_window
+ .bss.CTL_error
+                0x0000000000800130        0x1 rfm_int_sww/controller.o
+                0x0000000000800130                CTL_error
+ .bss.sumError  0x0000000000800131        0x2 rfm_int_sww/controller.o
+                0x0000000000800131                sumError
+ .bss.lastProcessValue
+                0x0000000000800133        0x2 rfm_int_sww/controller.o
+ .bss.menu_temp_rewoke
+                0x0000000000800135        0x1 rfm_int_sww/controller.o
+ .bss.rx_buff_in
+                0x0000000000800136        0x1 rfm_int_sww/com.o
+ .bss.rx_buff_out
+                0x0000000000800137        0x1 rfm_int_sww/com.o
+ .bss.tx_buff_in
+                0x0000000000800138        0x1 rfm_int_sww/com.o
+ .bss.tx_buff_out
+                0x0000000000800139        0x1 rfm_int_sww/com.o
+ .bss.tx_buff   0x000000000080013a       0x80 rfm_int_sww/com.o
+ .bss.rx_buff   0x00000000008001ba       0x20 rfm_int_sww/com.o
+ .bss.COM_requests
+                0x00000000008001da        0x1 rfm_int_sww/com.o
+ .bss.com_hex   0x00000000008001db        0x3 rfm_int_sww/com.o
+ .bss.wireless_buf_ptr
+                0x00000000008001de        0x1 rfm_int_sww/wireless.o
+                0x00000000008001de                wireless_buf_ptr
+ .bss.wirelessTimerCase
+                0x00000000008001df        0x1 rfm_int_sww/wireless.o
+                0x00000000008001df                wirelessTimerCase
+ .bss.time_sync_tmo
+                0x00000000008001e0        0x1 rfm_int_sww/wireless.o
+                0x00000000008001e0                time_sync_tmo
+ .bss.wl_skip_sync
+                0x00000000008001e1        0x1 rfm_int_sww/wireless.o
+                0x00000000008001e1                wl_skip_sync
+ .bss.wireless_async
+                0x00000000008001e2        0x1 rfm_int_sww/wireless.o
+                0x00000000008001e2                wireless_async
+ .bss.wireless_framebuf
+                0x00000000008001e3       0x46 rfm_int_sww/wireless.o
+ .bss.rfm_framepos
+                0x0000000000800229        0x1 rfm_int_sww/rfm.o
+                0x0000000000800229                rfm_framepos
+ .bss.rfm_mode  0x000000000080022a        0x1 rfm_int_sww/rfm.o
+                0x000000000080022a                rfm_mode
+ .bss.RTC_timer_todo
+                0x000000000080022b        0x1 rfm_int_sww/rtc.o
+                0x000000000080022b                RTC_timer_todo
+ .bss.RTC_timer_done
+                0x000000000080022c        0x1 rfm_int_sww/rtc.o
+                0x000000000080022c                RTC_timer_done
+ .bss.RTC_timer_time
+                0x000000000080022d        0x2 rfm_int_sww/rtc.o
+ .bss.valve_wanted
+                0x000000000080022f        0x1 rfm_int_sww/main.o
+                0x000000000080022f                valve_wanted
+ .bss.kb_events
+                0x0000000000800230        0x2 rfm_int_sww/keyboard.o
+                0x0000000000800230                kb_events
+ .bss.keys      0x0000000000800232        0x1 rfm_int_sww/keyboard.o
+ .bss.allow_rewoke
+                0x0000000000800233        0x1 rfm_int_sww/keyboard.o
+ .bss.state_front_prev
+                0x0000000000800234        0x1 rfm_int_sww/keyboard.o
+ .bss.long_press
+                0x0000000000800235        0x1 rfm_int_sww/keyboard.o
+ .bss.long_quiet
+                0x0000000000800236        0x1 rfm_int_sww/keyboard.o
+ .bss.sleep_with_ADC
+                0x0000000000800237        0x1 rfm_int_sww/adc.o
+                0x0000000000800237                sleep_with_ADC
+ .bss.ring_average
+                0x0000000000800238        0x4 rfm_int_sww/adc.o
+                0x0000000000800238                ring_average
+ .bss.dummy_adc
+                0x000000000080023c        0x2 rfm_int_sww/adc.o
+ .bss.ring_sum  0x000000000080023e        0x8 rfm_int_sww/adc.o
+ .bss.ring_pos  0x0000000000800246        0x1 rfm_int_sww/adc.o
+ .bss.state_ADC
+                0x0000000000800247        0x1 rfm_int_sww/adc.o
+ .bss.ring_buf  0x0000000000800248       0x3c rfm_int_sww/adc.o
+ .bss.service_watch_n
+                0x0000000000800284        0x1 rfm_int_sww/menu.o
+ .bss.locked    0x0000000000800285        0x1 rfm_int_sww/menu.o
+ .bss.menu_set_dow
+                0x0000000000800286        0x1 rfm_int_sww/menu.o
+ .bss.menu_set_time
+                0x0000000000800287        0x2 rfm_int_sww/menu.o
+ .bss.menu_set_mode
+                0x0000000000800289        0x1 rfm_int_sww/menu.o
+ .bss.menu_set_slot
+                0x000000000080028a        0x1 rfm_int_sww/menu.o
+ .bss.LCD_force_update
+                0x000000000080028b        0x1 rfm_int_sww/lcd.o
+                0x000000000080028b                LCD_force_update
+ .bss.LCD_BlinkCounter
+                0x000000000080028c        0x1 rfm_int_sww/lcd.o
+ .bss.LCD_Bitplane
+                0x000000000080028d        0x1 rfm_int_sww/lcd.o
+ *(COMMON)
+ COMMON         0x000000000080028e        0x5 rfm_int_sww/motor.o
+                0x000000000080028e                MOTOR_counter
+                0x0000000000800292                MOTOR_Dir
+ COMMON         0x0000000000800293        0x2 rfm_int_sww/controller.o
+                0x0000000000800293                CTL_open_window_timeout
+ COMMON         0x0000000000800295       0x2e rfm_int_sww/wireless.o
+                0x0000000000800295                wl_force_flags
+                0x0000000000800299                Keys
+                0x00000000008002c1                wl_force_addr2
+                0x00000000008002c2                wl_force_addr1
+ COMMON         0x00000000008002c3       0x50 rfm_int_sww/rfm.o
+                0x00000000008002c3                rfm_framebuf
+ COMMON         0x0000000000800313        0x1 rfm_int_sww/rtc.o
+                0x0000000000800313                RTC_DS
+ COMMON         0x0000000000800314        0x1 rfm_int_sww/keyboard.o
+                0x0000000000800314                state_wheel_prev
+ COMMON         0x0000000000800315       0x41 rfm_int_sww/adc.o
+                0x0000000000800315                ring_buf_temp_avgs_pos
+                0x0000000000800316                ring_buf_temp_avgs
+ COMMON         0x0000000000800356       0x34 rfm_int_sww/eeprom.o
+                0x0000000000800356                timmers_patch_data
+                0x0000000000800358                config
+ COMMON         0x000000000080038a        0x5 rfm_int_sww/menu.o
+                0x000000000080038a                hourbar_buff
+                0x000000000080038e                menu_state
+ COMMON         0x000000000080038f       0x12 rfm_int_sww/lcd.o
+                0x000000000080038f                LCD_Data
+                0x00000000008003a1                PROVIDE (__bss_end, .)
+                0x0000000000003c5c                __data_load_start = LOADADDR (.data)
+                0x0000000000003c74                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00000000008003a1        0x0
+                0x00000000008003a1                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00000000008003a1                PROVIDE (__noinit_end, .)
+                0x00000000008003a1                _end = .
+                0x00000000008003a1                PROVIDE (__heap_start, .)
+
+.eeprom         0x0000000000810000      0x188
+ *(.eeprom*)
+ .eeprom        0x0000000000810000      0x188 rfm_int_sww/eeprom.o
+                0x0000000000810000                ee_reserved1
+                0x0000000000810001                ee_reserved2
+                0x0000000000810002                ee_reserved3
+                0x0000000000810003                ee_layout
+                0x0000000000810004                ee_timers
+                0x0000000000810084                ee_reserved2_60
+                0x00000000008100c0                ee_config
+                0x0000000000810188                __eeprom_end = .
+
+.fuse           0x0000000000820000        0x3
+ *(.fuse)
+ .fuse          0x0000000000820000        0x3 rfm_int_sww/main.o
+                0x0000000000820000                __fuse
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x0000000000000000      0xdbc
+ *(.stab)
+ .stab          0x0000000000000000      0x6b4 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+ .stab          0x00000000000006b4      0x600 rfm_int_sww/xtea-asm.o
+                                        0x60c (size before relaxing)
+ .stab          0x0000000000000cb4       0x84 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(memcpy_P.o)
+                                         0x90 (size before relaxing)
+ .stab          0x0000000000000d38       0x84 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(memcpy.o)
+                                         0x90 (size before relaxing)
+
+.stabstr        0x0000000000000000       0xd9
+ *(.stabstr)
+ .stabstr       0x0000000000000000       0xd9 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x1e0
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x20 rfm_int_sww/motor.o
+ .debug_aranges
+                0x0000000000000020       0x20 rfm_int_sww/controller.o
+ .debug_aranges
+                0x0000000000000040       0x20 rfm_int_sww/rs232_485_hw.o
+ .debug_aranges
+                0x0000000000000060       0x20 rfm_int_sww/watch.o
+ .debug_aranges
+                0x0000000000000080       0x20 rfm_int_sww/com.o
+ .debug_aranges
+                0x00000000000000a0       0x20 rfm_int_sww/wireless.o
+ .debug_aranges
+                0x00000000000000c0       0x20 rfm_int_sww/rfm.o
+ .debug_aranges
+                0x00000000000000e0       0x20 rfm_int_sww/cmac.o
+ .debug_aranges
+                0x0000000000000100       0x20 rfm_int_sww/rtc.o
+ .debug_aranges
+                0x0000000000000120       0x20 rfm_int_sww/main.o
+ .debug_aranges
+                0x0000000000000140       0x20 rfm_int_sww/keyboard.o
+ .debug_aranges
+                0x0000000000000160       0x20 rfm_int_sww/adc.o
+ .debug_aranges
+                0x0000000000000180       0x20 rfm_int_sww/eeprom.o
+ .debug_aranges
+                0x00000000000001a0       0x20 rfm_int_sww/menu.o
+ .debug_aranges
+                0x00000000000001c0       0x20 rfm_int_sww/lcd.o
+
+.debug_pubnames
+                0x0000000000000000      0xbbf
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x0000000000000000      0x122 rfm_int_sww/motor.o
+ .debug_pubnames
+                0x0000000000000122       0xfe rfm_int_sww/controller.o
+ .debug_pubnames
+                0x0000000000000220       0x5f rfm_int_sww/rs232_485_hw.o
+ .debug_pubnames
+                0x000000000000027f       0x2d rfm_int_sww/watch.o
+ .debug_pubnames
+                0x00000000000002ac       0xad rfm_int_sww/com.o
+ .debug_pubnames
+                0x0000000000000359      0x134 rfm_int_sww/wireless.o
+ .debug_pubnames
+                0x000000000000048d       0x6e rfm_int_sww/rfm.o
+ .debug_pubnames
+                0x00000000000004fb       0x20 rfm_int_sww/cmac.o
+ .debug_pubnames
+                0x000000000000051b      0x181 rfm_int_sww/rtc.o
+ .debug_pubnames
+                0x000000000000069c       0x37 rfm_int_sww/main.o
+ .debug_pubnames
+                0x00000000000006d3       0xa2 rfm_int_sww/keyboard.o
+ .debug_pubnames
+                0x0000000000000775       0x98 rfm_int_sww/adc.o
+ .debug_pubnames
+                0x000000000000080d      0x143 rfm_int_sww/eeprom.o
+ .debug_pubnames
+                0x0000000000000950       0x71 rfm_int_sww/menu.o
+ .debug_pubnames
+                0x00000000000009c1      0x1fe rfm_int_sww/lcd.o
+
+.debug_info     0x0000000000000000     0x5648
+ *(.debug_info)
+ .debug_info    0x0000000000000000      0x766 rfm_int_sww/motor.o
+ .debug_info    0x0000000000000766      0x6a8 rfm_int_sww/controller.o
+ .debug_info    0x0000000000000e0e       0xf9 rfm_int_sww/rs232_485_hw.o
+ .debug_info    0x0000000000000f07      0x1d4 rfm_int_sww/watch.o
+ .debug_info    0x00000000000010db      0xa92 rfm_int_sww/com.o
+ .debug_info    0x0000000000001b6d      0x702 rfm_int_sww/wireless.o
+ .debug_info    0x000000000000226f      0x166 rfm_int_sww/rfm.o
+ .debug_info    0x00000000000023d5      0x17e rfm_int_sww/cmac.o
+ .debug_info    0x0000000000002553      0xb72 rfm_int_sww/rtc.o
+ .debug_info    0x00000000000030c5      0x657 rfm_int_sww/main.o
+ .debug_info    0x000000000000371c      0x1f0 rfm_int_sww/keyboard.o
+ .debug_info    0x000000000000390c      0x56d rfm_int_sww/adc.o
+ .debug_info    0x0000000000003e79      0x5d4 rfm_int_sww/eeprom.o
+ .debug_info    0x000000000000444d      0x846 rfm_int_sww/menu.o
+ .debug_info    0x0000000000004c93      0x9b5 rfm_int_sww/lcd.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x0000000000000000     0x18a2
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000      0x1fd rfm_int_sww/motor.o
+ .debug_abbrev  0x00000000000001fd      0x1e2 rfm_int_sww/controller.o
+ .debug_abbrev  0x00000000000003df       0x88 rfm_int_sww/rs232_485_hw.o
+ .debug_abbrev  0x0000000000000467       0xd4 rfm_int_sww/watch.o
+ .debug_abbrev  0x000000000000053b      0x28e rfm_int_sww/com.o
+ .debug_abbrev  0x00000000000007c9      0x1fe rfm_int_sww/wireless.o
+ .debug_abbrev  0x00000000000009c7       0xe1 rfm_int_sww/rfm.o
+ .debug_abbrev  0x0000000000000aa8       0xed rfm_int_sww/cmac.o
+ .debug_abbrev  0x0000000000000b95      0x336 rfm_int_sww/rtc.o
+ .debug_abbrev  0x0000000000000ecb      0x170 rfm_int_sww/main.o
+ .debug_abbrev  0x000000000000103b      0x103 rfm_int_sww/keyboard.o
+ .debug_abbrev  0x000000000000113e      0x19e rfm_int_sww/adc.o
+ .debug_abbrev  0x00000000000012dc      0x194 rfm_int_sww/eeprom.o
+ .debug_abbrev  0x0000000000001470      0x25a rfm_int_sww/menu.o
+ .debug_abbrev  0x00000000000016ca      0x1d8 rfm_int_sww/lcd.o
+
+.debug_line     0x0000000000000000     0x3bd1
+ *(.debug_line)
+ .debug_line    0x0000000000000000      0x668 rfm_int_sww/motor.o
+ .debug_line    0x0000000000000668      0x39f rfm_int_sww/controller.o
+ .debug_line    0x0000000000000a07      0x187 rfm_int_sww/rs232_485_hw.o
+ .debug_line    0x0000000000000b8e       0xdd rfm_int_sww/watch.o
+ .debug_line    0x0000000000000c6b      0x83b rfm_int_sww/com.o
+ .debug_line    0x00000000000014a6      0x5f1 rfm_int_sww/wireless.o
+ .debug_line    0x0000000000001a97      0x182 rfm_int_sww/rfm.o
+ .debug_line    0x0000000000001c19      0x174 rfm_int_sww/cmac.o
+ .debug_line    0x0000000000001d8d      0x5f3 rfm_int_sww/rtc.o
+ .debug_line    0x0000000000002380      0x525 rfm_int_sww/main.o
+ .debug_line    0x00000000000028a5      0x2bb rfm_int_sww/keyboard.o
+ .debug_line    0x0000000000002b60      0x1f1 rfm_int_sww/adc.o
+ .debug_line    0x0000000000002d51      0x284 rfm_int_sww/eeprom.o
+ .debug_line    0x0000000000002fd5      0x76c rfm_int_sww/menu.o
+ .debug_line    0x0000000000003741      0x490 rfm_int_sww/lcd.o
+
+.debug_frame    0x0000000000000000      0x710
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0x90 rfm_int_sww/motor.o
+ .debug_frame   0x0000000000000090       0x40 rfm_int_sww/controller.o
+ .debug_frame   0x00000000000000d0       0x60 rfm_int_sww/rs232_485_hw.o
+ .debug_frame   0x0000000000000130       0x20 rfm_int_sww/watch.o
+ .debug_frame   0x0000000000000150      0x120 rfm_int_sww/com.o
+ .debug_frame   0x0000000000000270       0x90 rfm_int_sww/wireless.o
+ .debug_frame   0x0000000000000300       0x30 rfm_int_sww/rfm.o
+ .debug_frame   0x0000000000000330       0x20 rfm_int_sww/cmac.o
+ .debug_frame   0x0000000000000350      0x120 rfm_int_sww/rtc.o
+ .debug_frame   0x0000000000000470       0x20 rfm_int_sww/main.o
+ .debug_frame   0x0000000000000490       0x50 rfm_int_sww/keyboard.o
+ .debug_frame   0x00000000000004e0       0x50 rfm_int_sww/adc.o
+ .debug_frame   0x0000000000000530       0x80 rfm_int_sww/eeprom.o
+ .debug_frame   0x00000000000005b0       0x50 rfm_int_sww/menu.o
+ .debug_frame   0x0000000000000600      0x110 rfm_int_sww/lcd.o
+
+.debug_str      0x0000000000000000     0x155f
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x618 rfm_int_sww/motor.o
+                                        0x67b (size before relaxing)
+ .debug_str     0x0000000000000618      0x1b9 rfm_int_sww/controller.o
+                                        0x57e (size before relaxing)
+ .debug_str     0x00000000000007d1       0x51 rfm_int_sww/rs232_485_hw.o
+                                        0x111 (size before relaxing)
+ .debug_str     0x0000000000000822       0x24 rfm_int_sww/watch.o
+                                        0x1b0 (size before relaxing)
+ .debug_str     0x0000000000000846      0x180 rfm_int_sww/com.o
+                                        0x5f4 (size before relaxing)
+ .debug_str     0x00000000000009c6      0x19e rfm_int_sww/wireless.o
+                                        0x602 (size before relaxing)
+ .debug_str     0x0000000000000b64       0x20 rfm_int_sww/rfm.o
+                                        0x172 (size before relaxing)
+ .debug_str     0x0000000000000b84       0x29 rfm_int_sww/cmac.o
+                                         0xf8 (size before relaxing)
+ .debug_str     0x0000000000000bad      0x25c rfm_int_sww/rtc.o
+                                        0x694 (size before relaxing)
+ .debug_str     0x0000000000000e09       0x83 rfm_int_sww/main.o
+                                        0x619 (size before relaxing)
+ .debug_str     0x0000000000000e8c       0xab rfm_int_sww/keyboard.o
+                                        0x1bf (size before relaxing)
+ .debug_str     0x0000000000000f37       0xb1 rfm_int_sww/adc.o
+                                        0x4b5 (size before relaxing)
+ .debug_str     0x0000000000000fe8      0x12d rfm_int_sww/eeprom.o
+                                        0x4f8 (size before relaxing)
+ .debug_str     0x0000000000001115      0x27c rfm_int_sww/menu.o
+                                        0x742 (size before relaxing)
+ .debug_str     0x0000000000001391      0x1ce rfm_int_sww/lcd.o
+                                        0x5c0 (size before relaxing)
+
+.debug_loc      0x0000000000000000     0x1f0d
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000      0x1ff rfm_int_sww/motor.o
+ .debug_loc     0x00000000000001ff      0x3ba rfm_int_sww/controller.o
+ .debug_loc     0x00000000000005b9       0x1e rfm_int_sww/rs232_485_hw.o
+ .debug_loc     0x00000000000005d7       0x1e rfm_int_sww/watch.o
+ .debug_loc     0x00000000000005f5      0x58d rfm_int_sww/com.o
+ .debug_loc     0x0000000000000b82      0x199 rfm_int_sww/wireless.o
+ .debug_loc     0x0000000000000d1b       0x30 rfm_int_sww/rfm.o
+ .debug_loc     0x0000000000000d4b      0x178 rfm_int_sww/cmac.o
+ .debug_loc     0x0000000000000ec3      0x4fc rfm_int_sww/rtc.o
+ .debug_loc     0x00000000000013bf       0x52 rfm_int_sww/main.o
+ .debug_loc     0x0000000000001411       0x26 rfm_int_sww/keyboard.o
+ .debug_loc     0x0000000000001437       0xb9 rfm_int_sww/adc.o
+ .debug_loc     0x00000000000014f0      0x156 rfm_int_sww/eeprom.o
+ .debug_loc     0x0000000000001646      0x3f2 rfm_int_sww/menu.o
+ .debug_loc     0x0000000000001a38      0x4d5 rfm_int_sww/lcd.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(../bin/rfm_int_sww/hr20.elf elf32-avr)
+LOAD linker stubs
+
+.debug_ranges   0x0000000000000000       0x30
+ .debug_ranges  0x0000000000000000       0x18 rfm_int_sww/eeprom.o
+ .debug_ranges  0x0000000000000018       0x18 rfm_int_sww/menu.o
+
+Cross Reference Table
+
+Symbol                                            File
+COM_commad_parse                                  rfm_int_sww/com.o
+                                                  rfm_int_sww/main.o
+COM_flush                                         rfm_int_sww/com.o
+COM_init                                          rfm_int_sww/com.o
+                                                  rfm_int_sww/main.o
+COM_print_debug                                   rfm_int_sww/com.o
+                                                  rfm_int_sww/controller.o
+COM_putchar                                       rfm_int_sww/com.o
+COM_rx_char_isr                                   rfm_int_sww/com.o
+                                                  rfm_int_sww/rs232_485_hw.o
+COM_tx_char_isr                                   rfm_int_sww/com.o
+                                                  rfm_int_sww/rs232_485_hw.o
+COM_wireless_command_parse                        rfm_int_sww/com.o
+                                                  rfm_int_sww/wireless.o
+CTL_change_mode                                   rfm_int_sww/controller.o
+                                                  rfm_int_sww/menu.o
+                                                  rfm_int_sww/com.o
+CTL_error                                         rfm_int_sww/controller.o
+                                                  rfm_int_sww/menu.o
+                                                  rfm_int_sww/keyboard.o
+                                                  rfm_int_sww/main.o
+                                                  rfm_int_sww/wireless.o
+                                                  rfm_int_sww/com.o
+                                                  rfm_int_sww/motor.o
+CTL_mode_auto                                     rfm_int_sww/controller.o
+                                                  rfm_int_sww/menu.o
+                                                  rfm_int_sww/com.o
+                                                  rfm_int_sww/watch.o
+CTL_mode_window                                   rfm_int_sww/controller.o
+                                                  rfm_int_sww/menu.o
+                                                  rfm_int_sww/main.o
+                                                  rfm_int_sww/com.o
+                                                  rfm_int_sww/watch.o
+CTL_open_window_timeout                           rfm_int_sww/controller.o
+CTL_temp_auto                                     rfm_int_sww/controller.o
+                                                  rfm_int_sww/menu.o
+                                                  rfm_int_sww/com.o
+                                                  rfm_int_sww/watch.o
+CTL_temp_change_inc                               rfm_int_sww/controller.o
+                                                  rfm_int_sww/menu.o
+CTL_temp_wanted                                   rfm_int_sww/controller.o
+                                                  rfm_int_sww/menu.o
+                                                  rfm_int_sww/com.o
+                                                  rfm_int_sww/watch.o
+CTL_temp_wanted_last                              rfm_int_sww/controller.o
+                                                  rfm_int_sww/com.o
+                                                  rfm_int_sww/watch.o
+CTL_update                                        rfm_int_sww/controller.o
+                                                  rfm_int_sww/main.o
+EEPROM_read                                       rfm_int_sww/eeprom.o
+                                                  rfm_int_sww/main.o
+Keys                                              rfm_int_sww/cmac.o
+                                                  rfm_int_sww/wireless.o
+LCD_AllSegments                                   rfm_int_sww/lcd.o
+                                                  rfm_int_sww/menu.o
+LCD_CharTablePrgMem                               rfm_int_sww/lcd.o
+LCD_Data                                          rfm_int_sww/lcd.o
+LCD_FieldOffsetTablePrgMem                        rfm_int_sww/lcd.o
+LCD_HourBarBitmap                                 rfm_int_sww/lcd.o
+                                                  rfm_int_sww/menu.o
+LCD_Init                                          rfm_int_sww/lcd.o
+                                                  rfm_int_sww/menu.o
+                                                  rfm_int_sww/main.o
+LCD_PrintChar                                     rfm_int_sww/lcd.o
+                                                  rfm_int_sww/menu.o
+LCD_PrintDec                                      rfm_int_sww/lcd.o
+                                                  rfm_int_sww/menu.o
+LCD_PrintDec3                                     rfm_int_sww/lcd.o
+                                                  rfm_int_sww/menu.o
+LCD_PrintDecW                                     rfm_int_sww/lcd.o
+                                                  rfm_int_sww/menu.o
+LCD_PrintHex                                      rfm_int_sww/lcd.o
+                                                  rfm_int_sww/menu.o
+LCD_PrintHexW                                     rfm_int_sww/lcd.o
+                                                  rfm_int_sww/menu.o
+LCD_PrintStringID                                 rfm_int_sww/lcd.o
+                                                  rfm_int_sww/menu.o
+                                                  rfm_int_sww/main.o
+LCD_PrintTemp                                     rfm_int_sww/lcd.o
+                                                  rfm_int_sww/menu.o
+LCD_PrintTempInt                                  rfm_int_sww/lcd.o
+                                                  rfm_int_sww/menu.o
+LCD_SegHourBarOffsetTablePrgMem                   rfm_int_sww/lcd.o
+LCD_SegOffsetTablePrgMem                          rfm_int_sww/lcd.o
+LCD_SetHourBarSeg                                 rfm_int_sww/lcd.o
+                                                  rfm_int_sww/menu.o
+LCD_SetSeg                                        rfm_int_sww/lcd.o
+                                                  rfm_int_sww/menu.o
+LCD_StringTable                                   rfm_int_sww/lcd.o
+LCD_force_update                                  rfm_int_sww/lcd.o
+                                                  rfm_int_sww/main.o
+LCD_used_bitplanes                                rfm_int_sww/lcd.o
+MOTOR_Dir                                         rfm_int_sww/main.o
+                                                  rfm_int_sww/motor.o
+MOTOR_GetPosPercent                               rfm_int_sww/motor.o
+                                                  rfm_int_sww/menu.o
+MOTOR_Goto                                        rfm_int_sww/motor.o
+                                                  rfm_int_sww/main.o
+MOTOR_PosAct                                      rfm_int_sww/motor.o
+                                                  rfm_int_sww/watch.o
+MOTOR_PosMax                                      rfm_int_sww/motor.o
+                                                  rfm_int_sww/watch.o
+MOTOR_PosOvershoot                                rfm_int_sww/motor.o
+                                                  rfm_int_sww/watch.o
+MOTOR_calibration_step                            rfm_int_sww/motor.o
+                                                  rfm_int_sww/menu.o
+MOTOR_counter                                     rfm_int_sww/watch.o
+                                                  rfm_int_sww/motor.o
+MOTOR_timer_pulse                                 rfm_int_sww/motor.o
+                                                  rfm_int_sww/main.o
+MOTOR_timer_stop                                  rfm_int_sww/motor.o
+                                                  rfm_int_sww/main.o
+MOTOR_updateCalibration                           rfm_int_sww/motor.o
+                                                  rfm_int_sww/main.o
+PID_force_update                                  rfm_int_sww/controller.o
+                                                  rfm_int_sww/main.o
+                                                  rfm_int_sww/com.o
+RFM_init                                          rfm_int_sww/rfm.o
+                                                  rfm_int_sww/main.o
+RS_Init                                           rfm_int_sww/rs232_485_hw.o
+                                                  rfm_int_sww/com.o
+RS_startSend                                      rfm_int_sww/rs232_485_hw.o
+                                                  rfm_int_sww/com.o
+RTC                                               rfm_int_sww/rtc.o
+                                                  rfm_int_sww/menu.o
+                                                  rfm_int_sww/main.o
+                                                  rfm_int_sww/wireless.o
+                                                  rfm_int_sww/com.o
+RTC_ActualTimerTemperature                        rfm_int_sww/rtc.o
+                                                  rfm_int_sww/controller.o
+RTC_AddOneSecond                                  rfm_int_sww/rtc.o
+                                                  rfm_int_sww/main.o
+RTC_DS                                            rfm_int_sww/rtc.o
+RTC_DayOfMonthTablePrgMem                         rfm_int_sww/rtc.o
+RTC_DowTimerGet                                   rfm_int_sww/rtc.o
+                                                  rfm_int_sww/menu.o
+RTC_DowTimerGetHourBar                            rfm_int_sww/rtc.o
+                                                  rfm_int_sww/menu.o
+RTC_DowTimerSet                                   rfm_int_sww/rtc.o
+                                                  rfm_int_sww/menu.o
+                                                  rfm_int_sww/com.o
+RTC_Init                                          rfm_int_sww/rtc.o
+                                                  rfm_int_sww/main.o
+RTC_SetDay                                        rfm_int_sww/rtc.o
+                                                  rfm_int_sww/menu.o
+                                                  rfm_int_sww/wireless.o
+                                                  rfm_int_sww/com.o
+RTC_SetHour                                       rfm_int_sww/rtc.o
+                                                  rfm_int_sww/menu.o
+                                                  rfm_int_sww/wireless.o
+                                                  rfm_int_sww/com.o
+RTC_SetMinute                                     rfm_int_sww/rtc.o
+                                                  rfm_int_sww/menu.o
+                                                  rfm_int_sww/wireless.o
+                                                  rfm_int_sww/com.o
+RTC_SetMonth                                      rfm_int_sww/rtc.o
+                                                  rfm_int_sww/menu.o
+                                                  rfm_int_sww/wireless.o
+                                                  rfm_int_sww/com.o
+RTC_SetSecond                                     rfm_int_sww/rtc.o
+                                                  rfm_int_sww/menu.o
+                                                  rfm_int_sww/wireless.o
+                                                  rfm_int_sww/com.o
+RTC_SetYear                                       rfm_int_sww/rtc.o
+                                                  rfm_int_sww/menu.o
+                                                  rfm_int_sww/wireless.o
+                                                  rfm_int_sww/com.o
+RTC_timer_done                                    rfm_int_sww/rtc.o
+                                                  rfm_int_sww/main.o
+                                                  rfm_int_sww/wireless.o
+RTC_timer_set                                     rfm_int_sww/rtc.o
+                                                  rfm_int_sww/keyboard.o
+                                                  rfm_int_sww/main.o
+                                                  rfm_int_sww/wireless.o
+RTC_timer_todo                                    rfm_int_sww/rtc.o
+                                                  rfm_int_sww/wireless.o
+__bad_interrupt                                   /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__bss_end                                         /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+__bss_start                                       /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+__data_end                                        /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+__data_load_start                                 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+__data_start                                      /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+__divmodhi4                                       /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodhi4.o)
+                                                  rfm_int_sww/lcd.o
+                                                  rfm_int_sww/menu.o
+                                                  rfm_int_sww/adc.o
+                                                  rfm_int_sww/rtc.o
+                                                  rfm_int_sww/wireless.o
+                                                  rfm_int_sww/controller.o
+                                                  rfm_int_sww/motor.o
+__divmodqi4                                       /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodqi4.o)
+                                                  rfm_int_sww/menu.o
+__divmodsi4                                       /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodsi4.o)
+                                                  rfm_int_sww/adc.o
+__do_clear_bss                                    /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
+                                                  rfm_int_sww/lcd.o
+                                                  rfm_int_sww/menu.o
+                                                  rfm_int_sww/eeprom.o
+                                                  rfm_int_sww/adc.o
+                                                  rfm_int_sww/keyboard.o
+                                                  rfm_int_sww/main.o
+                                                  rfm_int_sww/rtc.o
+                                                  rfm_int_sww/rfm.o
+                                                  rfm_int_sww/wireless.o
+                                                  rfm_int_sww/com.o
+                                                  rfm_int_sww/watch.o
+                                                  rfm_int_sww/controller.o
+                                                  rfm_int_sww/motor.o
+__do_copy_data                                    /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
+                                                  rfm_int_sww/lcd.o
+                                                  rfm_int_sww/menu.o
+                                                  rfm_int_sww/eeprom.o
+                                                  rfm_int_sww/adc.o
+                                                  rfm_int_sww/keyboard.o
+                                                  rfm_int_sww/rtc.o
+                                                  rfm_int_sww/rfm.o
+                                                  rfm_int_sww/com.o
+                                                  rfm_int_sww/controller.o
+                                                  rfm_int_sww/motor.o
+__epilogue_restores__                             /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_epilogue.o)
+                                                  rfm_int_sww/lcd.o
+                                                  rfm_int_sww/eeprom.o
+                                                  rfm_int_sww/adc.o
+                                                  rfm_int_sww/rtc.o
+                                                  rfm_int_sww/cmac.o
+                                                  rfm_int_sww/wireless.o
+                                                  rfm_int_sww/com.o
+__fuse                                            rfm_int_sww/main.o
+__heap_end                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__init                                            /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__mulsi3                                          /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_mulsi3.o)
+                                                  rfm_int_sww/adc.o
+                                                  rfm_int_sww/controller.o
+__prologue_saves__                                /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_prologue.o)
+                                                  rfm_int_sww/adc.o
+                                                  rfm_int_sww/rtc.o
+                                                  rfm_int_sww/cmac.o
+                                                  rfm_int_sww/wireless.o
+                                                  rfm_int_sww/com.o
+__stack                                           /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__tablejump2__                                    /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
+                                                  rfm_int_sww/menu.o
+                                                  rfm_int_sww/com.o
+__tablejump__                                     /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
+__udivmodhi4                                      /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodhi4.o)
+                                                  /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodhi4.o)
+                                                  rfm_int_sww/lcd.o
+                                                  rfm_int_sww/menu.o
+                                                  rfm_int_sww/rtc.o
+                                                  rfm_int_sww/com.o
+                                                  rfm_int_sww/motor.o
+__udivmodqi4                                      /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodqi4.o)
+                                                  /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodqi4.o)
+                                                  rfm_int_sww/lcd.o
+                                                  rfm_int_sww/menu.o
+                                                  rfm_int_sww/main.o
+                                                  rfm_int_sww/rtc.o
+                                                  rfm_int_sww/com.o
+__udivmodsi4                                      /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodsi4.o)
+                                                  /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodsi4.o)
+                                                  rfm_int_sww/adc.o
+__vector_1                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_10                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_11                                       rfm_int_sww/motor.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_12                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_13                                       rfm_int_sww/rs232_485_hw.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_14                                       rfm_int_sww/rs232_485_hw.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_15                                       rfm_int_sww/rs232_485_hw.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_16                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_17                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_18                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_19                                       rfm_int_sww/adc.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_2                                        rfm_int_sww/motor.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+                                                  rfm_int_sww/main.o
+                                                  rfm_int_sww/wireless.o
+__vector_20                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_21                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_22                                       rfm_int_sww/lcd.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_3                                        rfm_int_sww/keyboard.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_4                                        rfm_int_sww/rtc.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_5                                        rfm_int_sww/rtc.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_6                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_7                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_8                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_9                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vector_default                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+__vectors                                         /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+_div                                              /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_divmodhi4.o)
+_exit                                             /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+cmac_calc                                         rfm_int_sww/cmac.o
+                                                  rfm_int_sww/wireless.o
+config                                            rfm_int_sww/lcd.o
+                                                  rfm_int_sww/menu.o
+                                                  rfm_int_sww/eeprom.o
+                                                  rfm_int_sww/adc.o
+                                                  rfm_int_sww/main.o
+                                                  rfm_int_sww/rtc.o
+                                                  rfm_int_sww/wireless.o
+                                                  rfm_int_sww/com.o
+                                                  rfm_int_sww/controller.o
+                                                  rfm_int_sww/motor.o
+config_read                                       rfm_int_sww/eeprom.o
+                                                  rfm_int_sww/menu.o
+crypto_init                                       rfm_int_sww/wireless.o
+                                                  rfm_int_sww/main.o
+ee_config                                         rfm_int_sww/eeprom.o
+ee_layout                                         rfm_int_sww/eeprom.o
+                                                  rfm_int_sww/main.o
+ee_reserved1                                      rfm_int_sww/eeprom.o
+ee_reserved2                                      rfm_int_sww/eeprom.o
+ee_reserved2_60                                   rfm_int_sww/eeprom.o
+ee_reserved3                                      rfm_int_sww/eeprom.o
+ee_timers                                         rfm_int_sww/eeprom.o
+eeprom_config_init                                rfm_int_sww/eeprom.o
+                                                  rfm_int_sww/main.o
+eeprom_config_save                                rfm_int_sww/eeprom.o
+                                                  rfm_int_sww/menu.o
+                                                  rfm_int_sww/com.o
+                                                  rfm_int_sww/motor.o
+eeprom_timers_read_raw                            rfm_int_sww/eeprom.o
+                                                  rfm_int_sww/rtc.o
+                                                  rfm_int_sww/com.o
+eeprom_timers_write_raw                           rfm_int_sww/eeprom.o
+                                                  rfm_int_sww/rtc.o
+exit                                              /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+hourbar_buff                                      rfm_int_sww/menu.o
+                                                  rfm_int_sww/rtc.o
+kb_events                                         rfm_int_sww/keyboard.o
+                                                  rfm_int_sww/menu.o
+                                                  rfm_int_sww/main.o
+kb_timeout                                        rfm_int_sww/keyboard.o
+                                                  rfm_int_sww/rtc.o
+main                                              rfm_int_sww/main.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm169p.o
+memcpy                                            /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(memcpy.o)
+                                                  rfm_int_sww/cmac.o
+                                                  rfm_int_sww/wireless.o
+memcpy_P                                          /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(memcpy_P.o)
+                                                  rfm_int_sww/wireless.o
+menu_auto_update_timeout                          rfm_int_sww/menu.o
+                                                  rfm_int_sww/main.o
+menu_controller                                   rfm_int_sww/menu.o
+                                                  rfm_int_sww/main.o
+menu_state                                        rfm_int_sww/menu.o
+menu_view                                         rfm_int_sww/menu.o
+                                                  rfm_int_sww/main.o
+mont_contact_pooling                              rfm_int_sww/keyboard.o
+                                                  rfm_int_sww/main.o
+motor_diag                                        rfm_int_sww/motor.o
+                                                  rfm_int_sww/watch.o
+rfm_framebuf                                      rfm_int_sww/rfm.o
+                                                  rfm_int_sww/wireless.o
+                                                  rfm_int_sww/motor.o
+rfm_framepos                                      rfm_int_sww/rfm.o
+                                                  rfm_int_sww/wireless.o
+                                                  rfm_int_sww/motor.o
+rfm_framesize                                     rfm_int_sww/rfm.o
+                                                  rfm_int_sww/wireless.o
+                                                  rfm_int_sww/motor.o
+rfm_mode                                          rfm_int_sww/rfm.o
+                                                  rfm_int_sww/main.o
+                                                  rfm_int_sww/wireless.o
+                                                  rfm_int_sww/motor.o
+rfm_spi16                                         rfm_int_sww/rfm.o
+                                                  rfm_int_sww/main.o
+                                                  rfm_int_sww/wireless.o
+                                                  rfm_int_sww/motor.o
+ring_average                                      rfm_int_sww/adc.o
+                                                  rfm_int_sww/menu.o
+                                                  rfm_int_sww/main.o
+                                                  rfm_int_sww/com.o
+                                                  rfm_int_sww/watch.o
+                                                  rfm_int_sww/controller.o
+                                                  rfm_int_sww/motor.o
+ring_buf_temp_avgs                                rfm_int_sww/adc.o
+                                                  rfm_int_sww/controller.o
+ring_buf_temp_avgs_pos                            rfm_int_sww/adc.o
+                                                  rfm_int_sww/controller.o
+sleep_with_ADC                                    rfm_int_sww/adc.o
+                                                  rfm_int_sww/main.o
+start_task_ADC                                    rfm_int_sww/adc.o
+                                                  rfm_int_sww/main.o
+state_wheel_prev                                  rfm_int_sww/keyboard.o
+                                                  rfm_int_sww/main.o
+sumError                                          rfm_int_sww/controller.o
+                                                  rfm_int_sww/keyboard.o
+                                                  rfm_int_sww/main.o
+                                                  rfm_int_sww/com.o
+                                                  rfm_int_sww/watch.o
+task_ADC                                          rfm_int_sww/adc.o
+                                                  rfm_int_sww/main.o
+task_keyboard                                     rfm_int_sww/keyboard.o
+                                                  rfm_int_sww/main.o
+task_keyboard_long_press_detect                   rfm_int_sww/keyboard.o
+                                                  rfm_int_sww/main.o
+task_lcd_update                                   rfm_int_sww/lcd.o
+                                                  rfm_int_sww/main.o
+time_sync_tmo                                     rfm_int_sww/wireless.o
+                                                  rfm_int_sww/main.o
+timmers_patch_data                                rfm_int_sww/menu.o
+                                                  rfm_int_sww/eeprom.o
+timmers_patch_offset                              rfm_int_sww/eeprom.o
+                                                  rfm_int_sww/menu.o
+valve_wanted                                      rfm_int_sww/main.o
+                                                  rfm_int_sww/com.o
+watch                                             rfm_int_sww/watch.o
+                                                  rfm_int_sww/menu.o
+                                                  rfm_int_sww/com.o
+wirelesTimeSyncCheck                              rfm_int_sww/wireless.o
+                                                  rfm_int_sww/main.o
+wirelessReceivePacket                             rfm_int_sww/wireless.o
+                                                  rfm_int_sww/main.o
+wirelessSendDone                                  rfm_int_sww/wireless.o
+                                                  rfm_int_sww/main.o
+wirelessTimer                                     rfm_int_sww/wireless.o
+                                                  rfm_int_sww/main.o
+wirelessTimerCase                                 rfm_int_sww/wireless.o
+                                                  rfm_int_sww/main.o
+wireless_async                                    rfm_int_sww/wireless.o
+                                                  rfm_int_sww/com.o
+wireless_buf_ptr                                  rfm_int_sww/wireless.o
+                                                  rfm_int_sww/main.o
+wireless_putchar                                  rfm_int_sww/wireless.o
+                                                  rfm_int_sww/com.o
+wl_force_addr1                                    rfm_int_sww/main.o
+                                                  rfm_int_sww/wireless.o
+wl_force_addr2                                    rfm_int_sww/main.o
+                                                  rfm_int_sww/wireless.o
+wl_force_flags                                    rfm_int_sww/main.o
+                                                  rfm_int_sww/wireless.o
+wl_skip_sync                                      rfm_int_sww/wireless.o
+                                                  rfm_int_sww/main.o
+xtea_enc                                          rfm_int_sww/xtea-asm.o
+                                                  rfm_int_sww/cmac.o
+                                                  rfm_int_sww/wireless.o
