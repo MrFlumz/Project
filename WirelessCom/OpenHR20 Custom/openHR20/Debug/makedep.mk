@@ -10,6 +10,8 @@ eeprom.c
 
 engine.c
 
+gateway_com.c
+
 get_millis.c
 
 lcd.c

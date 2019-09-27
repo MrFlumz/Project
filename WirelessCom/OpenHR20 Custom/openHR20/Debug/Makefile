@@ -41,6 +41,7 @@ C_SRCS +=  \
 ../controller.c \
 ../eeprom.c \
 ../engine.c \
+../gateway_com.c \
 ../get_millis.c \
 ../lcd.c \
 ../main.c \
@@ -61,6 +62,7 @@ adc.o \
 controller.o \
 eeprom.o \
 engine.o \
+gateway_com.o \
 get_millis.o \
 lcd.o \
 main.o \
@@ -74,6 +76,7 @@ adc.o \
 controller.o \
 eeprom.o \
 engine.o \
+gateway_com.o \
 get_millis.o \
 lcd.o \
 main.o \
@@ -87,6 +90,7 @@ adc.d \
 controller.d \
 eeprom.d \
 engine.d \
+gateway_com.d \
 get_millis.d \
 lcd.d \
 main.d \
@@ -100,6 +104,7 @@ adc.d \
 controller.d \
 eeprom.d \
 engine.d \
+gateway_com.d \
 get_millis.d \
 lcd.d \
 main.d \
@@ -144,6 +149,13 @@ LINKER_SCRIPT_DEP+=
 	
 
 ./engine.o: .././engine.c
+	@echo Building file: $<
+	@echo Invoking: AVR/GNU C Compiler : 5.4.0
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\include"  -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=atmega169p -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\gcc\dev\atmega169p" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
+./gateway_com.o: .././gateway_com.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 5.4.0
 	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\include"  -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=atmega169p -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\gcc\dev\atmega169p" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 

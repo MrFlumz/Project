@@ -67,6 +67,8 @@ unsigned int counter = 0;
 #define TONODEID 3
 #define myUART UART0
 
+#include "gateway_com.h" //Communication with reMoni gateway
+
 // global Vars
 volatile bool    m_automatic_mode;         // auto mode (false: manu mode)
 
@@ -210,22 +212,13 @@ int main(void)
 			{
 				stringData[i]=DATA[i];
 			}
-			if (stringData[0] == '+')
-			{
-				CTL_temp_change_inc(5);
-				//send(TONODEID,"+",1,0); // (toNodeId,buffer,bufferSize,requestACK?)
-			}
-			else if (stringData[0] == '-')
-			{
-				CTL_temp_change_inc(-5);
-				//send(TONODEID,"-",1,0); // (toNodeId,buffer,bufferSize,requestACK?)
-			}
+			
+			handle_com_recieved(stringData);
+			
+			//Send
 			char tempstring[10];
 			sprintf(tempstring,"temp : %d", (int)(CTL_temp_wanted/2));
 			send(TONODEID,tempstring,10,0); // (toNodeId,buffer,bufferSize,requestACK?)
-			
-		
-			
 		}
 		
 		
