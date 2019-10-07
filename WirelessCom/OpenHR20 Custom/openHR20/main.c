@@ -63,8 +63,8 @@
 // RFM69 DEFINES
 unsigned int counter = 0;
 #define NETWORKID 33
-#define NODEID     4
-#define TONODEID 3
+#define NODEID     3
+#define TONODEID 4
 #define myUART UART0
 
 // global Vars
@@ -104,6 +104,19 @@ uint8_t input_temp(uint8_t);
 #warning "This code has not been tested with older versions."
 #endif
 
+
+void go_to_sleep_mode () {
+	set_sleep_mode(SLEEP_MODE_PWR_SAVE);
+	cli();
+	sleep_enable();
+	// disable ADC
+	ADCSRA = 0; 
+	sei();
+	sleep_cpu();
+	// cancel sleep as a precaution
+	sleep_disable();
+	
+}
 
 /*!
  *******************************************************************************
@@ -196,37 +209,67 @@ int main(void)
     *    - no serial communication active
     ***************************************************************************/
     
-	CTL_temp_change_inc (80); //start setpoint på 20 grader
+	CTL_temp_change_inc (43); //start setpoint på 20 grader
 	int last_second_main_loop;
 
 	int valve_wanted_last;
+	sei();
 	for (;;){        // change displaystate every 10 seconds 0 to 5
+		sei();
+		//go_to_sleep_mode();
+		
 		//Receive Data from RFM chip
 		//SendString(myUART, "_");
+		
+	
 		if(receiveDone())
 		{
+			
 			char stringData[16];
 			for(uint8_t i=0;i<16;i++) // max 16 digit can be shown in this case
 			{
 				stringData[i]=DATA[i];
 			}
-			if (stringData[0] == '+')
+			if (stringData[0] == 'R') // READ 
 			{
-				CTL_temp_change_inc(5);
-				//send(TONODEID,"+",1,0); // (toNodeId,buffer,bufferSize,requestACK?)
+				if (stringData[1] == 'T') // TEMP
+				{
+					char tempstring[10];
+					sprintf(tempstring, "%d", ADC_Get_Temp_Degree());
+					send(TONODEID,tempstring,strlen(tempstring),0); // (toNodeId,buffer,bufferSize,requestACK?)
+				}
+				if (stringData[1] == 'V') // VALVE
+				{
+					char tempstring[10];
+					sprintf(tempstring, "%d", valve_wanted);
+					send(TONODEID,tempstring,strlen(tempstring),0); // (toNodeId,buffer,bufferSize,requestACK?)
+				}
+				if (stringData[1] == 'S') // SETPOINT / TARGET
+				{
+					char tempstring[10];
+					sprintf(tempstring, "%d", CTL_temp_wanted);
+					send(TONODEID,tempstring,strlen(tempstring),0); // (toNodeId,buffer,bufferSize,requestACK?)
+				}
 			}
-			else if (stringData[0] == '-')
+			else if (stringData[0] == 'W')
 			{
-				CTL_temp_change_inc(-5);
-				//send(TONODEID,"-",1,0); // (toNodeId,buffer,bufferSize,requestACK?)
+				char tempstring[10];
+				_delay_ms(10);
+				sprintf(tempstring,"%c%c", stringData[1],stringData[2]);
+				uint8_t wantedTemp = atoi(tempstring);
+				
+				char temp[5];
+				sprintf(temp,"%d",wantedTemp);
+				CTL_temp_wanted = wantedTemp;
+				//send(TONODEID,temp,strlen(temp),0); // (toNodeId,buffer,bufferSize,requestACK?)
 			}
-			char tempstring[10];
-			sprintf(tempstring,"temp : %d", (int)(CTL_temp_wanted/2));
-			send(TONODEID,tempstring,10,0); // (toNodeId,buffer,bufferSize,requestACK?)
-			
-		
-			
+			//char tempstring[10];
+			//_delay_ms(10);
+			//sprintf(tempstring,"%d;%d;%d", ADC_Get_Temp_Degree(),valve_wanted,(int)(CTL_temp_wanted/2));
+			//send(TONODEID,tempstring,10,0); // (toNodeId,buffer,bufferSize,requestACK?)
 		}
+		
+		
 		
 		
 		

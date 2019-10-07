@@ -109,6 +109,7 @@ uint8_t sendWithRetry(uint8_t toAddress, const void* buffer, uint8_t bufferSize,
 uint8_t ACKRequested();
 uint8_t ACKReceived(uint8_t fromNodeID);
 void receiveBegin();
+uint8_t checkPayload();
 uint8_t receiveDone();
 void sendACK(const void* buffer, uint8_t bufferSize);
 uint32_t getFrequency();

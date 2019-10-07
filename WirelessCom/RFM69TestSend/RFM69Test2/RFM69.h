@@ -56,8 +56,7 @@
 #   define ISCn0                ISC00
 #   define ISCn1                ISC01
 #   define INT_VECT         INT0_vect
-
-//#   define EICRn               EICRA
+#   define EICRn               EICRA
 //
 //#elif defined (__AVR_ATmega64__)
 //#   define SS_DDR                DDRB

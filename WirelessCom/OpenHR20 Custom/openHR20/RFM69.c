@@ -43,6 +43,7 @@
 #include "RFM69registers.h"
 #include "RFM69.h"
 #include "get_millis.h"
+#include "avr/sleep.h"
 
 volatile uint8_t DATALEN;
 volatile uint8_t SENDERID;
@@ -79,6 +80,7 @@ void rfm69_init(uint16_t freqBand, uint8_t nodeID, uint8_t networkID)
         /* 0x08 */ { REG_FRFMID, (uint8_t) (freqBand==RF_315MHZ ? RF_FRFMID_315 : (freqBand==RF_433MHZ ? RF_FRFMID_433 : (freqBand==RF_868MHZ ? RF_FRFMID_868 : RF_FRFMID_915))) },
         /* 0x09 */ { REG_FRFLSB, (uint8_t) (freqBand==RF_315MHZ ? RF_FRFLSB_315 : (freqBand==RF_433MHZ ? RF_FRFLSB_433 : (freqBand==RF_868MHZ ? RF_FRFLSB_868 : RF_FRFLSB_915))) },
 
+		
 
         // looks like PA1 and PA2 are not implemented on RFM69W, hence the max output power is 13dBm
         // +17dBm and +20dBm are possible on RFM69HW
@@ -452,6 +454,10 @@ uint8_t receiveDone()
     return 0;
 }
 
+uint8_t checkPayload(){
+	return DATALEN;
+}
+
 // internal function
 void receiveBegin()
 {
@@ -502,6 +508,7 @@ void unselect()
 // Interrupt Service Routine
 ISR(INT_VECT)
 {
+
     inISR = 1;
     if (mode == RF69_MODE_RX && (readReg(REG_IRQFLAGS2) & RF_IRQFLAGS2_PAYLOADREADY))
     {

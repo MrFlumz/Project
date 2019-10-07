@@ -16,7 +16,7 @@
 #include "uart.h"
 #define resetPin 3
 
-
+unsigned int counter = 0;
 #define NETWORKID 33
 #define NODEID     4
 
@@ -55,7 +55,7 @@ int main(void)
 			char rssilevel[16];
 			sprintf(rssilevel,"\n\nRssi level is : %d \n",readRSSI(0));
 			SendString(myUART,	rssilevel);
-			
+			counter++;
 			
 		}
     }
