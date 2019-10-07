@@ -10,19 +10,11 @@ eeprom.c
 
 engine.c
 
-gateway_com.c
-
-get_millis.c
-
 lcd.c
 
 main.c
 
 motor.c
 
-RFM69.c
-
 rtc.c
-
-spi.c
 

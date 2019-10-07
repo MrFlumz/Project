@@ -20,7 +20,7 @@ main.d main.o: .././main.c \
  .././config.h .././main.h .././adc.h .././lcd.h .././motor.h .././rtc.h \
  .././engine.h .././controller.h .././eeprom.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\eeprom.h \
- .././debug.h .././RFM69.h .././RFM69registers.h .././gateway_com.h
+ .././debug.h
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdint.h:
 
@@ -79,9 +79,3 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\eeprom.h:
 
 .././debug.h:
-
-.././RFM69.h:
-
-.././RFM69registers.h:
-
-.././gateway_com.h:

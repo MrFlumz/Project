@@ -56,16 +56,6 @@
 #include "controller.h"
 #include "eeprom.h"
 
-// RFM69 includes
-#include "RFM69.h"
-#include "RFM69registers.h"
-
-// RFM69 DEFINES
-unsigned int counter = 0;
-#define NETWORKID 33
-#define NODEID     3
-#define TONODEID 4
-#define myUART UART0
 
 // global Vars
 volatile bool    m_automatic_mode;         // auto mode (false: manu mode)
@@ -105,26 +95,12 @@ uint8_t input_temp(uint8_t);
 #endif
 
 
-void go_to_sleep_mode () {
-	set_sleep_mode(SLEEP_MODE_PWR_SAVE);
-	cli();
-	sleep_enable();
-	// disable ADC
-	ADCSRA = 0;
-	sei();
-	sleep_cpu();
-	// cancel sleep as a precaution
-	sleep_disable();
-
-}
-
 /*!
  *******************************************************************************
  * main program
  ******************************************************************************/
 int main(void)
 {
-	
     bool last_state_mnt;        //!< motor mounted
     bool state_mnt;             //!< motor mounted
     bool err;                   //!< error
@@ -148,15 +124,15 @@ int main(void)
     //! Enable interrupts
     sei();
 
-    ////! show POST Screen
-    //LCD_AllSegments(LCD_MODE_ON);                   // all segments on
-    //delay(1000);
-    //LCD_AllSegments(LCD_MODE_OFF);        
-    //LCD_PrintDec(REVHIGH, 1, LCD_MODE_ON);          // print version
-    //LCD_PrintDec(REVLOW, 0, LCD_MODE_ON);
-    //LCD_Update();
-    //delay(1000);
-    //LCD_AllSegments(LCD_MODE_OFF);                  // all off
+    //! show POST Screen
+    LCD_AllSegments(LCD_MODE_ON);                   // all segments on
+    delay(1000);
+    LCD_AllSegments(LCD_MODE_OFF);        
+    LCD_PrintDec(REVHIGH, 1, LCD_MODE_ON);          // print version
+    LCD_PrintDec(REVLOW, 0, LCD_MODE_ON);
+    LCD_Update();
+    delay(1000);
+    LCD_AllSegments(LCD_MODE_OFF);                  // all off
 
     //! \todo Send Wakeup MSG
 
@@ -175,12 +151,6 @@ int main(void)
 		// We should do the following once here to have valid data from the start
     ADC_Measure_Ub();
 		ADC_Measure_Temp();
-
-	// init RFM69
-	rfm69_init(433, NODEID,NETWORKID);
-	setHighPower(0);   // if model number rfm69hw
-	setPowerLevel(30); // 0-31; 5dBm to 20 dBm
-	encrypt(NULL);     // if set has to be 16 bytes. example: "1234567890123456"
 
 		
     /*!
@@ -209,75 +179,13 @@ int main(void)
     *    - no serial communication active
     ***************************************************************************/
     
-	CTL_temp_change_inc (43); //start setpoint på 20 grader
-	int last_second_main_loop;
-
-	int valve_wanted_last;
-	sei();
+	CTL_temp_change_inc (40); //start setpoint på 20 grader
+	
+	int aksel_valve = 0;
+	
 	for (;;){        // change displaystate every 10 seconds 0 to 5
-		sei();
-		//go_to_sleep_mode();
-
-		//Receive Data from RFM chip
-		//SendString(myUART, "_");
-
-
-		if(receiveDone())
-		{
-
-			char stringData[16];
-			for(uint8_t i=0;i<16;i++) // max 16 digit can be shown in this case
-			{
-				stringData[i]=DATA[i];
-			}
-			if (stringData[0] == 'R') // READ
-			{
-				if (stringData[1] == 'T') // TEMP
-				{
-					char tempstring[10];
-					sprintf(tempstring, "%d", ADC_Get_Temp_Degree());
-					send(TONODEID,tempstring,strlen(tempstring),0); // (toNodeId,buffer,bufferSize,requestACK?)
-				}
-				if (stringData[1] == 'V') // VALVE
-				{
-					char tempstring[10];
-					sprintf(tempstring, "%d", valve_wanted);
-					send(TONODEID,tempstring,strlen(tempstring),0); // (toNodeId,buffer,bufferSize,requestACK?)
-				}
-				if (stringData[1] == 'S') // SETPOINT / TARGET
-				{
-					char tempstring[10];
-					sprintf(tempstring, "%d", CTL_temp_wanted);
-					send(TONODEID,tempstring,strlen(tempstring),0); // (toNodeId,buffer,bufferSize,requestACK?)
-				}
-			}
-			else if (stringData[0] == 'W')
-			{
-				char tempstring[10];
-				_delay_ms(10);
-				sprintf(tempstring,"%c%c", stringData[1],stringData[2]);
-				uint8_t wantedTemp = atoi(tempstring);
-
-				char temp[5];
-				sprintf(temp,"%d",wantedTemp);
-				CTL_temp_wanted = wantedTemp;
-				//send(TONODEID,temp,strlen(temp),0); // (toNodeId,buffer,bufferSize,requestACK?)
-			}
-			//char tempstring[10];
-			//_delay_ms(10);
-			//sprintf(tempstring,"%d;%d;%d", ADC_Get_Temp_Degree(),valve_wanted,(int)(CTL_temp_wanted/2));
-			//send(TONODEID,tempstring,10,0); // (toNodeId,buffer,bufferSize,requestACK?)
-		}
-
-
-		
-		
-		
-		
         // Activate Auto Mode
          setautomode(false);
-		
-		update_average_temp();
 		
 		
 		ADC_Measure_Temp();							//AFSLÆS TEMPERATUR I CELCIUS
@@ -287,11 +195,7 @@ int main(void)
 		//Regulering og motor control
 		int minute_CTL = (RTC_GetSecond()==1);
 		CTL_update(minute_CTL); 
-		if (valve_wanted != valve_wanted_last)
-		{
-			MOTOR_Goto(valve_wanted,full);
-			valve_wanted_last = valve_wanted;
-		}
+		MOTOR_Goto(valve_wanted,full);
 		
 		
 		
@@ -405,62 +309,62 @@ int main(void)
         
 		
 		
-        //if (display_mode==1) {
-            //// Ub: ADC Value Hex 
-            //ADC_Measure_Ub();
-            //value16 = ADC_Get_Bat_Val();
-            //LCD_PrintHexW(value16, LCD_MODE_ON);
-        //}else if (display_mode==2) {
-            //// Ub: ADC Value Decimal 
-            //ADC_Measure_Ub();
-            //value16 = ADC_Get_Bat_Val();
-            //LCD_PrintDecW(value16, LCD_MODE_ON);
-        //}else if (display_mode==3) {
-            //// Ub: Voltage [mV]
-            //ADC_Measure_Ub();            
-            //value16 = ADC_Get_Bat_Voltage();
-            //LCD_PrintDecW(value16, LCD_MODE_ON);
-        //}else if (display_mode==4) {
-            //// Temp: ADC Value Hex
-            //ADC_Measure_Temp();
-            //value16 = ADC_Get_Temp_Val();
-            //LCD_PrintHexW(value16, LCD_MODE_ON);
-        //}else if (display_mode==5) {
-            //// Temp: ADC Value Decimal
-            //ADC_Measure_Temp();
-            //value16 = ADC_Get_Temp_Val();
-            //LCD_PrintDecW(value16, LCD_MODE_ON);            
-        //}else if (display_mode==6) {
-            //// Temp: Temperature (Degree)
-            //ADC_Measure_Temp();
-            //value16s = ADC_Get_Temp_Degree();
-            //LCD_PrintTempInt(value16s, LCD_MODE_ON);
-        //}else if (display_mode==7) {
-            //// - 9,87 °C            
-            //value16s = -987;
-            //LCD_PrintTempInt(value16s, LCD_MODE_ON);
-        //}else if (display_mode==8) {
-            //// 98,76 °C            
-            //value16s = 9876;
-            //LCD_PrintTempInt(value16s, LCD_MODE_ON);
-		//}else if (display_mode==12) {
-            ////Test setting temperature to 30 celcius  
-			//
-			//m_reftemp = DEG_2_UINT8(30);
-			         //
-            //value16s = 3000;
-            //LCD_PrintTempInt(value16s, LCD_MODE_ON);	
-		//}else if (display_mode==13) {
-            ////Test setting temperature to 3 celcius  
-			//
-			//m_reftemp = DEG_2_UINT8(3);
-			         //
-            //value16s = 300;
-            //LCD_PrintTempInt(value16s, LCD_MODE_ON);
-        //}else{
-            //value16 = display_mode;                      
-            //LCD_PrintDecW(value16, LCD_MODE_ON);
-        //}         
+        if (display_mode==1) {
+            // Ub: ADC Value Hex 
+            ADC_Measure_Ub();
+            value16 = ADC_Get_Bat_Val();
+            LCD_PrintHexW(value16, LCD_MODE_ON);
+        }else if (display_mode==2) {
+            // Ub: ADC Value Decimal 
+            ADC_Measure_Ub();
+            value16 = ADC_Get_Bat_Val();
+            LCD_PrintDecW(value16, LCD_MODE_ON);
+        }else if (display_mode==3) {
+            // Ub: Voltage [mV]
+            ADC_Measure_Ub();            
+            value16 = ADC_Get_Bat_Voltage();
+            LCD_PrintDecW(value16, LCD_MODE_ON);
+        }else if (display_mode==4) {
+            // Temp: ADC Value Hex
+            ADC_Measure_Temp();
+            value16 = ADC_Get_Temp_Val();
+            LCD_PrintHexW(value16, LCD_MODE_ON);
+        }else if (display_mode==5) {
+            // Temp: ADC Value Decimal
+            ADC_Measure_Temp();
+            value16 = ADC_Get_Temp_Val();
+            LCD_PrintDecW(value16, LCD_MODE_ON);            
+        }else if (display_mode==6) {
+            // Temp: Temperature (Degree)
+            ADC_Measure_Temp();
+            value16s = ADC_Get_Temp_Degree();
+            LCD_PrintTempInt(value16s, LCD_MODE_ON);
+        }else if (display_mode==7) {
+            // - 9,87 °C            
+            value16s = -987;
+            LCD_PrintTempInt(value16s, LCD_MODE_ON);
+        }else if (display_mode==8) {
+            // 98,76 °C            
+            value16s = 9876;
+            LCD_PrintTempInt(value16s, LCD_MODE_ON);
+		}else if (display_mode==12) {
+            //Test setting temperature to 30 celcius  
+			
+			m_reftemp = DEG_2_UINT8(30);
+			         
+            value16s = 3000;
+            LCD_PrintTempInt(value16s, LCD_MODE_ON);	
+		}else if (display_mode==13) {
+            //Test setting temperature to 3 celcius  
+			
+			m_reftemp = DEG_2_UINT8(3);
+			         
+            value16s = 300;
+            LCD_PrintTempInt(value16s, LCD_MODE_ON);
+        }else{
+            value16 = display_mode;                      
+            LCD_PrintDecW(value16, LCD_MODE_ON);
+        }         
 		
 		  
         /*
@@ -636,17 +540,17 @@ void init(void)
     DDRF = (1<<PF3);          // PF3  activate tempsensor
 	
 	DDRF = (1<<PF6); //Test: Writing to pins
-	DDRB |= (1<<PB1)|(1<<PB2)|(1<<PB3);
+
     //! enable pullup on all inputs (keys and m_wheel)
     //! ATTENTION: no pullup on lighteye input watch circuit diagram
-    PORTB = (1<<PB0)|(1<<PB5)|(1<<PB6);
+    PORTB = (1<<PB0)|(1<<PB1)|(1<<PB2)|(1<<PB3)|(1<<PB5)|(1<<PB6);
 
     //! remark for PCMSK0:
     //!     PCINT0 for lighteye (motor monitor) is activated in motor.c using
     //!     mask register PCMSK0: PCMSK0=(1<<PCINT4) and PCMSK0&=~(1<<PCINT4)
 
     //! PCMSK1 for keyactions
-    PCMSK1 = (1<<PCINT8)|(1<<PCINT13);
+    PCMSK1 = (1<<PCINT8)|(1<<PCINT9)|(1<<PCINT10)|(1<<PCINT11)|(1<<PCINT13);
 
     //! activate PCINT0 + PCINT1
     EIMSK = (1<<PCIE1)|(1<<PCIE0);
@@ -808,9 +712,7 @@ ISR(PCINT1_vect){
 
         // m_wheel
         m_state_wheel = ( m_state_keys & (0x60) );   // m_wheel on PB5 and PB6
-     
-	 
-	    if (m_state_wheel !=m_state_wheel_prev){
+        if (m_state_wheel !=m_state_wheel_prev){
             m_state_wheel_prev = m_state_wheel;
              if ( (m_state_wheel == 0x20) || (m_state_wheel == 0x40) ) {
                 if (m_wheel < 0xff){
