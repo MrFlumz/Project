@@ -1,5 +1,10 @@
 
 
+import serial.tools.list_ports
+
+from IOtest import RadioTransreciver
+
+
 class DRTV:
     def __init__(self, f_addr, f_netid):
         self.nodeAdress = f_addr
@@ -15,6 +20,12 @@ class Room():
     def __init__(self, f_roomid):
         self.roomID = f_roomid
         self.DRTVList = []
+        self.description = ""
+        self.target_temp = 0
+        self.time = 0
+
+    def setDescription(self, f_des):
+        self.description = f_des
 
     def addDRTV(self, addr, netid):
         self.DRTVList.append(DRTV(addr,netid))
@@ -31,6 +42,13 @@ class Room():
 #Use the Person class to create an object, and then execute the printname method:
 
 roomObj = Room(1)
+roomObj.setDescription("Group locale 123")
+
 roomObj.addDRTV(3,33)
 roomObj.addDRTV(4,33)
 roomObj.setTempAll(54)
+
+
+radio = RadioTransreciver(4,33)
+radio.getTemp()
+
