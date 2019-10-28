@@ -8,33 +8,25 @@ class RadioTransreciver:
     #String format:   "NodeID; NetworkID; R/W; Data"
 
 
-    def __init__(self, NodeID, NetworkID):
+    def __init__(self, NetworkID, verbose = 0):
         """Intialization of RPI RFM69 RadioTransreciver object"""
         #
-        self._baudrate = 9600
+        self.verbose = verbose;
+        self._baudrate = 57600
         self._timeout = 1
-        self._NodeID = NodeID
         self._NetworkID = NetworkID
         self._CurrentTemp = 0
         self._TargetTemp = 0
+
         self._BatteryLvl = 0
-        comports = list(serial.tools.list_ports.comports())
-        s = 0
-        print(comports)
-        for p in comports:
-            if 'CH340' in p.description:
-                print(p.device)
-                # Connection to port
-                self.port = serial.Serial(p.device, self._baudrate, timeout=self._timeout)
-                print("\n>----------- Settings -----------<")
-                print("> NodeID:   {nodeID} : NetworkID: {networkID} <".format(nodeID=self._NodeID,
-                                                                               networkID=self._NetworkID))
-                print("> Baud:  {baud} : Timeout:    {timeout} <".format(baud=self._baudrate, timeout=self._timeout))
-                print("> Device name : {devname}          <".format(devname=p.device))
-                print(">>> Initialization Complete! <<<\n")
-            else:
-                print(">>> Initialization Failed! <<<\n")
-                print("Dev not found!")
+        self.port = serial.Serial("/dev/ttyUSB0", self._baudrate, timeout=self._timeout)
+        time.sleep(0.1)
+        if self.verbose:
+            print("\n>----------- Settings -----------<")
+            print("> NodeID:   {nodeID} : NetworkID: {networkID} <".format(nodeID=000,
+                                                                           networkID=self._NetworkID))
+            print("> Baud:  {baud} : Timeout:    {timeout} <".format(baud=self._baudrate, timeout=self._timeout))
+            print(">>> Initialization Complete! <<<\n")
 
 
 
@@ -44,6 +36,21 @@ class RadioTransreciver:
         print("1. Getting temp")
         self._CurrentTemp = self.Wmsg("RT")
         print("2. Current temp is: {CurrentTemp}\n".format(CurrentTemp = self._CurrentTemp))
+
+    def getValue(self,f_WhatToGet, f_NodeID):
+        """
+        :param f_WhatToGet: T = tempereature, S = target temp, B = Battery, V = ValvePos
+        :param f_NodeID: id of the current node
+        :return:
+        """
+
+        RW = "R{What}".format(What=f_WhatToGet) # formats what to send
+        self.daString = "{NodeID};{RW};!".format(NodeID=f_NodeID, RW=RW)
+        print("\n>>Sending :", self.daString)
+        self.skriv = self.port.write(self.daString.encode())
+        mod = self.port.read(10)
+        print("<<Received: {data}\n".format(data=mod.decode()))
+        return mod
 
     def setTarget(self, target):
         """Sets the DRTV's target temperature on the current node"""
@@ -64,17 +71,19 @@ class RadioTransreciver:
         self._Batterylvl = self.Wmsg("PIK")
         print("Battery lvl is: {bat}".format(bat = self._Batterylvl))
 
-    def Wmsg(self, R_W):
+    def Wmsg(self,NodeID, R_W):
         """Stand function for sending message over serial connection"""
         # Make the string: "NodeID; NetworkID; R/W; Data"
         # V1.1 format s  : "NodeID; Messagetype;!"
-        self.daString = "{NodeID};{RW};!".format(NodeID = self._NodeID, RW = R_W)
+        self.daString = "{NodeID};{RW};!".format(NodeID = NodeID, RW = R_W)
         # self.daString = "{NodeID}; {NetworkID}; {RW}; {Data}".format(NodeID = self._NodeID, NetworkID = self._NetworkID, Data = Message, RW = R_W)
-        print("\n>>Sending :",self.daString)
-        self.skriv = self.port.write(self.daString)
-        self.mod = self.port.read(100)
-        print("<<Received: {data}\n".format(data = self.mod))
-        return self.mod
+        if self.verbose:
+            print("\n>>Sending :",self.daString)
+        self.skriv = self.port.write(self.daString.encode())
+        mod = self.port.readline()
+        if self.verbose:
+            print("<<Received: {data}\n".format(data=mod.decode()))
+        return mod.decode()
 
     def logginLoop(self):
         #threading.Timer(5.0, printit).start()
