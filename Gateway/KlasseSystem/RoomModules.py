@@ -30,8 +30,8 @@ class Room():
         while True:
             btnstr = self.radio.Wmsg(self.NodeID, "")
             strings = btnstr.split('$')
-            print(self.temp)
-            print(strings)
+            #print(self.temp)
+            #print(strings)
             for x in strings:
                 str = x.split(';')                              # str indeholder nu $id;+
                 length = len(str)
@@ -43,6 +43,7 @@ class Room():
                                     self.temp = self.temp + 1;
                                 if str[1].rstrip() == '-':
                                     self.temp = self.temp - 1;
+                    print(self.temp)
 
                 # print("Node {node} pressed {temp}".format(node=str[0], temp=str[1]))
             time.sleep(0.2)
